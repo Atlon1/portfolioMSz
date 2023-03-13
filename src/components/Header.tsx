@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/Maciej_logo.png'
 
 const Header = () => {
-    return <header id='home' className='py-2'>
+    return <header className='py-2'>
         <div className='container mx-auto'>
             <div className='flex justify-between items-center '>
                 <a href='#' >
