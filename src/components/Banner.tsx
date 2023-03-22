@@ -1,10 +1,10 @@
 import React from 'react';
-
-import Image from '../assets/avatar.svg';
-import {FaGithub, FaYoutube, FaDribbble} from 'react-icons/fa'
+import Image from '../assets/MaciejSz.png';
+import {FaGithub} from 'react-icons/fa'
 import {TypeAnimation} from "react-type-animation";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
+import {Link} from "react-scroll";
 
 const Banner = () => {
     return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -16,7 +16,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='text-[55px] font-bold leading-[0.8] lg:text-[80px]'>
+                        className='text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
                         Maciej <span>Szajstek</span>
                     </motion.h1>
                     <motion.div
@@ -24,19 +24,19 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold
+                        className='mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold
                     leading-[1]'>
-                        <span className='text-white mr-4'>I am a</span>
+                        <span className='text-white mr-4'>Jestem:</span>
                         <TypeAnimation
                             sequence={[
-                                'Developer',
-                                2000,
-                                'Designer',
-                                2000,
-                                'Engineer',
-                                2000
+                                'Front Developerem',
+                                3000,
+                                'Projektantem Ui/Ux',
+                                3000,
+                                'Inżnierem',
+                                3000
                             ]}
-                            speed={50}
+                            speed={30}
                             className='text-accent'
                             wrapper='span'
                             repeat={Infinity}/>
@@ -47,18 +47,30 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='mb-8 max-w-lg mx-auto lg:mx-0'>
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Cześć! <br/>
+                        Naukę front-endu rozpocząłem rok temu, od Kursu w Coders Lab's. Zdecydowałem się na język JS,
+                        ponieważ uważam że jest on najbardziej przystępny. Po za tym widzę ogrom możliwości jakie za
+                        sobą niesie.
+                        Poniżej znajdują się pierwsze moje aplikacje webowe. Z czasem będę dokładał ich coraz to więcej.
+                        Na co dzień pracuję jako Technolog.
+                        w obecnej pracy zobaczyłem jakie korzyści ze sobą niesie programowanie po przez automatyzowanie
+                        bieżącej pracy oraz ograniczanie błędów,
+                        ztąd pomysł na naukę.
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex max-m-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 '>
-                        <button className='btn btn-lg'>Contact me</button>
-                        <a href='#' className='text-gradient btn-link'>My Portfolio</a>
+                        className='flex max-m-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 md:justify-center lg:justify-start'>
+                        <button className='btn btn-lg'>
+                            <Link to="contact"
+                                  activeClass='active'
+                                  smooth={true}
+                                  spy={true}>
+                                Kontakt
+                            </Link>
+                        </button>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.8)}
@@ -66,14 +78,8 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers'>
-                        <a href='#'>
-                            <FaYoutube/>
-                        </a>
-                        <a href='#'>
+                        <a href='https://github.com/Atlon1'>
                             <FaGithub/>
-                        </a>
-                        <a href='#'>
-                            <FaDribbble/>
                         </a>
                     </motion.div>
                 </div>
@@ -81,8 +87,10 @@ const Banner = () => {
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]'>
-                    <img src={Image} alt=''/>
+                    className='hidden  lg:flex flex-1 max-w-[280px] lg:max-w-[350px] bg-accent rounded-full'>
+                    <img
+                        className='rounded-full mix-blend-darken'
+                        src={Image} alt='MaciejSz'/>
                 </motion.div>
             </div>
         </div>
