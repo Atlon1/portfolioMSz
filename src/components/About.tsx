@@ -1,20 +1,14 @@
 import React from 'react';
 import CountUp from "react-countup";
 import {useInView} from "react-intersection-observer";
-import {FaReact} from 'react-icons/fa'
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
-
 
 
 const About = () => {
     const [ref, inView] = useInView({
         threshold: 0.5,
     })
-
-    type Carousel = {
-        shadowArrows:any
-    }
 
     return (
         <section className='section' id='about' ref={ref}>
@@ -88,12 +82,54 @@ const About = () => {
                     {/*    // viewport={{once: false, amount: 0.3}}*/}
                     {/*    className='flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top'*/}
                     {/*/>*/}
-
-                    <div>
-                        <FaReact/>
-                        <p>React</p>
-                        <div>
-
+                    <div className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center'>
+                        <div className='flex flex-col items-center justify-between w-24 lg:h-32'>
+                            <img
+                                className='w-11 max-h-11 hidden lg:flex lg:max-w-[482px] mx-auto'
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1200px-WebStorm_Icon.svg.png"/>
+                            <h3 className='break-words text-center leading-none'>Webstorm</h3>
+                            <div className='flex'>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                     className="h-6 hidden lg:flex lg:max-w-[482px] mx-auto" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                     className="h-6 hidden lg:flex lg:max-w-[482px] mx-auto" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                     className="h-6 hidden lg:flex lg:max-w-[482px] mx-auto" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                     className="h-6 hidden lg:flex lg:max-w-[482px] mx-auto" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/>
+                                    </g>
+                                </svg>
+                                <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
+                                     className="h-6 hidden lg:flex lg:max-w-[482px] mx-auto" height="1em" width="1em"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path fill="none" d="M0 0h24v24H0z"/>
+                                        <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7L12 17zm0-2.344l2.817 1.72-.766-3.21 2.507-2.147-3.29-.264L12 7.708l-1.268 3.047-3.29.264 2.507 2.147-.766 3.21L12 14.657z"/>
+                                    </g>
+                                </svg>
+                            </div>
                         </div>
                     </div>
                 </div>
