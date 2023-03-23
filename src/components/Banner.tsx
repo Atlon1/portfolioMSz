@@ -33,7 +33,7 @@ const Banner = () => {
                                 3000,
                                 'Projektantem Ui/Ux',
                                 3000,
-                                'Inżnierem',
+                                'Inżyierem',
                                 3000
                             ]}
                             speed={30}
@@ -87,9 +87,9 @@ const Banner = () => {
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden  lg:flex flex-1 max-w-[280px] lg:max-w-[350px] bg-accent rounded-full'>
+                    className='hidden lg:flex flex-1 max-w-[280px] lg:max-w-[350px] animation_BG transition-colors'>
                     <img
-                        className='rounded-full mix-blend-darken'
+                        className='rounded-full mix-blend-darken '
                         src={Image} alt='MaciejSz'/>
                 </motion.div>
             </div>

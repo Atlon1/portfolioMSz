@@ -10,14 +10,13 @@
             #191654 100%,
             #406aff 117.04%
     );
-    box-shadow: 0 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+
 }
 
 .btn:hover {
     background: linear-gradient(
             92.23deg,
             #191654 21.43%,
-
             #43C6AC 100%,
             #ff56f6 117.04%
     );
@@ -44,6 +43,28 @@
     color: #fff;
     padding: 1rem;
     border-radius: 100%;
+}
+
+@keyframes morph {
+    0% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, deepskyblue 0%, mediumpurple 100%);
+    }
+
+    50% {
+        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+        background: linear-gradient(45deg, lightgreen 0%, aqua 100%);
+    }
+
+    100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        background: linear-gradient(45deg, dodgerblue 0%, lightgreen 100%);
+    }
+}
+
+.animation_BG{
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 }
 
 @layer base {
