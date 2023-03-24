@@ -32,19 +32,19 @@ export const SkillsList: List[] = [
         id: 4,
         url: "https://skillicons.dev/icons?i=sass",
         text: "Sass",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {
         id: 5,
         url: "https://skillicons.dev/icons?i=css",
         text: "HTML5",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {
         id: 6,
         url: "https://skillicons.dev/icons?i=github",
         text: "Github",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {
         id: 7,
@@ -68,13 +68,13 @@ export const SkillsList: List[] = [
         id: 10,
         url: "https://skillicons.dev/icons?i=express",
         text: "Express.js",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {
         id: 11,
         url: "https://skillicons.dev/icons?i=mongodb",
         text: "MongoDB",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
     },
 
 ]
