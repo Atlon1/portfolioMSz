@@ -15,8 +15,8 @@ function App() {
             <Banner/>
             <Nav/>
             <About/>
-            <Services/>
             <Work/>
+            <Services/>
             <Contact/>
         </div>
     );

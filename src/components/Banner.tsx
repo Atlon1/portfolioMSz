@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from '../assets/MaciejSz.png';
 import {FaGithub} from 'react-icons/fa'
+import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
@@ -33,7 +34,7 @@ const Banner = () => {
                                 3000,
                                 'Projektantem Ui/Ux',
                                 3000,
-                                'Inżyierem',
+                                'Inżynierem',
                                 3000
                             ]}
                             speed={30}
@@ -62,7 +63,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex max-m-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 md:justify-center lg:justify-start'>
+                        className='flex max-m-max gap-x-6 items-center mb-6 mx-auto lg:mx-0 md:justify-center lg:justify-start justify-center'>
                         <button className='btn btn-lg'>
                             <Link to="contact"
                                   activeClass='active'
@@ -77,17 +78,27 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers'>
-                        <a href='https://github.com/Atlon1'>
-                            <FaGithub/>
-                        </a>
+                        className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers'>
+                        <div
+                            className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
+                            <a href='https://github.com/Atlon1'>
+                                <FaGithub/>
+                            </a>
+                        </div>
+                        <div
+                            className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
+                            <a href='https://drive.google.com/file/d/1M4gU47TVYpSIj1i78QpFO-BuaUrMHsZP/view?usp=sharing'>
+                                <RiFilePaper2Line/>
+                            </a>
+                        </div>
+
                     </motion.div>
                 </div>
                 <motion.div
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[280px] lg:max-w-[350px] animation_BG transition-colors'>
+                    className='hidden lg:flex flex-1 max-w-[280px] lg:max-w-[350px] animation_BG transition-colors hover:text-gradient'>
                     <img
                         className='rounded-full mix-blend-darken '
                         src={Image} alt='MaciejSz'/>
