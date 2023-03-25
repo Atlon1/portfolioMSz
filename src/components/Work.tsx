@@ -11,15 +11,16 @@ const Work = () => {
 
     const [open, setOpen] = useState(false)
     const [windowProp, setWindowProp] = useState({
-        opacity: "0"
+        opacity: "0",
+        index: "20"
     })
 
     const handleWin = () => {
         setOpen(!open)
-        if ( open === false){
-            setWindowProp({...windowProp, opacity: "1"})
+        if (open === false) {
+            setWindowProp({...windowProp, opacity: "1", index: "40"})
         } else {
-            setWindowProp({...windowProp, opacity: '0'})
+            setWindowProp({...windowProp, opacity: '0', index: '20'})
         }
     }
 
@@ -29,6 +30,7 @@ const Work = () => {
             <div className='container mx-auto'>
                 <div className='flex flex-col lg:flex-row gap-x-10 '>
                     <div
+
                         // variants={fadeIn('right', 0.3)}
                         // initial='hidden'
                         // whileInView={'show'}
@@ -48,7 +50,8 @@ const Work = () => {
                             className='group relative overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'
                             onClick={handleWin}>
                             <div
-                                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'/>
+                                className='group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300'
+                            />
                             <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt=''/>
                             <div
                                 className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
@@ -95,15 +98,21 @@ const Work = () => {
                     </div>
 
                     <div
-                        className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 z-20 flex justify-center items-center overflow-y-auto"
+                        className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center overflow-y-hidden"
                         style={
                             {
-                                opacity: windowProp.opacity
+                                opacity: windowProp.opacity,
+                                zIndex: windowProp.index
                             }
                         }
+                    >
+                        <div className='class="flex flex-col absolute bg-gradient-to-l bg-site bg-cover max-w-[90%] max-h-[90%] lg:w-[700px] rounded-xl p-4 overflow-y-auto'
+                             style={
+                                 {
+                                     transform: "translateY(1px) translateZ(0px)"
+                                 }
+                             }
                         >
-                        <div className='class="flex flex-col absolute bg-gradient-to-l from-[#A3D4C8] to-[#E8BAC2] max-w-[90%]
-                         max-h-[90%] lg:w-[700px] border-2 border-white/50 rounded-xl p-6 overflow-y-auto"'>
                             <div className='hidden md:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto pb-4'>
                                 <img/>
                             </div>
