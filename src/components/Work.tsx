@@ -7,7 +7,9 @@ import Img1 from '../assets/portfolio-img1.png';
 import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
 
-const Work = () => {
+
+
+export default function Work(){
 
     const [open, setOpen] = useState(false)
     const [windowProp, setWindowProp] = useState({
@@ -19,14 +21,20 @@ const Work = () => {
         setOpen(!open)
         if (open === false) {
             setWindowProp({...windowProp, opacity: "1", index: "40"})
+            document.body.style.overflowY = "hidden"
+
         } else {
             setWindowProp({...windowProp, opacity: '0', index: '20'})
+            document.body.style.overflowY = "visible"
         }
     }
 
 
+
+
+
     return (
-        <section className='section' id='work'>
+        <section className='section ' id='work'>
             <div className='container mx-auto'>
                 <div className='flex flex-col lg:flex-row gap-x-10 '>
                     <div
@@ -98,7 +106,7 @@ const Work = () => {
                     </div>
 
                     <div
-                        className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center overflow-y-hidden"
+                        className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center "
                         style={
                             {
                                 opacity: windowProp.opacity,
@@ -106,7 +114,7 @@ const Work = () => {
                             }
                         }
                     >
-                        <div className='class="flex flex-col absolute bg-gradient-to-l bg-site bg-cover max-w-[90%] max-h-[90%] lg:w-[700px] rounded-xl p-4 overflow-y-auto'
+                        <div className='class="flex flex-col absolute bg-gradient-to-l bg-site bg-cover max-w-[90%] max-h-[90%] lg:w-[700px] rounded-xl p-4'
                              style={
                                  {
                                      transform: "translateY(1px) translateZ(0px)"
@@ -147,6 +155,5 @@ const Work = () => {
             </div>
         </section>
     )
-};
 
-export default Work;
+};

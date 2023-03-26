@@ -7,7 +7,10 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 
 
-function App() {
+
+export default function App(){
+
+
 
     return (
         <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
@@ -20,6 +23,5 @@ function App() {
             <Contact/>
         </div>
     );
-}
 
-export default App;
+};
