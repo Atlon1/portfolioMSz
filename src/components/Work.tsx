@@ -45,12 +45,10 @@ export default function Work(){
                         // viewport={{once: false, amount: 0.3}}
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
                         <div>
-                            <h2 className='h2 leading-tight text-accent'>My Lastest <br/>
-                                work
+                            <h2 className='h2 leading-tight text-accent'>Moje ostatnie <br/>projekty:
                             </h2>
-                            <p className='max-w-sm mb-16'>
-                                Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,
-                                ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,
+                            <p className='max-w-sm mb-32'>
+                                Jestem otwarty na porjekty kazdego rodzaju.
                             </p>
                             <button className='btn btn-sm'>View all projects</button>
                         </div>
