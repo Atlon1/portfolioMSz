@@ -6,31 +6,58 @@ import {fadeIn} from "../variants";
 import Img1 from '../assets/portfolio-img1.png';
 import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
+import WorkCont from "./work/WorkCont";
+import WorkModal from "./work/WorkModal";
 
 
-
-export default function Work(){
+export default function Work() {
 
     const [open, setOpen] = useState(false)
+    const [open2, setOpen2] = useState(false)
+    const [open3, setOpen3] = useState(false)
+
     const [windowProp, setWindowProp] = useState({
         opacity: "0",
-        index: "20"
+        index: "-2",
+        index2: "40"
     })
 
     const handleWin = () => {
         setOpen(!open)
         if (open === false) {
-            setWindowProp({...windowProp, opacity: "1", index: "40"})
+            setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
         } else {
-            setWindowProp({...windowProp, opacity: '0', index: '20'})
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
             document.body.style.overflowY = "visible"
         }
+
     }
+    const handleWin2 = () => {
+        setOpen2(!open2)
+        if (open2 === false) {
+            setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
+            document.body.style.overflowY = "hidden"
 
+        } else {
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
+            document.body.style.overflowY = "visible"
+        }
 
+    }
+    const handleWin3 = () => {
+        setOpen3(!open3)
+        if (open3 === false) {
+            setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
+            document.body.style.overflowY = "hidden"
 
+        } else {
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
+            document.body.style.overflowY = "visible"
+        }
+
+    }
 
 
     return (
@@ -50,24 +77,19 @@ export default function Work(){
                             <p className='max-w-sm mb-32'>
                                 Jestem otwarty na porjekty kazdego rodzaju.
                             </p>
-                            <button className='btn btn-sm'>View all projects</button>
+                            <a href="https://github.com/Atlon1?tab=repositories">
+                                <button className='btn btn-sm'> View all projects</button>
+                            </a>
                         </div>
-                        <div
-                            className='group relative overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'
-                            onClick={handleWin}>
-                            <div
-                                className='group-hover:bg-black/70 w-full h-full z-40 absolute transition-all duration-300'
-                            />
-                            <img className='group-hover:scale-125 transition-all duration-500' src={Img1} alt=''/>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                                <span className='text-gradient'>UI/UX Design</span>
-                            </div>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                                <span className='text-3xl text-white'>Project Title</span>
-                            </div>
-                        </div>
+                        <WorkCont
+                            button={handleWin}
+                            index2={windowProp.index2}
+                            img={Img1}
+                            project="Ux/UI"
+                            title="moj pierwszy projekt"
+                        >
+
+                        </WorkCont>
                     </div>
                     <div
                         // variants={fadeIn('left', 0.2)}
@@ -75,80 +97,70 @@ export default function Work(){
                         // whileInView={'show'}
                         // viewport={{once: false, amount: 0.3}}
                         className='flex-1 flex flex-col gap-y-10 lg:mt-16 xl:mt-0 '>
-                        <div className='group relative overflow-hidden border-2 border-white/50 rounded-2xl'>
-                            <div
-                                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'/>
-                            <img className='group-hover:scale-125 transition-all duration-500' src={Img2} alt=''/>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                                <span className='text-gradient'>UI/UX Design</span>
-                            </div>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                                <span className='text-3xl text-white'>Project Title</span>
-                            </div>
+                        <div className='group relative overflow-hidden rounded-2xl'>
+                            <WorkCont
+                                button={handleWin2}
+                                index2={windowProp.index2}
+                                img={Img2}
+                                project="Ux/UI"
+                                title="moj pierwszy projekt"/>
+
                         </div>
-                        <div className='group relative overflow-hidden border-2 border-white/50 rounded-2xl'>
-                            <div
-                                className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'/>
-                            <img className='group-hover:scale-125 transition-all duration-500' src={Img3} alt=''/>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                                <span className='text-gradient'>UI/UX Design</span>
-                            </div>
-                            <div
-                                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                                <span className='text-3xl text-white'>Project Title</span>
-                            </div>
-                        </div>
+                        <WorkCont
+                            button={handleWin3}
+                            index2={windowProp.index2}
+                            img={Img3}
+                            project="Ux/UI"
+                            title="moj pierwszy projekt"
+                        >
+                        </WorkCont>
+                        <WorkModal
+                            visible={open}
+                            opacity={windowProp.opacity}
+                            index={windowProp.index}
+                            img={Img1}
+                            text="Lol"
+                            description='Opis opis'
+                            technology='react fire base itp'
+                            autor="Maciej Szajstek"
+                            name="chujek"
+                            description2="lol2"
+                            note='nie wiem'
+                            link="chujek.pl"
+                            button={handleWin}
+                        />
+                        <WorkModal
+                            visible={open2}
+                            opacity={windowProp.opacity}
+                            index={windowProp.index}
+                            img={Img2}
+                            text="Lol"
+                            description='Opis opis'
+                            technology='react fire base itpasdasdasdasdasdadasdads'
+                            autor="Maciej Szajstek"
+                            name="chujek"
+                            description2="lol2"
+                            note='nie wiem'
+                            link="chujek.pl"
+                            button={handleWin2}
+                        />
+                        <WorkModal
+                            visible={open3}
+                            opacity={windowProp.opacity}
+                            index={windowProp.index}
+                            img={Img3}
+                            text="Lol"
+                            description='Opis opis1'
+                            technology='react fire base itp'
+                            autor="Maciej Szajstekasdasd"
+                            name="chujek"
+                            description2="lol2"
+                            note='nie wiem'
+                            link="chujek.pl"
+                            button={handleWin3}
+                        />
                     </div>
 
-                    <div
-                        className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center "
-                        style={
-                            {
-                                opacity: windowProp.opacity,
-                                zIndex: windowProp.index
-                            }
-                        }
-                    >
-                        <div className='class="flex flex-col absolute bg-gradient-to-l bg-site bg-cover max-w-[90%] max-h-[90%] lg:w-[700px] rounded-xl p-4'
-                             style={
-                                 {
-                                     transform: "translateY(1px) translateZ(0px)"
-                                 }
-                             }
-                        >
-                            <div className='hidden md:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto pb-4'>
-                                <img/>
-                            </div>
-                            <div className='mb-1'>
-                                <p className='text-gradient'>Text</p>
-                                <h2 className='text-3xl text-white'>Opis</h2>
-                            </div>
-                            <div className='flex flex-col gap-2'>
-                                <div className='flex flex-wrap'>
-                                    <div className='text-accent m-1 px-2 bg-white rounded-lg'>Tech</div>
-                                    <div className='text-accent m-1 px-2 bg-white rounded-lg'>Tech</div>
-                                    <div className='text-accent m-1 px-2 bg-white rounded-lg'>Tech</div>
-                                </div>
-                                <div className='flex flex-wrap lg:flex-nowrap text-xl'>
-                                    <div className='font-semibold'>autor</div>
-                                    <div className='mx-2 italic'>Imie</div>
-                                </div>
-                                <p className='indent-4 leading-5 text-justify'>Opis</p>
-                                <p className='text-sm text-justify italic'>Notatka</p>
-                                <div className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'>
-                                    <a href='#'>
-                                        <button className='btn btn-sm'>Źródło</button>
-                                    </a>
-                                </div>
-                                <div className='text-gradient text-sm cursor-pointer'
-                                     onClick={handleWin}
-                                > Zamknij okno</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
