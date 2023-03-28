@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 
-import Img1 from '../assets/portfolio-img1.png';
+import Img1 from '../assets/Oddaj_rzeczy.jpg';
 import Img2 from '../assets/portfolio-img2.png';
 import Img3 from '../assets/portfolio-img3.png';
 import WorkCont from "./work/WorkCont";
@@ -85,10 +85,9 @@ export default function Work() {
                             button={handleWin}
                             index2={windowProp.index2}
                             img={Img1}
-                            project="Ux/UI"
-                            title="moj pierwszy projekt"
+                            project="Porfolio Porject"
+                            title="Oddaj rzeczy"
                         >
-
                         </WorkCont>
                     </div>
                     <div
@@ -119,14 +118,16 @@ export default function Work() {
                             opacity={windowProp.opacity}
                             index={windowProp.index}
                             img={Img1}
-                            text="Lol"
-                            description='Opis opis'
-                            technology='react fire base itp'
-                            autor="Maciej Szajstek"
-                            name="chujek"
-                            description2="lol2"
-                            note='nie wiem'
-                            link="chujek.pl"
+                            text="Portfolio porject"
+                            description='Oddaj rzeczy'
+                            technology='React, firebase, Sass, React-Router, hash-link, React-Paginate, Aos. '
+                            autor="Wykonał"
+                            name="Maciej Szajstek (solo)"
+                            description2="   Projekt miał za zadnie stowrzenie prostej, aplikacji web. Z uzyciem
+                            logowania i autoryzacji za pomocą bazy Firebase. Dostęp do dodatkowych funkcji oraz możliwość utworzenia konta.
+                            Walidacja forlumarza kontakt, oraz pełna walidajca formularza wyślij, rzeczy."
+                            note=''
+                            link="https://atlon1.github.io/Rent_the_stuff/"
                             button={handleWin}
                         />
                         <WorkModal
