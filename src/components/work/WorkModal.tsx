@@ -10,11 +10,7 @@ const WorkModal = (props: any) => {
 
     else {
         return (
-            <motion.div
-                variants={fadeIn('right', 0.2)}
-                initial='hidden'
-                whileInView={'show'}
-                viewport={{once: false, amount: 0.3}}
+            <div
                 className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center "
                 style={
                     {
@@ -23,8 +19,6 @@ const WorkModal = (props: any) => {
                     }
                 }
             >
-
-
                 <motion.div
                     variants={fadeIn('down', 0.2)}
                     initial='hidden'
@@ -65,11 +59,9 @@ const WorkModal = (props: any) => {
                         </div>
                     </div>
                 </motion.div>
-            </motion.div>
+            </div>
         );
     }
-
-
 };
 
 export default WorkModal;
