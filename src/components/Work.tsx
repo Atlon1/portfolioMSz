@@ -101,8 +101,8 @@ export default function Work() {
                                 button={handleWin2}
                                 index2={windowProp.index2}
                                 img={Img2}
-                                project="Ux/UI"
-                                title="moj pierwszy projekt"/>
+                                project="Portfolio Projekt"
+                                title="E-commerance - pierwszy sklep"/>
 
                         </div>
                         <WorkCont
@@ -118,7 +118,7 @@ export default function Work() {
                             opacity={windowProp.opacity}
                             index={windowProp.index}
                             img={Img1}
-                            text="Portfolio porject"
+                            text="Portfolio porjekt"
                             description='Oddaj rzeczy'
                             technology='React, firebase, Sass, React-Router, hash-link, React-Paginate, Aos. '
                             autor="Wykonał"
@@ -135,13 +135,13 @@ export default function Work() {
                             opacity={windowProp.opacity}
                             index={windowProp.index}
                             img={Img2}
-                            text="Lol"
-                            description='Opis opis'
-                            technology='react fire base itpasdasdasdasdasdadasdads'
-                            autor="Maciej Szajstek"
-                            name="chujek"
-                            description2="lol2"
-                            note='nie wiem'
+                            text="Portfolio projekt"
+                            description='E-commerence pierwszy sklep'
+                            technology='React, firebase, Tawilwind CSS'
+                            autor="Wykonał"
+                            name="Maciej Szajstek (solo)"
+                            description2="Pierwsze funkcjonalnosci, sklepu internetowego"
+                            note=''
                             link="chujek.pl"
                             button={handleWin2}
                         />
