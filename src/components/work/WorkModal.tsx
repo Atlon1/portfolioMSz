@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import {fadeIn} from "../../variants";
+import {motion} from "framer-motion";
+
 
 const WorkModal = (props: any) => {
 
@@ -7,7 +10,11 @@ const WorkModal = (props: any) => {
 
     else {
         return (
-            <div
+            <motion.div
+                variants={fadeIn('right', 0.2)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.3}}
                 className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center "
                 style={
                     {
@@ -18,7 +25,11 @@ const WorkModal = (props: any) => {
             >
 
 
-                <div
+                <motion.div
+                    variants={fadeIn('down', 0.2)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.3}}
                     className='class="flex flex-col absolute bg-gradient-to-l bg-modal bg-cover max-w-[100%] max-h-[100%] lg:w-[700px] rounded-xl p-4'
                     style={
                         {
@@ -53,8 +64,8 @@ const WorkModal = (props: any) => {
                         > Zamknij okno
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         );
     }
 

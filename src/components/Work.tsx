@@ -64,12 +64,11 @@ export default function Work() {
         <section className='section ' id='work'>
             <div className='container mx-auto'>
                 <div className='flex flex-col lg:flex-row gap-x-10 '>
-                    <div
-
-                        // variants={fadeIn('right', 0.3)}
-                        // initial='hidden'
-                        // whileInView={'show'}
-                        // viewport={{once: false, amount: 0.3}}
+                    <motion.div
+                        variants={fadeIn('right', 0.3)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: false, amount: 0.3}}
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
                         <div>
                             <h2 className='h2 leading-tight text-accent'>Moje ostatnie <br/>projekty:
@@ -89,12 +88,12 @@ export default function Work() {
                             title="Oddaj rzeczy"
                         >
                         </WorkCont>
-                    </div>
-                    <div
-                        // variants={fadeIn('left', 0.2)}
-                        // initial='hidden'
-                        // whileInView={'show'}
-                        // viewport={{once: false, amount: 0.3}}
+                    </motion.div>
+                    <motion.div
+                        variants={fadeIn('left', 0.2)}
+                        initial='hidden'
+                        whileInView={'show'}
+                        viewport={{once: false, amount: 0.3}}
                         className='flex-1 flex flex-col gap-y-10 lg:mt-16 xl:mt-0 '>
                         <div className='group relative overflow-hidden rounded-2xl'>
                             <WorkCont
@@ -160,8 +159,7 @@ export default function Work() {
                             link="chujek.pl"
                             button={handleWin3}
                         />
-                    </div>
-
+                    </motion.div>
                 </div>
             </div>
         </section>
