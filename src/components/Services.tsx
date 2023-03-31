@@ -6,31 +6,31 @@ import {fadeIn} from "../variants";
 
 const services = [
     {
-        name: 'UI/UX',
-        description: 'Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,' +
-            ' ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ' +
-            'ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet ',
-        link: "Learn more",
+        name: 'Standaryzacja zakupów narzedzi skrawajacych.',
+        description: 'Szczegółowe wyliczenia, pracy przy zakupie narzędzi skrawających. Czas, droga, opis. Opracowano instrukcje po przez przekazanie odpowienich stadnradów zakupwych.',
+        link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
     },
     {
-        name: 'Development',
-        description: 'Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,' +
-            ' ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ' +
-            'ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet ',
-        link: "Learn more",
+        name: 'Zwiększenie efektywności,maszyn CNC.',
+        description: 'Opracowanie oprzyrządowania technologicznego pozwalającego na wykonaywanie jednocześnie kilku elementów na raz. Wydłużenie pracy maszyny o około 40%  w nocy. Możliwość montażu, wszelkiego rodzaju elementów.',
+        link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
     },
     {
-        name: 'Digital marketing ',
-        description: 'Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,' +
-            ' ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ' +
-            'ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet ',
-        link: "Learn more",
+        name: 'Organizacja pracy maszyn. Layout.',
+        description: 'Wyrysowanie planu obszaru pordukcyjnego. Przestawienie maszyn wg. koncjepcji. Opracowanie Harmonogramu Gunta.' +
+            ' Nie zakłucając cyklu pordukcyjnego.',
+        link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
     },
     {
-        name: 'Product branding ',
-        description: 'Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem,' +
-            ' ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ' +
-            'ipsum dolor sit amet Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet ',
+        name: 'Nowe technologie obróbkowe.',
+        description: 'Szczegółowe wyliczenia zakupu nowych technologi obróbki Trochoidalnej. Testy w praktyce.' +
+            'Nowa technologia narzedzi skrawających dla nowej strategii obróbki.',
+        link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+    },
+    {
+        name: 'Zakup maszyn CNC na potrzeby produkcyjne.',
+        description: 'Wytypownie odpowiedniej maszyny, na potrzeby produkcyjne. Negocjacje cenowe dobór odpownienich parametrów maszyny.' +
+            'Instalacja. Nadzór nad instalcją w miejscu wskazanym. Podłączenia mediów niezbędnych do pracy.',
         link: "Learn more",
     },
 ]
@@ -47,9 +47,9 @@ const Services = () => {
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-                    <h2 className='h2 text-accent mb-6'>What i Do.</h2>
-                    <h3 className='h3 max-w-[455px] mb-16'>I.m FreeLance developer with 5 yeats of expirience.</h3>
-                    <button className='btn btn-sm'>See my work</button>
+                    <h2 className='h2 text-accent mb-6'>Czym sie zajmuje? </h2>
+                    <h3 className='h3 max-w-[455px] mb-16'>Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo jak FreeLance Developer..</h3>
+                    <button className='btn btn-sm'>Technologia.</button>
                 </motion.div>
 
                 <motion.div
@@ -62,7 +62,7 @@ const Services = () => {
                         {services.map((services, index) => {
                             const {name, description, link} = services
                             return (
-                                <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+                                <div className='border-b border-white/20 h-[180px] mb-[38px] flex' key={index}>
                                     <div className='max-w-[476px]'>
                                         <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
                                         <p className='font-secondary leading-tight'>{description}
@@ -71,16 +71,10 @@ const Services = () => {
                                     <div className='flex flex-col flex-1 items-end'>
                                         <a
                                             className='btn w-9 h-9 mb-[42px] flex justify-center items-center '
-                                            href="#">
+                                            href={link}>
                                             <BsArrowUpRight/>
                                         </a>
-                                        <a
-                                            className='text-gradient text-sm'
-                                            href='#'>
-                                            {link}
-                                        </a>
                                     </div>
-
                                 </div>
                             );
                         })}

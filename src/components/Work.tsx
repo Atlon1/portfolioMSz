@@ -74,7 +74,7 @@ export default function Work() {
                             <h2 className='h2 leading-tight text-accent'>Moje ostatnie <br/>projekty:
                             </h2>
                             <p className='max-w-sm mb-32'>
-                                Jestem otwarty na porjekty kazdego rodzaju.
+                                Jestem otwarty na projekty kazdego rodzaju.
                             </p>
                             <a href="https://github.com/Atlon1?tab=repositories">
                                 <button className='btn btn-sm'> View all projects</button>
