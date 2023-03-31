@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 
@@ -14,6 +13,27 @@ const Contact = () => {
         }
         return null
     }
+
+
+    const validateEmail = (form: any) => {
+        if (!form.email) {
+            return "Podany email jest nie prawidłowy!"
+        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)) {
+            return "Zły e-mail!"
+        }
+        return null
+    }
+
+    const validateText = (form: any)=> {
+        if (!form.text) {
+            return "Pole nie może być pustę!"
+        } else if (form.text.length < 40) {
+            return "Wiadomość musi mieć conajmniej 40 znaków!"
+        }
+        return null
+    }
+
+
 
     const [nameErr, setNameErr] = useState(null as any);
     const [emailErr, setEmailErr] = useState(null as any);
@@ -39,13 +59,18 @@ const Contact = () => {
     const handleSendMessage = async (e: any) => {
         e.preventDefault()
         const nameError = validateName(form)
+        const emailError = validateEmail(form)
+        const textErorr = validateText(form)
 
-        if (nameError) {
+        if (nameError || emailError || textErorr) {
             setNameErr(nameError)
-
+            setEmailErr(emailError)
+            setTextErr(textErorr)
             setBorderColor('1px solid red')
         } else {
             setNameErr('')
+            setEmailErr('')
+            setTextErr('')
             setBorderColor('')
 
             return setAgree (
@@ -96,7 +121,7 @@ const Contact = () => {
                         style=
                             {
                                 {
-                                    borderBottom: borderColor
+                                    borderBottom: (!nameErr ? "1px solid white" : borderColor)
                                 }
                             }
                     />
@@ -106,13 +131,27 @@ const Contact = () => {
                         className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
                         type='text'
                         name="email"
+                        style=
+                            {
+                                {
+                                    borderBottom: (!emailErr ? "1px solid white" : borderColor)
+                                }
+                            }
                         placeholder='Adres email'/>
+                    <div className='text-red-700 font-secondary flex'>{emailErr}</div>
                     <textarea
                         onChange={updateField}
-                        className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12'
+                        className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-2'
                         placeholder='Wiadomość'
+                        style=
+                            {
+                                {
+                                    borderBottom: (!textErr ? "1px solid white" : borderColor)
+                                }
+                            }
                         name="text"
                     > </textarea>
+                    <div className='text-red-700 font-secondary flex'>{textErr}</div>
                     <button className='btn btn-lg' onClick={handleSendMessage}>Wyślij wiadomosc!</button>
                     {agree}
                 </form>
