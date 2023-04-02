@@ -141,7 +141,7 @@ const Contact = () => {
                     <div className='text-red-700 font-secondary flex'>{emailErr}</div>
                     <textarea
                         onChange={updateField}
-                        className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-2'
+                        className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-5'
                         placeholder='Wiadomość'
                         style=
                             {
@@ -150,7 +150,7 @@ const Contact = () => {
                                 }
                             }
                         name="text"
-                    > </textarea>
+                    />
                     <div className='text-red-700 font-secondary flex'>{textErr}</div>
                     <button className='btn btn-lg' onClick={handleSendMessage}>Wyślij wiadomosc!</button>
                     {agree}
