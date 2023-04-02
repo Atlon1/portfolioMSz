@@ -1,6 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
+import {db} from '../Firebase'
+import {collection, addDoc} from 'firebase/firestore'
 
 const Contact = () => {
 
@@ -47,7 +49,9 @@ const Contact = () => {
         text: ''
     })
 
-    console.log(form.name)
+    const usersCollectionRef = collection(db,"kontakt")
+
+
 
     const updateField = (e: any) => {
         setForm({
@@ -72,6 +76,12 @@ const Contact = () => {
             setEmailErr('')
             setTextErr('')
             setBorderColor('')
+
+            await addDoc(usersCollectionRef,{
+                name: form.name,
+                email: form.email,
+                text: form.text
+            })
 
             return setAgree (
                 <div style={
@@ -104,11 +114,11 @@ const Contact = () => {
                         </h2>
                     </div>
                 </motion.div>
-                <form
-                    // variants={fadeIn('left', 0.3)}
-                    // initial='hidden'
-                    // whileInView={'show'}
-                    // viewport={{once: false, amount: 0.3}}
+                <motion.form
+                    variants={fadeIn('left', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.3}}
                     className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'
 
                 >
@@ -154,7 +164,7 @@ const Contact = () => {
                     <div className='text-red-700 font-secondary flex'>{textErr}</div>
                     <button className='btn btn-lg' onClick={handleSendMessage}>Wyślij wiadomosc!</button>
                     {agree}
-                </form>
+                </motion.form>
             </div>
         </div>
     </section>;
