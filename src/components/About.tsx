@@ -1,7 +1,6 @@
 import React from 'react';
 import CountUp from "react-countup";
 import {useInView} from "react-intersection-observer";
-import {RiStarSFill,RiStarSLine} from 'react-icons/ri';
 import {SkillsList} from "./Helpers/SkillsList";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
