@@ -49,7 +49,7 @@ const Contact = () => {
         text: ''
     })
 
-    const usersCollectionRef = collection(db,"kontakt")
+    const usersCollectionRef = collection(db,"contact")
 
 
 
