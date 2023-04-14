@@ -17,7 +17,6 @@ const About = () => {
         <section className='section' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
-
                     <motion.div
                         variants={fadeIn('right', 0.3)}
                         initial='hidden'
@@ -91,9 +90,10 @@ const About = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.3}}
                         className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center mb-40'>
-                        {SkillsList.map((elem)=> {
+                        {SkillsList.map((elem, key)=> {
                             return (
                                 <SkillComp
+                                    key={key}
                                     id={elem.id}
                                     url={elem.url}
                                     text={elem.text}

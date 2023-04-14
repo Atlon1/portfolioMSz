@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 
 import Img1 from '../assets/Oddaj_rzeczy.jpg';
-import Img2 from '../assets/portfolio-img2.png';
+import Img2 from '../assets/e-commerence.jpg';
 import Img3 from '../assets/portfolio-img3.png';
 import WorkCont from "./work/WorkCont";
 import WorkModal from "./work/WorkModal";
@@ -19,7 +19,7 @@ export default function Work() {
     const [windowProp, setWindowProp] = useState({
         opacity: "0",
         index: "-2",
-        index2: "40"
+        index2: "20"
     })
 
     const handleWin = () => {
@@ -136,12 +136,12 @@ export default function Work() {
                             img={Img2}
                             text="Portfolio projekt"
                             description='E-commerence pierwszy sklep'
-                            technology='React, firebase, Tawilwind CSS'
+                            technology='Tailwind css, Typescript, useContext, useEffect.'
                             autor="Wykonał"
                             name="Maciej Szajstek (solo)"
-                            description2="Pierwsze funkcjonalnosci, sklepu internetowego"
+                            description2="Pełnoprawny sklep internetowy, pełna funkcjonalność zakładki cart. Możliwość edycji zakupów oraz przegląd produktów które cie interesują."
                             note=''
-                            link="chujek.pl"
+                            link="https://atlon1.github.io/first-e-comerance-shop/"
                             button={handleWin2}
                         />
                         <WorkModal

@@ -32,7 +32,7 @@ const WorkModal = (props: any) => {
                     }
                 >
                     <div className='hidden md:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto pb-4'>
-                        <img src={props.img}/>
+                        <img className='rounded-bl-[40px] rounded-tr-[40px]' src={props.img}/>
                     </div>
                     <div className='mb-1'>
                         <p className='text-gradient'>{props.text}</p>
