@@ -5,7 +5,7 @@ import {fadeIn} from "../variants";
 
 import Img1 from '../assets/Oddaj_rzeczy.jpg';
 import Img2 from '../assets/e-commerence.jpg';
-import Img3 from '../assets/portfolio-img3.png';
+import Img3 from '../assets/Estate-website.jpg';
 import WorkCont from "./work/WorkCont";
 import WorkModal from "./work/WorkModal";
 
@@ -15,6 +15,8 @@ export default function Work() {
     const [open, setOpen] = useState(false)
     const [open2, setOpen2] = useState(false)
     const [open3, setOpen3] = useState(false)
+    const [open4, setOpen4] = useState(false)
+    const [open5, setOpen5] = useState(false)
 
     const [windowProp, setWindowProp] = useState({
         opacity: "0",
@@ -58,6 +60,31 @@ export default function Work() {
         }
 
     }
+    const handleWin4 = () => {
+        setOpen4(!open4)
+        if (open4 === false) {
+            setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
+            document.body.style.overflowY = "hidden"
+
+        } else {
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
+            document.body.style.overflowY = "visible"
+        }
+
+    }
+
+    const handleWin5 = () => {
+        setOpen5(!open5)
+        if (open5 === false) {
+            setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
+            document.body.style.overflowY = "hidden"
+
+        } else {
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
+            document.body.style.overflowY = "visible"
+        }
+
+    }
 
 
     return (
@@ -88,6 +115,14 @@ export default function Work() {
                             title="Oddaj rzeczy"
                         >
                         </WorkCont>
+                        <WorkCont
+                            button={handleWin4}
+                            index2={windowProp.index2}
+                            img={Img1}
+                            project="Test"
+                            title="Oddaj rzeczy"
+                        >
+                        </WorkCont>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('left', 0.2)}
@@ -109,7 +144,15 @@ export default function Work() {
                             index2={windowProp.index2}
                             img={Img3}
                             project="Ux/UI"
-                            title="moj pierwszy projekt"
+                            title="Estate website"
+                        >
+                        </WorkCont>
+                        <WorkCont
+                            button={handleWin5}
+                            index2={windowProp.index2}
+                            img={Img2}
+                            project="Test"
+                            title="Estate website"
                         >
                         </WorkCont>
                         <WorkModal
@@ -149,15 +192,45 @@ export default function Work() {
                             opacity={windowProp.opacity}
                             index={windowProp.index}
                             img={Img3}
-                            text="Lol"
-                            description='Opis opis1'
-                            technology='react fire base itp'
-                            autor="Maciej Szajstekasdasd"
-                            name="chujek"
-                            description2="lol2"
-                            note='nie wiem'
-                            link="chujek.pl"
+                            text="Ux/ui design"
+                            description='E-state website'
+                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
+                            autor="Wykonał"
+                            name="Maciej Szajstek (solo)"
+                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
+                            note=''
+                            link="https://atlon1.github.io/estate-website"
                             button={handleWin3}
+                        />
+                        <WorkModal
+                            visible={open4}
+                            opacity={windowProp.opacity}
+                            index={windowProp.index}
+                            img={Img3}
+                            text="LOLOLOL"
+                            description='E-state website'
+                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
+                            autor="Wykonał"
+                            name="Maciej Szajstek (solo)"
+                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
+                            note=''
+                            link="https://atlon1.github.io/estate-website"
+                            button={handleWin4}
+                        />
+                        <WorkModal
+                            visible={open5}
+                            opacity={windowProp.opacity}
+                            index={windowProp.index}
+                            img={Img3}
+                            text="LOLOLOL1221123"
+                            description='E-state website'
+                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
+                            autor="Wykonał"
+                            name="Maciej Szajstek (solo)"
+                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
+                            note=''
+                            link="https://atlon1.github.io/estate-website"
+                            button={handleWin5}
                         />
                     </motion.div>
                 </div>
