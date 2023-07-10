@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
-
 import Img1 from '../assets/Oddaj_rzeczy.jpg';
 import Img2 from '../assets/e-commerence.jpg';
 import Img3 from '../assets/Estate-website.jpg';
+import Img4 from '../assets/Gym-image.jpg'
 import WorkCont from "./work/WorkCont";
 import WorkModal from "./work/WorkModal";
 
@@ -26,7 +26,7 @@ export default function Work() {
 
     const handleWin = () => {
         setOpen(!open)
-        if (open === false) {
+        if (!open) {
             setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
@@ -38,7 +38,7 @@ export default function Work() {
     }
     const handleWin2 = () => {
         setOpen2(!open2)
-        if (open2 === false) {
+        if (!open2) {
             setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
@@ -50,7 +50,7 @@ export default function Work() {
     }
     const handleWin3 = () => {
         setOpen3(!open3)
-        if (open3 === false) {
+        if (!open3) {
             setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
@@ -62,7 +62,7 @@ export default function Work() {
     }
     const handleWin4 = () => {
         setOpen4(!open4)
-        if (open4 === false) {
+        if (!open4) {
             setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
@@ -75,7 +75,7 @@ export default function Work() {
 
     const handleWin5 = () => {
         setOpen5(!open5)
-        if (open5 === false) {
+        if (!open5) {
             setWindowProp({...windowProp, opacity: "1", index: "40", index2: '20'})
             document.body.style.overflowY = "hidden"
 
@@ -118,9 +118,9 @@ export default function Work() {
                         <WorkCont
                             button={handleWin4}
                             index2={windowProp.index2}
-                            img={Img1}
-                            project="Test"
-                            title="Oddaj rzeczy"
+                            img={Img4}
+                            project="portfolio project"
+                            title="GYM ME"
                         >
                         </WorkCont>
                     </motion.div>
@@ -206,15 +206,15 @@ export default function Work() {
                             visible={open4}
                             opacity={windowProp.opacity}
                             index={windowProp.index}
-                            img={Img3}
-                            text="LOLOLOL"
-                            description='E-state website'
-                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
+                            img={Img4}
+                            text="Gym me"
+                            description='Gym site'
+                            technology='Tailwind css, Typescript, Routing, useEffect, React-switch, Validation on forms, Accordion, Multi-lang '
                             autor="Wykonał"
                             name="Maciej Szajstek (solo)"
-                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
+                            description2="Strona siłowni, promująca zdorwy tryb życia. Składa sie z 6 sekcji. Każda z nich zawiera szereg informacji. Np. Koszt karnteu, rodzaje treningów. "
                             note=''
-                            link="https://atlon1.github.io/estate-website"
+                            link="https://atlon1.github.io/gym-site/"
                             button={handleWin4}
                         />
                         <WorkModal
