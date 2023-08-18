@@ -6,6 +6,7 @@ import Img1 from '../assets/Oddaj_rzeczy.jpg';
 import Img2 from '../assets/e-commerence.jpg';
 import Img3 from '../assets/Estate-website.jpg';
 import Img4 from '../assets/Gym-image.jpg'
+import Img5 from '../assets/Photoland.jpg'
 import WorkCont from "./work/WorkCont";
 import WorkModal from "./work/WorkModal";
 
@@ -150,9 +151,9 @@ export default function Work() {
                         <WorkCont
                             button={handleWin5}
                             index2={windowProp.index2}
-                            img={Img2}
-                            project="Test"
-                            title="Estate website"
+                            img={Img5}
+                            project="Portfolio Projekt"
+                            title="Photoland"
                         >
                         </WorkCont>
                         <WorkModal
@@ -221,15 +222,15 @@ export default function Work() {
                             visible={open5}
                             opacity={windowProp.opacity}
                             index={windowProp.index}
-                            img={Img3}
-                            text="LOLOLOL1221123"
-                            description='E-state website'
-                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
+                            img={Img5}
+                            text="PhotoLand"
+                            description='Photoland e-comerence'
+                            technology='Tailwind css, Typescript, useContext, useEffect, useParams, strapi, strape'
                             autor="Wykonał"
                             name="Maciej Szajstek (solo)"
-                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
+                            description2="Sklep z możliwościa zakupu aparatu fotograficznego, z możliościa zapłaty zamówienia."
                             note=''
-                            link="https://atlon1.github.io/estate-website"
+                            link="https://atlon1.github.io/fotoSite/"
                             button={handleWin5}
                         />
                     </motion.div>
