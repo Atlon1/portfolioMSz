@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react';
 
 import {motion} from "framer-motion";
@@ -32,7 +33,7 @@ export default function Work() {
             document.body.style.overflowY = "hidden"
 
         } else {
-            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '40'})
+            setWindowProp({...windowProp, opacity: '0', index: '-2', index2: '20'})
             document.body.style.overflowY = "visible"
         }
 
@@ -91,23 +92,28 @@ export default function Work() {
     return (
         <section className='section w-full h-full mb-[150px]' id='work'>
             <div className='container mx-auto'>
-                <div className='flex flex-col lg:flex-row gap-x-10 '>
-                    <motion.div
-                        variants={fadeIn('right', 0.3)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        viewport={{once: false, amount: 0.3}}
+                <motion.div
+                    variants={fadeIn('right', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.3}}
+                    className='flex flex-col gap-x-10 '>
+                    <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
                         <div>
                             <h2 className='h2 leading-tight text-accent'>Moje ostatnie <br/>projekty:
                             </h2>
-                            <p className='max-w-sm mb-32'>
+                            <p className='max-w-sm mb-16'>
                                 Jestem otwarty na projekty kazdego rodzaju.
                             </p>
                             <a href="https://github.com/Atlon1?tab=repositories">
-                                <button className='btn btn-sm'> View all projects</button>
+                                <button className='btn btn-sm mb-10'> View all projects</button>
                             </a>
                         </div>
+
+                    </div>
+                    <div
+                        className='grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 lg:mt-16 xl:mt-0 '>
                         <WorkCont
                             button={handleWin}
                             index2={windowProp.index2}
@@ -124,13 +130,6 @@ export default function Work() {
                             title="GYM ME"
                         >
                         </WorkCont>
-                    </motion.div>
-                    <motion.div
-                        variants={fadeIn('left', 0.2)}
-                        initial='hidden'
-                        whileInView={'show'}
-                        viewport={{once: false, amount: 0.3}}
-                        className='flex-1 flex flex-col gap-y-10 lg:mt-16 xl:mt-0 '>
                         <div className='group relative overflow-hidden rounded-2xl'>
                             <WorkCont
                                 button={handleWin2}
@@ -233,8 +232,8 @@ export default function Work() {
                             link="https://atlon1.github.io/fotoSite/"
                             button={handleWin5}
                         />
-                    </motion.div>
-                </div>
+                    </div>
+                </motion.div>
             </div>
         </section>
     )

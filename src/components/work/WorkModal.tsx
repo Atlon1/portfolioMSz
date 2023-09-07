@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
+import {IoCloseOutline} from 'react-icons/io5'
 
 
 const WorkModal = (props: any) => {
@@ -11,7 +12,7 @@ const WorkModal = (props: any) => {
     else {
         return (
             <div
-                className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center "
+                className="bg-black bg-opacity-80 w-full h-full fixed top-0 left-0 flex justify-center items-center"
                 style={
                     {
                         opacity: `${props.opacity}`,
@@ -24,13 +25,18 @@ const WorkModal = (props: any) => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.3}}
-                    className='class="flex flex-col absolute bg-gradient-to-l bg-modal bg-cover max-w-[100%] max-h-[100%] lg:w-[700px] rounded-xl p-4'
+                    className='class="flex flex-col absolute bg-gray-500 bg-cover max-w-[100%] max-h-[100%] lg:w-[700px] rounded-xl p-4'
                     style={
                         {
                             transform: "translateY(1px) translateZ(0px)"
                         }
                     }
                 >
+                    <div className='absolute right-2 top-2 hover:scale-110 duration-200 cursor-pointer'
+                         onClick={props.button}
+                    >
+                        <IoCloseOutline className='text-4xl text-white'/>
+                    </div>
                     <div className='hidden md:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto pb-4'>
                         <img className='rounded-bl-[40px] rounded-tr-[40px]' src={props.img}/>
                     </div>
@@ -52,10 +58,6 @@ const WorkModal = (props: any) => {
                             <a href={props.link}>
                                 <button className='btn btn-sm'>Źródło</button>
                             </a>
-                        </div>
-                        <div className='text-gradient text-sm cursor-pointer'
-                             onClick={props.button}
-                        > Zamknij okno
                         </div>
                     </div>
                 </motion.div>

@@ -7,7 +7,7 @@ const WorkCont = (props:any) => {
     return (
         <div
 
-            className='group relative max-h-80 overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'
+            className='group relative max-h-80 max-w-[600px] overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'
             onClick={props.button}>
             <div
                 className='group-hover:bg-black/70 w-full h-full absolute transition-all duration-300' style={

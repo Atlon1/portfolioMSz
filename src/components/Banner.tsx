@@ -25,8 +25,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='mb-6 text-[36px] lg:text-[40px] font-secondary font-semibold
-                    leading-[1]'>
+                        className='mb-6 text-[22px] sm:text-[36px] max-w-full font-secondary font-semibold leading-[1]'>
                         <span className='text-white mr-4'>Jestem:</span>
                         <TypeAnimation
                             sequence={[

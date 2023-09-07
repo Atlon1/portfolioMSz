@@ -27,12 +27,12 @@ const About = () => {
                         <h3 className='h3 mb-4'> Moj obecny stack technologiczny to:</h3>
                         <p className='mb-6'>
                             Java script(path, comand, Fs, cli),<br/>
-                            React (aos, firebase, typed, dycznamiczne strony www),<br/>
+                            React (aos, firebase, typed, responsywne strony www, motion, modal),<br/>
                             Node Js(Mongose DB, Axios, Express),<br/>
-                            TypeScript..<br/>
-                            Caly czas poszerzam swoje umiejętności, (obecnie UX/Ui, Tailwind CSS)
+                            TypeScript.<br/>
+                            Tailwind CSS, Strapi, Next JS.
                         </p>
-                        <div className='flex gap-x-6 lg:gap-x-10 mb-12'>
+                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10  mb-12'>
                             <div>
                                 <div className='text-[40px] font-tertiary text-gradient'>
                                     {
@@ -48,7 +48,7 @@ const About = () => {
                             <div>
                                 <div className='text-[40px] font-tertiary text-gradient'>
                                     {
-                                        inView ? <CountUp start={0} end={5} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={6} duration={3}/> : null
                                     }
                                     ++
                                 </div>
