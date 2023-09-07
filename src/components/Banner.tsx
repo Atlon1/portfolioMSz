@@ -1,15 +1,17 @@
 import React from 'react';
-import Image from '../assets/MaciejSz.png';
+import Image from '../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {FaGithub} from 'react-icons/fa'
 import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import {Link} from "react-scroll";
+import ParticlessConteiner from "./ParticlessConteiner";
 
 const Banner = () => {
     return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
         <div className='container mx-auto'>
+            <ParticlessConteiner/>
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.h1
@@ -97,10 +99,11 @@ const Banner = () => {
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[280px] lg:max-w-[350px] animation_BG transition-colors hover:text-gradient'>
+                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20'>
                     <img
-                        className='rounded-full mix-blend-darken '
+                        className=''
                         src={Image} alt='MaciejSz'/>
+
                 </motion.div>
             </div>
         </div>

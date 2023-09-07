@@ -27,7 +27,8 @@ module.exports = {
         site: "url('../assets/bg-site2.jpg')",
         about: "url('../assets/about.png')",
         services: "url('../assets/services.png')",
-        modal: "url('../assets/Bg-modal.jpg')"
+        modal: "url('../assets/Bg-modal.jpg')",
+        explosion: "url('../assets/bg-explosion.png')",
       },
     },
   },
