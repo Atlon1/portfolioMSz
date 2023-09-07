@@ -89,7 +89,7 @@ const Banner = () => {
                         </div>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
-                            <a href='https://drive.google.com/file/d/1M4gU47TVYpSIj1i78QpFO-BuaUrMHsZP/view?usp=sharing'>
+                            <a href='https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link'>
                                 <RiFilePaper2Line/>
                             </a>
                         </div>
