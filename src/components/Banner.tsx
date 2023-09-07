@@ -9,9 +9,10 @@ import {Link} from "react-scroll";
 import ParticlessConteiner from "./ParticlessConteiner";
 
 const Banner = () => {
-    return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
-        <div className='container mx-auto'>
-            <ParticlessConteiner/>
+
+    return <section className='min-h-[75vh] lg:min-h-[78vh] flex items-center' id='home'>
+        <ParticlessConteiner/>
+        <div className='container mx-auto z-20'>
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.h1
@@ -99,9 +100,8 @@ const Banner = () => {
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20'>
+                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 z-20'>
                     <img
-                        className=''
                         src={Image} alt='MaciejSz'/>
 
                 </motion.div>
