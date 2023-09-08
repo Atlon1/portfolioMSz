@@ -89,7 +89,7 @@ export default function Work() {
 
 
     return (
-        <section className='section w-full h-full mb-[150px]' id='work'>
+        <section className='section w-full h-full py-[4px] xl:h-screen xl:py-[150px]' id='work'>
             <div className='container mx-auto'>
                 <motion.div
                     variants={fadeIn('right', 0.3)}

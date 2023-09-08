@@ -98,7 +98,7 @@ const Contact = () => {
     }
 
 
-    return <section className='p-[px] lg:section w-full h-full' id='contact'>
+    return <section className='py-[4px] xl:mb-[100px] lg:section w-full h-full' id='contact'>
         <div className='container mx-auto'>
             <div className=' flex flex-col lg:flex-row'>
                 <motion.div

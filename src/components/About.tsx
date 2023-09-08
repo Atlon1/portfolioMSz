@@ -15,7 +15,7 @@ const About = () => {
     })
 
     return (
-        <section className='section py-[4px]' id='about' ref={ref}>
+        <section className='section h-full w-full py-[2px] flex items-center xl:h-screen' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
                     <motion.div
@@ -90,7 +90,7 @@ const About = () => {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.3}}
-                        className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center mb-40'>
+                        className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center '>
                         {SkillsList.map((elem, key)=> {
                             return (
                                 <SkillComp

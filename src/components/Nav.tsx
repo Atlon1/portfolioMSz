@@ -7,6 +7,8 @@ import {Link} from 'react-scroll'
 const Nav = () => {
 
 
+
+
     return <nav className='fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-[100]'>
         <div className='container mx-auto'>
             <div className='w-full bg-black/20 h-[96px] p-4 shadow-lg rounded-full max-w-[460px]

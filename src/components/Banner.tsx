@@ -20,7 +20,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
+                        className='hidden sm:block text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
                         Maciej <span>Szajstek</span>
                     </motion.h1>
                     <motion.div
@@ -56,7 +56,7 @@ const Banner = () => {
                         sobą niesie.
                         Poniżej znajdują się pierwsze moje aplikacje webowe. Z czasem będę dokładał ich coraz to więcej.
                         Na co dzień pracuję jako Technolog.
-                        w obecnej pracy zobaczyłem jakie korzyści ze sobą niesie programowanie poprzez automatyzowanie
+                        w obecnej pracy dostrzegłem jakie korzyści ze sobą niesie programowanie poprzez automatyzowanie
                         bieżącej pracy oraz ograniczanie błędów,
                         stąd pomysł na naukę.
                     </motion.p>
