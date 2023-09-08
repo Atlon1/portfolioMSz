@@ -15,7 +15,7 @@ const About = () => {
     })
 
     return (
-        <section className='section' id='about' ref={ref}>
+        <section className='section py-2' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
                     <motion.div
