@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioMSz/static/css/main.3edcc38a.css",
-    "main.js": "/portfolioMSz/static/js/main.bd4ea17c.js",
+    "main.css": "/portfolioMSz/static/css/main.e9126749.css",
+    "main.js": "/portfolioMSz/static/js/main.1ceff31e.js",
     "static/media/bg-site2.jpg": "/portfolioMSz/static/media/bg-site2.20b87727091b2efa5adc.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
     "static/media/services.png": "/portfolioMSz/static/media/services.8e66d4fbbd95de45b8db.png",
@@ -12,11 +12,11 @@
     "static/media/Photoland.jpg": "/portfolioMSz/static/media/Photoland.0fc538f5045200bb61cb.jpg",
     "static/media/Maciej_logo.png": "/portfolioMSz/static/media/Maciej_logo.5d5651cd1755b2acd341.png",
     "index.html": "/portfolioMSz/index.html",
-    "main.3edcc38a.css.map": "/portfolioMSz/static/css/main.3edcc38a.css.map",
-    "main.bd4ea17c.js.map": "/portfolioMSz/static/js/main.bd4ea17c.js.map"
+    "main.e9126749.css.map": "/portfolioMSz/static/css/main.e9126749.css.map",
+    "main.1ceff31e.js.map": "/portfolioMSz/static/js/main.1ceff31e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3edcc38a.css",
-    "static/js/main.bd4ea17c.js"
+    "static/css/main.e9126749.css",
+    "static/js/main.1ceff31e.js"
   ]
 }
