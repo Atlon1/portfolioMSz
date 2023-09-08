@@ -6,6 +6,7 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
+import Nav from "./Nav";
 
 
 const About = () => {
@@ -32,7 +33,7 @@ const About = () => {
                             TypeScript.<br/>
                             Tailwind CSS, Strapi, Next JS.
                         </p>
-                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10  mb-12'>
+                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
                                 <div className='text-[40px] font-tertiary text-gradient2'>
                                     {
