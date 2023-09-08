@@ -49,7 +49,7 @@ export const SkillsList: List[] = [
     {
         id: 7,
         url: "https://skillicons.dev/icons?i=ts",
-        text: "Teypescirpt",
+        text: "Typescript",
         stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {

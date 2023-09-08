@@ -17,11 +17,11 @@ const WorkCont = (props:any) => {
             }/>
             <img className='group-hover:scale-125 transition-all duration-500' src={props.img} alt={props.img}/>
             <div
-                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50 '>
+                className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-[30] '>
                 <span className='text-gradient'>{props.project}</span>
             </div>
             <div
-                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-[30]'>
                 <span className='text-3xl text-white'>{props.title}</span>
             </div>
         </div>

@@ -48,7 +48,7 @@ const Services = () => {
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
                     <h2 className='h2 text-accent mb-6'>Czym sie zajmuje? </h2>
-                    <h3 className='h3 max-w-[455px] mb-16'>Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo jak FreeLance Developer..</h3>
+                    <h3 className='h3 max-w-[455px] mb-16'>Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce się na FreeLance Developer..</h3>
                     <button className='btn btn-sm'>Technologia.</button>
                 </motion.div>
 

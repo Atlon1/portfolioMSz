@@ -1,4 +1,3 @@
-
 import React, {useState} from 'react';
 
 import {motion} from "framer-motion";
@@ -23,7 +22,7 @@ export default function Work() {
     const [windowProp, setWindowProp] = useState({
         opacity: "0",
         index: "-2",
-        index2: "20"
+        index2: "10"
     })
 
     const handleWin = () => {
@@ -107,7 +106,7 @@ export default function Work() {
                                 Jestem otwarty na projekty kazdego rodzaju.
                             </p>
                             <a href="https://github.com/Atlon1?tab=repositories">
-                                <button className='btn btn-sm mb-10'> View all projects</button>
+                                <button className='btn btn-sm mb-10'> Wszystkie projekty</button>
                             </a>
                         </div>
 

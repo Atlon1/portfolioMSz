@@ -10,7 +10,7 @@ import ParticlessConteiner from "./ParticlessConteiner";
 
 const Banner = () => {
 
-    return <section className='min-h-[75vh] lg:min-h-[78vh] flex items-center' id='home'>
+    return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
         <ParticlessConteiner/>
         <div className='container mx-auto z-20'>
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
@@ -20,7 +20,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
+                        className='text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
                         Maciej <span>Szajstek</span>
                     </motion.h1>
                     <motion.div
@@ -49,16 +49,16 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='mb-8 max-w-lg mx-auto lg:mx-0'>
+                        className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-[14px] sm:text-[18px]'>
                         Cześć! <br/>
                         Naukę front-endu rozpocząłem rok temu, od Kursu w Coders Lab's. Zdecydowałem się na język JS,
-                        ponieważ uważam że jest on najbardziej przystępny. Po za tym widzę ogrom możliwości jakie za
+                        ponieważ uważam że jest on najbardziej przystępny. Poza tym widzę ogrom możliwości jakie za
                         sobą niesie.
                         Poniżej znajdują się pierwsze moje aplikacje webowe. Z czasem będę dokładał ich coraz to więcej.
                         Na co dzień pracuję jako Technolog.
-                        w obecnej pracy zobaczyłem jakie korzyści ze sobą niesie programowanie po przez automatyzowanie
+                        w obecnej pracy zobaczyłem jakie korzyści ze sobą niesie programowanie poprzez automatyzowanie
                         bieżącej pracy oraz ograniczanie błędów,
-                        ztąd pomysł na naukę.
+                        stąd pomysł na naukę.
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
@@ -80,7 +80,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers'>
+                        className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers mb-32'>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
                             <a href='https://github.com/Atlon1'>

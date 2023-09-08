@@ -34,7 +34,7 @@ const About = () => {
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10  mb-12'>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient'>
+                                <div className='text-[40px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={1} duration={3}/> : null
                                     }
@@ -46,7 +46,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient'>
+                                <div className='text-[40px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={6} duration={3}/> : null
                                     }
@@ -58,7 +58,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient'>
+                                <div className='text-[40px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={10} duration={3}/> : null
                                     }
@@ -79,7 +79,7 @@ const About = () => {
                                     Kontakt
                                 </Link>
                             </button>
-                            <a href='https://github.com/Atlon1' className='text-gradient btn-link'>
+                            <a href='https://github.com/Atlon1' className='text-gradient2 btn-link'>
                                 My Portfolio
                             </a>
                         </div>
