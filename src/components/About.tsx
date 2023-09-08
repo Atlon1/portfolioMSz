@@ -15,7 +15,7 @@ const About = () => {
     })
 
     return (
-        <section className='section py-2' id='about' ref={ref}>
+        <section className='section py-[4px]' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
                     <motion.div
@@ -35,7 +35,7 @@ const About = () => {
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient2'>
+                                <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={1} duration={3}/> : null
                                     }
@@ -47,7 +47,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient2'>
+                                <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={6} duration={3}/> : null
                                     }
@@ -59,7 +59,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[40px] font-tertiary text-gradient2'>
+                                <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
                                         inView ? <CountUp start={0} end={10} duration={3}/> : null
                                     }
