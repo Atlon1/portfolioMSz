@@ -100,7 +100,7 @@ const Banner = () => {
                     variants={fadeIn('down', 0.5)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 z-20'>
+                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 z-20 '>
                     <img
                         src={Image} alt='MaciejSz'/>
 
