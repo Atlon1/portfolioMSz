@@ -89,7 +89,7 @@ export default function Work() {
 
 
     return (
-        <section className='section w-full h-full py-[4px] xl:h-screen xl:py-[150px]' id='work'>
+        <section className='w-full h-full py-[4px] xl:h-screen ' id='work'>
             <div className='container mx-auto'>
                 <motion.div
                     variants={fadeIn('right', 0.3)}
@@ -135,7 +135,7 @@ export default function Work() {
                                 index2={windowProp.index2}
                                 img={Img2}
                                 project="Portfolio Projekt"
-                                title="E-commerance - pierwszy sklep"/>
+                                title="Womens Sale - e-com"/>
 
                         </div>
                         <WorkCont

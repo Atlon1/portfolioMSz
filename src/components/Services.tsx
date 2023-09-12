@@ -38,7 +38,7 @@ const services = [
 const Services = () => {
 
 
-    return <section className='section w-full h-full py-[4px] xl:h-screen xl:pb-24' id='services'>
+    return <section className=' w-full h-full py-[4px] xl:h-screen xl:pb-24 xl:mt-[450px]' id='services'>
         <div className=' container mx-auto'>
             <div className=' flex flex-col lg:flex-row'>
                 <motion.div
