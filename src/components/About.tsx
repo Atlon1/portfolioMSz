@@ -31,7 +31,8 @@ const About = () => {
                             React (aos, firebase, typed, responsywne strony www, motion, modal),<br/>
                             Node Js(Mongose DB, Axios, Express),<br/>
                             TypeScript.<br/>
-                            Tailwind CSS, Strapi, Next JS.
+                            Tailwind CSS, Strapi, Next JS.<br/>
+                            Następnym krokiem jest. C#
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
