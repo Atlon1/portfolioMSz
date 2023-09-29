@@ -30,12 +30,14 @@ const About = () => {
                             JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń),
                             React (AOS, Firebase, TypeScript, tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale),
                             Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express),
+                            MySql,
+                            Prisma,
                             TypeScript,
                             Tailwind CSS,
                             Strapi,
                             Next.js.
 
-                            Moim kolejnym celem jest poznanie języka C#.
+                            Moim kolejnym celem jest poznanie języka C# oraz .Net.
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
