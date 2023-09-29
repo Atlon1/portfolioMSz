@@ -27,18 +27,21 @@ const About = () => {
                         <h2 className='h2 text-accent'>Technologie.</h2>
                         <h3 className='h3 mb-4'> Moj obecny stack technologiczny to:</h3>
                         <p className='mb-6'>
-                            Java script(path, comand, Fs, cli),<br/>
-                            React (aos, firebase, typed, responsywne strony www, motion, modal),<br/>
-                            Node Js(Mongose DB, Axios, Express),<br/>
-                            TypeScript.<br/>
-                            Tailwind CSS, Strapi, Next JS.<br/>
-                            Następnym krokiem jest. C#
+                            JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń),
+                            React (AOS, Firebase, TypeScript, tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale),
+                            Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express),
+                            TypeScript,
+                            Tailwind CSS,
+                            Strapi,
+                            Next.js.
+
+                            Moim kolejnym celem jest poznanie języka C#.
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
-                                        inView ? <CountUp start={0} end={1} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={2} duration={3}/> : null
                                     }
 
                                 </div>
@@ -50,7 +53,7 @@ const About = () => {
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
-                                        inView ? <CountUp start={0} end={6} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={8} duration={3}/> : null
                                     }
                                     ++
                                 </div>

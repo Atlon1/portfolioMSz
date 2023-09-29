@@ -74,7 +74,7 @@ const ParticlessConteiner = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80
+                        value: 70
                     },
                     opacity: {
                         value: 0.5,
@@ -83,7 +83,7 @@ const ParticlessConteiner = () => {
                         type: 'circle'
                     },
                     size: {
-                        value: {min: 3, max: 5}
+                        value: {min:2, max: 5}
                     }
                 },
                 detectRetina: true

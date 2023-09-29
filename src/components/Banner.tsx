@@ -51,14 +51,13 @@ const Banner = () => {
                         viewport={{once: false, amount: 0.7}}
                         className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-[14px] sm:text-[18px]'>
                         Cześć! <br/>
-                        Naukę front-endu rozpocząłem rok temu, od Kursu w Coders Lab's. Zdecydowałem się na język JS,
-                        ponieważ uważam że jest on najbardziej przystępny. Poza tym widzę ogrom możliwości jakie za
-                        sobą niesie.
-                        Poniżej znajdują się pierwsze moje aplikacje webowe. Z czasem będę dokładał ich coraz to więcej.
-                        Na co dzień pracuję jako Technolog.
-                        w obecnej pracy dostrzegłem jakie korzyści ze sobą niesie programowanie poprzez automatyzowanie
-                        bieżącej pracy oraz ograniczanie błędów,
-                        stąd pomysł na naukę.
+                        Rozpocząłem naukę front-endu w grudniu 2021 roku, uczestnicząc w kursie organizowanym przez
+                        Coders Lab. Wybrałem język JavaScript, uważając, że jest on najbardziej przystępny i oferuje
+                        ogromne możliwości. Poniżej znajdują się moje pierwsze aplikacje webowe, a z czasem planuję
+                        tworzyć ich coraz więcej. Codziennie pracuję jako technolog, a w mojej obecnej pracy dostrzegłem
+                        korzyści płynące z programowania, takie jak automatyzacja bieżących zadań i ograniczanie błędów.
+                        To właśnie to zainspirowało mnie do nauki front-endu, a mój ogromny zapał do pracy sprawia, że
+                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
