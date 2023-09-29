@@ -50,7 +50,7 @@ export const SkillsList: List[] = [
         id: 7,
         url: "https://skillicons.dev/icons?i=ts",
         text: "Typescript",
-        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>]
     },
     {
         id: 8,
@@ -74,6 +74,36 @@ export const SkillsList: List[] = [
         id: 11,
         url: "https://skillicons.dev/icons?i=mongodb",
         text: "MongoDB",
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+    },
+    {
+        id: 12,
+        url: "https://skillicons.dev/icons?i=nextjs",
+        text: "Next JS",
+        stars: [<RiStarSFill/>,<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+    },
+    {
+        id: 13,
+        url: "https://skillicons.dev/icons?i=prisma",
+        text: "Prisma",
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+    },
+    {
+        id: 14,
+        url: "https://skillicons.dev/icons?i=cs",
+        text: "C #",
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+    },
+    {
+        id: 15,
+        url: "https://skillicons.dev/icons?i=dotnet",
+        text: "Net",
+        stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
+    },
+    {
+        id: 16,
+        url: "https://skillicons.dev/icons?i=mysql",
+        text: "MySql",
         stars: [<RiStarSFill/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>,<RiStarSLine/>]
     },
 
