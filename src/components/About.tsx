@@ -6,7 +6,7 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
-import Nav from "./Nav";
+
 
 
 const About = () => {
@@ -15,7 +15,7 @@ const About = () => {
     })
 
     return (
-        <section className='section h-full w-full py-[2px] flex items-center xl:h-screen' id='about' ref={ref}>
+        <section className='h-full w-full py-[2px] flex items-center xl:h-screen' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
                     <motion.div
