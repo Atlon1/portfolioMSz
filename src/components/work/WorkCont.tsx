@@ -2,13 +2,14 @@ import React, {useState} from 'react';
 import Modal from "react-modal";
 import {WorkContProps} from "../../data/pl/forntDataPl";
 import {IoCloseOutline} from 'react-icons/io5';
+import WorkModal from "./WorkModal";
 
 Modal.setAppElement('#root');
 
 const modalStyles = {
     overlay: {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
-        zIndex: '30'
+        zIndex: '30',
     }
 };
 
@@ -47,16 +48,14 @@ const WorkCont = ({data}: { data: WorkContProps }) => {
                     onRequestClose={closeModal}
                     contentLabel='Work-Competitions'
                     className='bg-white w-full h-full lg:max-w-[900px] lg:max-h-[800px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
-                    lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none'
+                    lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none bg-modal bg-cover bg-no-repeat overflow-hidden lg:p-12 p-4'
                 >
                     <div
                         onClick={closeModal}
                         className='absolute right-2 top-2 hover:scale-110 duration-200 cursor-pointer'>
                         <IoCloseOutline className='text-4xl text-black' />
                     </div>
-                    <div className='text-black'>
-                        Placeholder content
-                    </div>
+                        <WorkModal data={data.description}/>
                 </Modal>
             )}
         </div>
