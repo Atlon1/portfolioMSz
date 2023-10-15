@@ -95,16 +95,13 @@ const About = () => {
                         variants={fadeIn('left', 0.3)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.3}}
+                        viewport={{once: false, amount: 0.5}}
                         className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center '>
-                        {SkillsList.map((elem, key)=> {
+                        {SkillsList.map((skillList)=> {
                             return (
                                 <SkillComp
-                                    key={key}
-                                    id={elem.id}
-                                    url={elem.url}
-                                    text={elem.text}
-                                    stars={elem.stars}
+                                    key={skillList.id}
+                                    skillList={skillList}
                                 />
                             )
                         })}
