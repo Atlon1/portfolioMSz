@@ -2,7 +2,7 @@ import {RiStarSFill, RiStarSLine} from "react-icons/ri";
 import React from "react";
 
 interface List {
-    id: any
+    id: number
     url: string
     text: string
     stars: any

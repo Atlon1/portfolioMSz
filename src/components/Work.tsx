@@ -1,14 +1,12 @@
 import React, {useState} from 'react';
-
+import Modal from "react-modal";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
-import Img1 from '../assets/Oddaj_rzeczy.jpg';
-import Img2 from '../assets/e-commerence.jpg';
-import Img3 from '../assets/Estate-website.jpg';
-import Img4 from '../assets/Gym-image.jpg'
-import Img5 from '../assets/Photoland.jpg'
 import WorkCont from "./work/WorkCont";
 import WorkModal from "./work/WorkModal";
+
+import {workContModal} from '../data/pl/forntDataPl'
+
 
 
 export default function Work() {
@@ -91,11 +89,8 @@ export default function Work() {
     return (
         <section className='w-full h-full py-[4px]' id='work'>
             <div className='container mx-auto'>
-                <motion.div
-                    variants={fadeIn('right', 0.3)}
-                    initial='hidden'
-                    whileInView={'show'}
-                    viewport={{once: false, amount: 0.3}}
+                <div
+                    // wstaw motion div
                     className='flex flex-col gap-x-10 '>
                     <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
@@ -113,126 +108,131 @@ export default function Work() {
                     </div>
                     <div
                         className='grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 lg:mt-16 xl:mt-0 '>
-                        <WorkCont
-                            button={handleWin}
-                            index2={windowProp.index2}
-                            img={Img1}
-                            project="Porfolio Porject"
-                            title="Oddaj rzeczy"
-                        >
-                        </WorkCont>
-                        <WorkCont
-                            button={handleWin4}
-                            index2={windowProp.index2}
-                            img={Img4}
-                            project="portfolio project"
-                            title="GYM ME"
-                        >
-                        </WorkCont>
-                        <div className='group relative overflow-hidden rounded-2xl'>
-                            <WorkCont
-                                button={handleWin2}
-                                index2={windowProp.index2}
-                                img={Img2}
-                                project="Portfolio Projekt"
-                                title="Womens Sale - e-com"/>
+                        {workContModal.map((data) => {
+                            return (
+                                <WorkCont key={data.id} data = {data}/>
+                            )
+                        })}
+                        {/*<WorkCont*/}
+                        {/*    button={handleWin}*/}
+                        {/*    index2={windowProp.index2}*/}
+                        {/*    img={Img1}*/}
+                        {/*    project="Porfolio Porject"*/}
+                        {/*    title="Oddaj rzeczy"*/}
+                        {/*>*/}
+                        {/*</WorkCont>*/}
+                        {/*<WorkCont*/}
+                        {/*    button={handleWin4}*/}
+                        {/*    index2={windowProp.index2}*/}
+                        {/*    img={Img4}*/}
+                        {/*    project="portfolio project"*/}
+                        {/*    title="GYM ME"*/}
+                        {/*>*/}
+                        {/*</WorkCont>*/}
+                        {/*<div className='group relative overflow-hidden rounded-2xl'>*/}
+                        {/*    <WorkCont*/}
+                        {/*        button={handleWin2}*/}
+                        {/*        index2={windowProp.index2}*/}
+                        {/*        img={Img2}*/}
+                        {/*        project="Portfolio Projekt"*/}
+                        {/*        title="Womens Sale - e-com"/>*/}
 
-                        </div>
-                        <WorkCont
-                            button={handleWin3}
-                            index2={windowProp.index2}
-                            img={Img3}
-                            project="Ux/UI"
-                            title="Estate website"
-                        >
-                        </WorkCont>
-                        <WorkCont
-                            button={handleWin5}
-                            index2={windowProp.index2}
-                            img={Img5}
-                            project="Portfolio Projekt"
-                            title="Photoland"
-                        >
-                        </WorkCont>
-                        <WorkModal
-                            visible={open}
-                            opacity={windowProp.opacity}
-                            index={windowProp.index}
-                            img={Img1}
-                            text="Portfolio porjekt"
-                            description='Oddaj rzeczy'
-                            technology='React, firebase, Sass, React-Router, hash-link, React-Paginate, Aos. '
-                            autor="Wykonał"
-                            name="Maciej Szajstek (solo)"
-                            description2="   Projekt miał za zadnie stowrzenie prostej, aplikacji web. Z uzyciem
-                            logowania i autoryzacji za pomocą bazy Firebase. Dostęp do dodatkowych funkcji oraz możliwość utworzenia konta.
-                            Walidacja forlumarza kontakt, oraz pełna walidajca formularza wyślij, rzeczy."
-                            note=''
-                            link="https://atlon1.github.io/Rent_the_stuff/"
-                            button={handleWin}
-                        />
-                        <WorkModal
-                            visible={open2}
-                            opacity={windowProp.opacity}
-                            index={windowProp.index}
-                            img={Img2}
-                            text="Portfolio projekt"
-                            description='E-commerence pierwszy sklep'
-                            technology='Tailwind css, Typescript, useContext, useEffect.'
-                            autor="Wykonał"
-                            name="Maciej Szajstek (solo)"
-                            description2="Pełnoprawny sklep internetowy, pełna funkcjonalność zakładki cart. Możliwość edycji zakupów oraz przegląd produktów które cie interesują."
-                            note=''
-                            link="https://atlon1.github.io/first-e-comerance-shop/"
-                            button={handleWin2}
-                        />
-                        <WorkModal
-                            visible={open3}
-                            opacity={windowProp.opacity}
-                            index={windowProp.index}
-                            img={Img3}
-                            text="Ux/ui design"
-                            description='E-state website'
-                            technology='Tailwind css, Typescript, useContext, useEffect, useParams'
-                            autor="Wykonał"
-                            name="Maciej Szajstek (solo)"
-                            description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."
-                            note=''
-                            link="https://atlon1.github.io/estate-website"
-                            button={handleWin3}
-                        />
-                        <WorkModal
-                            visible={open4}
-                            opacity={windowProp.opacity}
-                            index={windowProp.index}
-                            img={Img4}
-                            text="Gym me"
-                            description='Gym site'
-                            technology='Tailwind css, Typescript, Routing, useEffect, React-switch, Validation on forms, Accordion, Multi-lang '
-                            autor="Wykonał"
-                            name="Maciej Szajstek (solo)"
-                            description2="Strona siłowni, promująca zdorwy tryb życia. Składa sie z 6 sekcji. Każda z nich zawiera szereg informacji. Np. Koszt karnteu, rodzaje treningów. "
-                            note=''
-                            link="https://atlon1.github.io/gym-site/"
-                            button={handleWin4}
-                        />
-                        <WorkModal
-                            visible={open5}
-                            opacity={windowProp.opacity}
-                            index={windowProp.index}
-                            img={Img5}
-                            text="PhotoLand"
-                            description='Photoland e-comerence'
-                            technology='Tailwind css, Typescript, useContext, useEffect, useParams, strapi, strape'
-                            autor="Wykonał"
-                            name="Maciej Szajstek (solo)"
-                            description2="Sklep z możliwościa zakupu aparatu fotograficznego, z możliościa zapłaty zamówienia."
-                            note=''
-                            link="https://atlon1.github.io/fotoSite/"
-                            button={handleWin5}
-                        />
+                        {/*</div>*/}
+                        {/*<WorkCont*/}
+                        {/*    button={handleWin3}*/}
+                        {/*    index2={windowProp.index2}*/}
+                        {/*    img={Img3}*/}
+                        {/*    project="Ux/UI"*/}
+                        {/*    title="Estate website"*/}
+                        {/*>*/}
+                        {/*</WorkCont>*/}
+                        {/*<WorkCont*/}
+                        {/*    button={handleWin5}*/}
+                        {/*    index2={windowProp.index2}*/}
+                        {/*    img={Img5}*/}
+                        {/*    project="Portfolio Projekt"*/}
+                        {/*    title="Photoland"*/}
+                        {/*>*/}
+                        {/*</WorkCont>*/}
+                        {/*<WorkModal*/}
+                        {/*    visible={open}*/}
+                        {/*    opacity={windowProp.opacity}*/}
+                        {/*    index={windowProp.index}*/}
+                        {/*    img={Img1}*/}
+                        {/*    text="Portfolio porjekt"*/}
+                        {/*    description='Oddaj rzeczy'*/}
+                        {/*    technology='React, firebase, Sass, React-Router, hash-link, React-Paginate, Aos. '*/}
+                        {/*    autor="Wykonał"*/}
+                        {/*    name="Maciej Szajstek (solo)"*/}
+                        {/*    description2="   Projekt miał za zadnie stowrzenie prostej, aplikacji web. Z uzyciem*/}
+                        {/*    logowania i autoryzacji za pomocą bazy Firebase. Dostęp do dodatkowych funkcji oraz możliwość utworzenia konta.*/}
+                        {/*    Walidacja forlumarza kontakt, oraz pełna walidajca formularza wyślij, rzeczy."*/}
+                        {/*    note=''*/}
+                        {/*    link="https://atlon1.github.io/Rent_the_stuff/"*/}
+                        {/*    button={handleWin}*/}
+                        {/*/>*/}
+                        {/*<WorkModal*/}
+                        {/*    visible={open2}*/}
+                        {/*    opacity={windowProp.opacity}*/}
+                        {/*    index={windowProp.index}*/}
+                        {/*    img={Img2}*/}
+                        {/*    text="Portfolio projekt"*/}
+                        {/*    description='E-commerence pierwszy sklep'*/}
+                        {/*    technology='Tailwind css, Typescript, useContext, useEffect.'*/}
+                        {/*    autor="Wykonał"*/}
+                        {/*    name="Maciej Szajstek (solo)"*/}
+                        {/*    description2="Pełnoprawny sklep internetowy, pełna funkcjonalność zakładki cart. Możliwość edycji zakupów oraz przegląd produktów które cie interesują."*/}
+                        {/*    note=''*/}
+                        {/*    link="https://atlon1.github.io/first-e-comerance-shop/"*/}
+                        {/*    button={handleWin2}*/}
+                        {/*/>*/}
+                        {/*<WorkModal*/}
+                        {/*    visible={open3}*/}
+                        {/*    opacity={windowProp.opacity}*/}
+                        {/*    index={windowProp.index}*/}
+                        {/*    img={Img3}*/}
+                        {/*    text="Ux/ui design"*/}
+                        {/*    description='E-state website'*/}
+                        {/*    technology='Tailwind css, Typescript, useContext, useEffect, useParams'*/}
+                        {/*    autor="Wykonał"*/}
+                        {/*    name="Maciej Szajstek (solo)"*/}
+                        {/*    description2="Sklep z nieruchomościami. Zaawansowany banner z wyszkuiwarką. Przykładowe nieruchomości z użciem useParams."*/}
+                        {/*    note=''*/}
+                        {/*    link="https://atlon1.github.io/estate-website"*/}
+                        {/*    button={handleWin3}*/}
+                        {/*/>*/}
+                        {/*<WorkModal*/}
+                        {/*    visible={open4}*/}
+                        {/*    opacity={windowProp.opacity}*/}
+                        {/*    index={windowProp.index}*/}
+                        {/*    img={Img4}*/}
+                        {/*    text="Gym me"*/}
+                        {/*    description='Gym site'*/}
+                        {/*    technology='Tailwind css, Typescript, Routing, useEffect, React-switch, Validation on forms, Accordion, Multi-lang '*/}
+                        {/*    autor="Wykonał"*/}
+                        {/*    name="Maciej Szajstek (solo)"*/}
+                        {/*    description2="Strona siłowni, promująca zdorwy tryb życia. Składa sie z 6 sekcji. Każda z nich zawiera szereg informacji. Np. Koszt karnteu, rodzaje treningów. "*/}
+                        {/*    note=''*/}
+                        {/*    link="https://atlon1.github.io/gym-site/"*/}
+                        {/*    button={handleWin4}*/}
+                        {/*/>*/}
+                        {/*<WorkModal*/}
+                        {/*    visible={open5}*/}
+                        {/*    opacity={windowProp.opacity}*/}
+                        {/*    index={windowProp.index}*/}
+                        {/*    img={Img5}*/}
+                        {/*    text="PhotoLand"*/}
+                        {/*    description='Photoland e-comerence'*/}
+                        {/*    technology='Tailwind css, Typescript, useContext, useEffect, useParams, strapi, strape'*/}
+                        {/*    autor="Wykonał"*/}
+                        {/*    name="Maciej Szajstek (solo)"*/}
+                        {/*    description2="Sklep z możliwościa zakupu aparatu fotograficznego, z możliościa zapłaty zamówienia."*/}
+                        {/*    note=''*/}
+                        {/*    link="https://atlon1.github.io/fotoSite/"*/}
+                        {/*    button={handleWin5}*/}
+                        {/*/>*/}
                     </div>
-                </motion.div>
+                </div>
             </div>
         </section>
     )
