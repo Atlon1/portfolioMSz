@@ -51,13 +51,13 @@ export const workContModal: WorkContProps[] = [
         title: 'E-commerce-shop',
         project: 'Portfolio project',
         description: {
-            text: 'Opis projektu',
-            description1: 'Opis projektu',
+            text: 'E-commerence Shop:',
+            description1: 'Technologie:',
             description2: 'Opis projektu',
-            technology: ['Technologia', 'Technologia', 'Technologia'],
+            technology: ['ReactScroll', 'Fetch Get-POST', 'FireBase', 'HashLink', 'Context-API','RWD'],
             autor: 'Autor',
-            name: 'Name',
-            note: 'Note',
+            name: 'Maciej Szajstek - solo',
+            note: 'E-commerence Live Demo',
             link: "qwwfwdf",
             img: WorkImg2
         },
