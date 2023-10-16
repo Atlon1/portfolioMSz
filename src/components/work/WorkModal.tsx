@@ -22,9 +22,10 @@ const WorkModal = ({data: {img, text, description1, description2, technology, au
 
     return (
         <div className='flex flex-col overflow-hidden'>
-            <div className='md:flex flex-1 max-w-[320px] lg:max-w-[482px] mx-auto pb-6 border-b-2 border-white'>
+            <div className='md:flex flex-1 max-w-[320px] lg:max-w-[482px] lg:max-h-[350px] mx-auto pb-6'>
                 <img className='rounded-bl-[40px] rounded-tr-[40px]' src={img}/>
             </div>
+            <span className='border border-white/50 w-full'/>
             <div className='my-1'>
                 <p className='text-gradient text-accent'>{text}</p>
                 <h2 className='text-3xl text-white'>{description1}</h2>

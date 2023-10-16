@@ -47,7 +47,7 @@ const WorkCont = ({data}: { data: WorkContProps }) => {
                     style={modalStyles}
                     onRequestClose={closeModal}
                     contentLabel='Work-Competitions'
-                    className='bg-white w-full h-full lg:max-w-[900px] lg:max-h-[800px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
+                    className='bg-white w-full h-full lg:max-w-[900px] lg:max-h-[900px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
                     lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none bg-modal bg-cover bg-no-repeat overflow-hidden lg:p-12 p-4'
                 >
                     <div

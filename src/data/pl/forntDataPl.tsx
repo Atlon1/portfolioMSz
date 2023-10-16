@@ -5,9 +5,6 @@ import WorkImg4 from '../../assets/Gym-image.jpg'
 import WorkImg5 from '../../assets/Photoland.jpg'
 
 
-
-
-
 export type WorkContProps = {
     id: number,
     img: string,
@@ -35,19 +32,23 @@ export const workContModal: WorkContProps[] = [
         description: {
             text: 'Oddaj rzeczy:',
             description1: 'Technologie:',
-            description2: 'Opis projektu',
+            description2: 'Witaj na oficjalnej stronie internetowej organizacji charytatywnej "PT Oddaj Rzeczy"! Jesteśmy miejscem, gdzie dobroczynność spotyka potrzebujących, a Twoja chęć pomocy przekształca się w konkretne działania na rzecz tych, którzy potrzebują wsparcia.\n' +
+                '\n' +
+                'Nasza misja:\n' +
+                '\n' +
+                'Naszą główną misją jest wspieranie osób potrzebujących poprzez zbieranie i rozprowadzanie darów, odzieży, żywności, a także innych potrzebnych artykułów. Dążymy do poprawy warunków życia najuboższych i pomagamy w trudnych sytuacjach życiowych.',
             technology: ['ReactRouter', 'Aos', 'FireBase', "FireStroe", "CountIf", 'Pagination', 'FormValidation', "LogIn", "Typed"],
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
-            note: 'Note',
-            link: "qwwfwdf",
+            note: 'Oddaj rzeczy Live Demo',
+            link: "https://atlon1.github.io/Rent_the_stuff/",
             img: WorkImg1
         },
     },
     {
         id: 2,
         img: WorkImg2,
-        title: 'E-commerce',
+        title: 'E-commerce-shop',
         project: 'Portfolio project',
         description: {
             text: 'Opis projektu',
