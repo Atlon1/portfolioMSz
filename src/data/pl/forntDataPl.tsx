@@ -36,9 +36,9 @@ export const workContModal: WorkContProps[] = [
             text: 'Oddaj rzeczy:',
             description1: 'Technologie:',
             description2: 'Opis projektu',
-            technology: ['Technologia', 'Technologia', 'Technologia', 'Technologia'],
-            autor: 'Autor',
-            name: 'Name',
+            technology: ['ReactRouter', 'Aos', 'FireBase', "FireStroe", "CountIf", 'Pagination', 'FormValidation', "LogIn", "Typed"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
             note: 'Note',
             link: "qwwfwdf",
             img: WorkImg1
