@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolioMSz/static/css/main.3a0d6862.css",
-    "main.js": "/portfolioMSz/static/js/main.4ad72153.js",
+    "main.css": "/portfolioMSz/static/css/main.af3a0a22.css",
+    "main.js": "/portfolioMSz/static/js/main.1c2a8d98.js",
     "static/media/bg-site2.jpg": "/portfolioMSz/static/media/bg-site2.20b87727091b2efa5adc.jpg",
+    "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
     "static/media/services.png": "/portfolioMSz/static/media/services.8e66d4fbbd95de45b8db.png",
     "static/media/Estate-website.jpg": "/portfolioMSz/static/media/Estate-website.223ca3f1ae636c6ab0f7.jpg",
@@ -12,11 +13,11 @@
     "static/media/Photoland.jpg": "/portfolioMSz/static/media/Photoland.0fc538f5045200bb61cb.jpg",
     "static/media/Maciej_logo.png": "/portfolioMSz/static/media/Maciej_logo.5d5651cd1755b2acd341.png",
     "index.html": "/portfolioMSz/index.html",
-    "main.3a0d6862.css.map": "/portfolioMSz/static/css/main.3a0d6862.css.map",
-    "main.4ad72153.js.map": "/portfolioMSz/static/js/main.4ad72153.js.map"
+    "main.af3a0a22.css.map": "/portfolioMSz/static/css/main.af3a0a22.css.map",
+    "main.1c2a8d98.js.map": "/portfolioMSz/static/js/main.1c2a8d98.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a0d6862.css",
-    "static/js/main.4ad72153.js"
+    "static/css/main.af3a0a22.css",
+    "static/js/main.1c2a8d98.js"
   ]
 }
