@@ -15,11 +15,11 @@ export default function Work() {
 
 
     return (
-        <section className='w-full h-full py-[4px] section lg:h-screen' id='work'>
+        <section className='w-full h-full lg:section py-[10px]' id='work'>
             <div className='container mx-auto'>
                 <div
                     // wstaw motion div
-                    className='flex flex-col gap-x-10 '>
+                    className='flex flex-col gap-x-10'>
                     <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
                         <div>
@@ -35,34 +35,31 @@ export default function Work() {
 
                     </div>
                     <Swiper
-                        modules={[Pagination, Navigation, Grid]}
+                        modules={[Pagination, Navigation , Grid]}
                         loop={false}
                         navigation={true}
                         breakpoints={
                             {
-                                320: {
+                                600: {
                                     slidesPerView: 1,
                                     spaceBetween: 20,
                                 },
-                                768: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 40,
-                                },
-                                1024: {
+                                780: {
                                     slidesPerView: 2,
                                     spaceBetween: 50,
                                 },
                             }
                         }
+
                         pagination={{
                             clickable: true,
                         }}
                         grid={{
                             rows: 2,
-                            fill: "row",
-                        }
-                        }
-                        className='productSlider w-full h-full sm:justify-center'
+                            fill: 'row',
+                        }}
+
+                        className='productSlider w-full h-full'
                     >
 
                         <div>
@@ -75,8 +72,6 @@ export default function Work() {
                             })}
                         </div>
                     </Swiper>
-
-
                 </div>
             </div>
         </section>

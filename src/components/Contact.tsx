@@ -26,7 +26,7 @@ const Contact = () => {
         return null
     }
 
-    const validateText = (form: any)=> {
+    const validateText = (form: any) => {
         if (!form.text) {
             return "Pole nie może być pustę!"
         } else if (form.text.length < 40) {
@@ -34,7 +34,6 @@ const Contact = () => {
         }
         return null
     }
-
 
 
     const [nameErr, setNameErr] = useState(null as any);
@@ -49,8 +48,7 @@ const Contact = () => {
         text: ''
     })
 
-    const usersCollectionRef = collection(db,"contact")
-
+    const usersCollectionRef = collection(db, "contact")
 
 
     const updateField = (e: any) => {
@@ -77,13 +75,13 @@ const Contact = () => {
             setTextErr('')
             setBorderColor('')
 
-            await addDoc(usersCollectionRef,{
+            await addDoc(usersCollectionRef, {
                 name: form.name,
                 email: form.email,
                 text: form.text
             })
 
-            return setAgree (
+            return setAgree(
                 <div style={
                     {
                         color: '#49953a',
@@ -98,7 +96,7 @@ const Contact = () => {
     }
 
 
-    return <section className='py-[4px] xl:mb-[100px] lg:section w-full h-full' id='contact'>
+    return <section className='w-full h-full lg:section mb-20 py-[10px]' id='contact'>
         <div className='container mx-auto'>
             <div className=' flex flex-col lg:flex-row'>
                 <motion.div

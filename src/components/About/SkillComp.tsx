@@ -11,12 +11,11 @@ type SkillProps = {
 
 const SkillComp = ({skillList}: SkillProps) => {
 
-    const {id, url, text, stars} = skillList
+    const { url, text, stars} = skillList
 
 
     return (
         <div
-            key={id}
             className='flex flex-col items-center justify-between w-24 lg:h-32'>
             <div className='flex lg:w-11 lg:h-11 items-center'>
                 <img alt={text}

@@ -89,9 +89,8 @@
         @apply bg-gradient-to-r text-transparent bg-clip-text from-[#43C6AC] to-[#191654] font-bold font-primary hover:from-[#191654] hover:to-[#43C6AC];
     }
     .section {
-        @apply py-8 lg:py-24 lg:h-screen flex items-center;
+        @apply py-8 lg:py-24 xl:h-screen flex items-center;
     }
-
 
 
     .productSlider .swiper-pagination-bullet {

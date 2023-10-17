@@ -15,7 +15,7 @@ const About = () => {
     })
 
     return (
-        <section className='h-full w-full py-[2px] flex items-center xl:h-screen' id='about' ref={ref}>
+        <section className='w-full h-full lg:section' id='about' ref={ref}>
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col '>
                     <motion.div
