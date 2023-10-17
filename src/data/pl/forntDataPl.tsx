@@ -53,12 +53,12 @@ export const workContModal: WorkContProps[] = [
         description: {
             text: 'E-commerence Shop:',
             description1: 'Technologie:',
-            description2: 'Opis projektu',
-            technology: ['ReactScroll', 'Fetch Get-POST', 'FireBase', 'HashLink', 'Context-API','RWD'],
-            autor: 'Autor',
+            description2: 'Nasza strona internetowa to miejsce, gdzie znajdziesz najnowsze trendy w modzie na każdą okazję. Oferujemy szeroki wybór wysokiej jakości odzieży, od eleganckich sukienek po codzienne ubrania. Nasze kolekcje są starannie dobrane, aby sprostać oczekiwaniom zarówno miłośników klasyki, jak i tych, którzy kochają eksperymentować z stylem. Dzięki prostemu interfejsowi i wygodnym opcjom wyszukiwania znajdziesz szybko to, czego szukasz. Zachęcamy do odwiedzenia naszej strony i odkrycia inspirujących outfitów, które podkreślą Twój unikalny styl.',
+            technology: ['ReactScroll', 'Fetch Get-POST', 'FireBase', 'HashLink', 'Context-API', 'RWD'],
+            autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: 'E-commerence Live Demo',
-            link: "qwwfwdf",
+            link: "https://atlon1.github.io/first-e-comerance-shop/",
             img: WorkImg2
         },
     },
@@ -66,33 +66,41 @@ export const workContModal: WorkContProps[] = [
         id: 3,
         img: WorkImg3,
         title: 'Estate website',
-        project: 'Estate website',
+        project: 'Portfolio project',
         description: {
-            text: 'Opis projektu',
-            description1: 'Opis projektu',
-            description2: 'Opis projektu',
-            technology: ['Technologia', 'Technologia', 'Technologia'],
-            autor: 'Autor',
-            name: 'Name',
-            note: 'Note',
-            link: "qwwfwdf",
+            text: 'Estate website:',
+            description1: 'Technologie:',
+            description2: 'Nasza strona internetowa jest wiodącym źródłem nieruchomości w Stanach Zjednoczonych i Kanadzie, ' +
+                'oferując szeroki wybór atrakcyjnych ofert na rynku nieruchomości. Działamy w obu krajach, umożliwiając klientom dostęp do różnorodnych nieruchomości,' +
+                ' od luksusowych domów po mieszkania i działki inwestycyjne. Nasza platforma jest łatwa w obsłudze, a zaawansowane narzędzia wyszukiwania pozwalają szybko znaleźć ' +
+                'idealną nieruchomość. Ponadto, dostarczamy najnowsze informacje o rynku nieruchomości oraz doradztwo dotyczące zakupu, sprzedaży i ' +
+                'inwestycji. Jesteśmy partnerem w Twojej podróży w poszukiwaniu wymarzonej nieruchomości w Stanach i Kanadzie.',
+            technology: ['Fetch', 'React-Router', 'ContextAPI', 'UseParams', 'DataBase'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Estate Live Demo',
+            link: "https://atlon1.github.io/estate-website/",
             img: WorkImg3
         },
     },
     {
         id: 4,
         img: WorkImg4,
-        title: 'Gym',
-        project: 'Gym',
+        title: 'Gym-me',
+        project: 'Portfolio project',
         description: {
-            text: 'Opis projektu',
-            description1: 'Opis projektu',
-            description2: 'Opis projektu',
-            technology: ['Technologia', 'Technologia', 'Technologia'],
-            autor: 'Autor',
-            name: 'Name',
-            note: 'Note',
-            link: "qwwfwdf",
+            text: 'Gym-me',
+            description1: 'Technologie:',
+            description2: 'Nasza siłownia to miejsce, gdzie Twoje cele fitness stają się rzeczywistością. Oferujemy nowoczesny i dobrze wyposażony obiekt, który jest idealnym miejscem ' +
+                'do kształtowania swojej sylwetki, poprawy wytrzymałości i zdrowia. Nasz zespół doświadczonych instruktorów jest gotowy, by pomóc Ci osiągnąć swoje cele treningowe i dostosować ' +
+                'programy do Twoich indywidualnych potrzeb. Nasza atmosfera sprzyja motywacji i rozwojowi, zapewniając komfort i poczucie bezpieczeństwa. Bez względu na to, czy jesteś ' +
+                'doświadczonym sportowcem czy dopiero zaczynasz swoją przygodę z fitness, u nas znajdziesz wszystko, czego potrzebujesz, by być w formie i cieszyć się zdrowym stylem życia. ' +
+                'Dołącz do naszej społeczności i zacznij pracować nad sobą już dziś!',
+            technology: ['React-Router', 'ContextAPI', 'UseParams', 'DataBase', 'Local Storage', 'Acordion', 'React-Switch', 'FormValidation'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Gym-me Live Demo',
+            link: "https://atlon1.github.io/gym-site/",
             img: WorkImg4
         },
     },
@@ -100,16 +108,19 @@ export const workContModal: WorkContProps[] = [
         id: 5,
         img: WorkImg5,
         title: 'Photoland',
-        project: 'Photoland',
+        project: 'Portfolio project',
         description: {
-            text: 'Opis projektu',
-            description1: 'Opis projektu',
-            description2: 'Opis projektu',
-            technology: ['Technologia', 'Technologia', 'Technologia'],
-            autor: 'Autor',
-            name: 'Name',
-            note: 'Note',
-            link: "qwwfwdf",
+            text: 'Photoland',
+            description1: 'Technologie:',
+            description2: 'Nasza strona to raj dla pasjonatów fotografii, gdzie znajdziesz najwyższej jakości aparaty fotograficzne dostępne na rynku. Oferujemy szeroki wybór aparatów cyfrowych, ' +
+                'lustrzanek oraz akcesoriów, które pomogą Ci uwiecznić najpiękniejsze chwile w życiu. Nasza platforma zapewnia łatwą nawigację i szczegółowe opisy produktów, ' +
+                'abyś mógł dokładnie znaleźć aparat odpowiedni do swoich potrzeb. Jesteśmy zawsze na bieżąco z nowościami w świecie fotografii, dostarczając Ci informacje o najnowszych modelach i ' +
+                'technologiach. Dołącz do naszej społeczności fotografów i zainwestuj w swoją pasję, odkrywając świat poprzez obiektyw aparatu.',
+            technology: ['React scroll', 'React Switch', 'Strapi', 'Strape', 'React-Router', 'ContextAPI', 'UseParams'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Photoland Live Demo',
+            link: "https://atlon1.github.io/fotoSite/",
             img: WorkImg5
         },
     }
