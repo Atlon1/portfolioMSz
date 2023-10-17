@@ -3,14 +3,19 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import WorkCont from "./work/WorkCont";
 import {workContModal} from '../data/pl/forntDataPl'
-
+import {Swiper, SwiperSlide} from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/grid';
+import {Pagination, Navigation, Grid} from "swiper";
 
 
 export default function Work() {
 
 
     return (
-        <section className='w-full h-full py-[4px]' id='work'>
+        <section className='w-full h-full py-[4px] section lg:h-screen' id='work'>
             <div className='container mx-auto'>
                 <div
                     // wstaw motion div
@@ -29,14 +34,49 @@ export default function Work() {
                         </div>
 
                     </div>
-                    <div
-                        className='grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10 lg:mt-16 xl:mt-0 '>
-                        {workContModal.map((data) => {
-                            return (
-                                <WorkCont key={data.id} data = {data}/>
-                            )
-                        })}
-                    </div>
+                    <Swiper
+                        modules={[Pagination, Navigation, Grid]}
+                        loop={false}
+                        navigation={true}
+                        breakpoints={
+                            {
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 50,
+                                },
+                            }
+                        }
+                        pagination={{
+                            clickable: true,
+                        }}
+                        grid={{
+                            rows: 2,
+                            fill: "row",
+                        }
+                        }
+                        className='productSlider w-full h-full sm:justify-center'
+                    >
+
+                        <div>
+                            {workContModal.map((data) => {
+                                return (
+                                    <SwiperSlide key={data.id}>
+                                        <WorkCont key={data.id} data={data}/>
+                                    </SwiperSlide>
+                                )
+                            })}
+                        </div>
+                    </Swiper>
+
+
                 </div>
             </div>
         </section>
