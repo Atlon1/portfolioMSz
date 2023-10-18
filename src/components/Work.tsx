@@ -42,7 +42,7 @@ export default function Work() {
                         modules={[Pagination, Navigation, Grid ]}
                         loop={false}
                         navigation={true}
-
+                            spaceBetween={20}
                         breakpoints={
                             {
                                 600: {
