@@ -17,7 +17,11 @@ export default function Work() {
     return (
         <section className='w-full h-full lg:section py-[10px]' id='work'>
             <div className='container mx-auto'>
-                <div
+                <motion.div
+                    variants={fadeIn('left', 0.3)}
+                    initial='hidden'
+                    whileInView={'show'}
+                    viewport={{once: false, amount: 0.3}}
                     // wstaw motion div
                     className='flex flex-col gap-x-10'>
                     <div
@@ -35,9 +39,10 @@ export default function Work() {
 
                     </div>
                     <Swiper
-                        modules={[Pagination, Navigation , Grid]}
+                        modules={[Pagination, Navigation, Grid ]}
                         loop={false}
                         navigation={true}
+
                         breakpoints={
                             {
                                 600: {
@@ -50,14 +55,15 @@ export default function Work() {
                                 },
                             }
                         }
-
-                        pagination={{
-                            clickable: true,
-                        }}
                         grid={{
                             rows: 2,
                             fill: 'row',
                         }}
+
+                        pagination={{
+                            clickable: true,
+                        }}
+
 
                         className='productSlider w-full h-full'
                     >
@@ -72,7 +78,7 @@ export default function Work() {
                             })}
                         </div>
                     </Swiper>
-                </div>
+                </motion.div>
             </div>
         </section>
     )

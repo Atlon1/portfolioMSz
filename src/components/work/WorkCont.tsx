@@ -8,8 +8,9 @@ Modal.setAppElement('#root');
 
 const modalStyles = {
     overlay: {
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backgroundColor: "rgba(0, 0, 0, 0.8)",
         zIndex: '30',
+
     }
 };
 
@@ -25,13 +26,14 @@ const WorkCont = ({data}: { data: WorkContProps }) => {
         setModalIsOpen(false);
     };
 
+
     return (
         <div>
             <div
                 onClick={openModal}
-                className='group relative max-h-80 max-w-[600px] overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'>
+                className='group relative max-w-[600px] max-h-80 lg:h-[350px] h-[250px] bg-black overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'>
                 <div className='group-hover:bg-black/80 w-full h-full absolute transition-all duration-300 z-[1]'/>
-                <img className='group-hover:scale-125 transition-all duration-500' src={img} alt={title}/>
+                <img className='group-hover:scale-125 transition-all duration-500 bg-contain' src={img} alt={title}/>
                 <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-[1]'>
                     <span className='text-gradient'>{project}</span>
                 </div>
@@ -47,8 +49,8 @@ const WorkCont = ({data}: { data: WorkContProps }) => {
                     style={modalStyles}
                     onRequestClose={closeModal}
                     contentLabel='Work-Competitions'
-                    className='bg-white w-full h-full lg:max-w-[900px] lg:max-h-[900px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
-                    lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none bg-modal bg-cover bg-no-repeat overflow-hidden lg:p-12 p-4'
+                    className='bg-white w-full h-full lg:max-w-[950px] lg:max-h-[950px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
+                    lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none bg-modal bg-cover bg-no-repeat overflow-auto  lg:p-12 p-4'
                 >
                     <div
                         onClick={closeModal}
