@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioMSz/static/css/main.ebe405a2.css",
-    "main.js": "/portfolioMSz/static/js/main.9f325b07.js",
+    "main.js": "/portfolioMSz/static/js/main.c101e9cf.js",
     "static/media/bg-site2.jpg": "/portfolioMSz/static/media/bg-site2.20b87727091b2efa5adc.jpg",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
@@ -14,10 +14,10 @@
     "static/media/Maciej_logo.png": "/portfolioMSz/static/media/Maciej_logo.5d5651cd1755b2acd341.png",
     "index.html": "/portfolioMSz/index.html",
     "main.ebe405a2.css.map": "/portfolioMSz/static/css/main.ebe405a2.css.map",
-    "main.9f325b07.js.map": "/portfolioMSz/static/js/main.9f325b07.js.map"
+    "main.c101e9cf.js.map": "/portfolioMSz/static/js/main.c101e9cf.js.map"
   },
   "entrypoints": [
     "static/css/main.ebe405a2.css",
-    "static/js/main.9f325b07.js"
+    "static/js/main.c101e9cf.js"
   ]
 }
