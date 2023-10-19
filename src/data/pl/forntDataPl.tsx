@@ -3,6 +3,7 @@ import WorkImg2 from '../../assets/e-commerence.jpg'
 import WorkImg3 from '../../assets/Estate-website.jpg';
 import WorkImg4 from '../../assets/Gym-image.jpg'
 import WorkImg5 from '../../assets/Photoland.jpg'
+import Logo from '../../assets/Maciej_logo.png'
 
 
 export type WorkContProps = {
@@ -125,4 +126,18 @@ export const workContModal: WorkContProps[] = [
         },
     }
 ]
+export type bannerType = {
+    img: string,
+    text: string,
+    linkedIn: string,
+    email: string
+}
+
+export const bannerPL: bannerType = {
+        img: Logo,
+        text: "Pracuj ze mną!",
+        linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
+        email: 'maciej.szasjtek@gmail.com'
+}
+
 
