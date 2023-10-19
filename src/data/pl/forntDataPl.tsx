@@ -4,6 +4,7 @@ import WorkImg3 from '../../assets/Estate-website.jpg';
 import WorkImg4 from '../../assets/Gym-image.jpg'
 import WorkImg5 from '../../assets/Photoland.jpg'
 import Logo from '../../assets/Maciej_logo.png'
+import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 
 
 export type WorkContProps = {
@@ -126,18 +127,42 @@ export const workContModal: WorkContProps[] = [
         },
     }
 ]
-export type bannerType = {
+export type headerType = {
     img: string,
     text: string,
     linkedIn: string,
     email: string
 }
 
-export const bannerPL: bannerType = {
+export const headerPL: headerType = {
         img: Logo,
         text: "Pracuj ze mną!",
         linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
         email: 'maciej.szasjtek@gmail.com'
+}
+
+export type bannerType = {
+    singleWord: string[],
+    typed: string[],
+    description: string,
+    link: string,
+    cv: string,
+    img: string
+}
+
+export const bannerPl: bannerType = {
+    singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
+    typed: ['Frontend Developerem', 'Projektantem Ui/Ux', 'Inżynierem'],
+    description: 'Rozpocząłem naukę front-endu w grudniu 2021 roku, uczestnicząc w kursie organizowanym przez\n' +
+        '                        Coders Lab. Wybrałem język JavaScript, uważając, że jest on najbardziej przystępny i oferuje\n' +
+        '                        ogromne możliwości. Poniżej znajdują się moje pierwsze aplikacje webowe, a z czasem planuję\n' +
+        '                        tworzyć ich coraz więcej. Codziennie pracuję jako technolog, a w mojej obecnej pracy dostrzegłem\n' +
+        '                        korzyści płynące z programowania, takie jak automatyzacja bieżących zadań i ograniczanie błędów.\n' +
+        '                        To właśnie to zainspirowało mnie do nauki front-endu, a mój ogromny zapał do pracy sprawia, że\n' +
+        '                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.',
+    link: 'https://github.com/Atlon1',
+    cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
+    img: Image
 }
 
 

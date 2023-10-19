@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {FaGithub} from 'react-icons/fa'
 import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
@@ -7,8 +6,11 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import {Link} from "react-scroll";
 import ParticlessConteiner from "./ParticlessConteiner";
+import {bannerPl} from '../data/pl/forntDataPl'
 
 const Banner = () => {
+
+    const {singleWord, typed, description, link, cv, img} = bannerPl
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
         <ParticlessConteiner/>
@@ -21,7 +23,7 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='hidden sm:block text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
-                        Maciej <span>Szajstek</span>
+                        {singleWord[0]}<span>{singleWord[1]}</span>
                     </motion.h1>
                     <motion.div
                         variants={fadeIn('up', 0.4)}
@@ -29,14 +31,14 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='mb-6 text-[22px] sm:text-[36px] max-w-full font-secondary font-semibold leading-[1]'>
-                        <span className='text-white mr-4'>Jestem:</span>
+                        <span className='text-white mr-4'>{singleWord[2]}</span>
                         <TypeAnimation
                             sequence={[
-                                'Front Developerem',
+                                typed[0],
                                 3000,
-                                'Projektantem Ui/Ux',
+                                typed[1],
                                 3000,
-                                'Inżynierem',
+                                typed[2],
                                 3000
                             ]}
                             speed={30}
@@ -50,14 +52,8 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-[14px] sm:text-[18px]'>
-                        Cześć! <br/>
-                        Rozpocząłem naukę front-endu w grudniu 2021 roku, uczestnicząc w kursie organizowanym przez
-                        Coders Lab. Wybrałem język JavaScript, uważając, że jest on najbardziej przystępny i oferuje
-                        ogromne możliwości. Poniżej znajdują się moje pierwsze aplikacje webowe, a z czasem planuję
-                        tworzyć ich coraz więcej. Codziennie pracuję jako technolog, a w mojej obecnej pracy dostrzegłem
-                        korzyści płynące z programowania, takie jak automatyzacja bieżących zadań i ograniczanie błędów.
-                        To właśnie to zainspirowało mnie do nauki front-endu, a mój ogromny zapał do pracy sprawia, że
-                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.
+                        {singleWord[3]} <br/>
+                        {description}
                     </motion.p>
                     <motion.div
                         variants={fadeIn('up', 0.6)}
@@ -70,7 +66,7 @@ const Banner = () => {
                                   activeClass='active'
                                   smooth={true}
                                   spy={true}>
-                                Kontakt
+                                {singleWord[4]}
                             </Link>
                         </button>
                     </motion.div>
@@ -82,17 +78,16 @@ const Banner = () => {
                         className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers mb-32'>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
-                            <a href='https://github.com/Atlon1'>
+                            <a href={link}>
                                 <FaGithub/>
                             </a>
                         </div>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
-                            <a href='https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link'>
+                            <a href={cv}>
                                 <RiFilePaper2Line/>
                             </a>
                         </div>
-
                     </motion.div>
                 </div>
                 <motion.div
@@ -101,8 +96,7 @@ const Banner = () => {
                     whileInView={'show'}
                     className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 '>
                     <img
-                        src={Image} alt='MaciejSz'/>
-
+                        src={img} alt='MaciejSz'/>
                 </motion.div>
             </div>
         </div>

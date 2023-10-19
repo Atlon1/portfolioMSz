@@ -1,9 +1,9 @@
 import React from 'react';
-import { bannerPL} from '../data/pl/forntDataPl'
+import { headerPL} from '../data/pl/forntDataPl'
 
 const Header = () => {
 
-    const {img, text, linkedIn, email} = bannerPL
+    const {img, text, linkedIn, email} = headerPL
 
     return <header className='py-2 z-50'>
         <div className='container mx-auto'>
