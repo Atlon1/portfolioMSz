@@ -5,6 +5,7 @@ import WorkImg4 from '../../assets/Gym-image.jpg'
 import WorkImg5 from '../../assets/Photoland.jpg'
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
+import {RiStarSFill, RiStarSLine} from "react-icons/ri";
 
 
 export type WorkContProps = {
@@ -135,10 +136,10 @@ export type headerType = {
 }
 
 export const headerPL: headerType = {
-        img: Logo,
-        text: "Pracuj ze mną!",
-        linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
-        email: 'maciej.szasjtek@gmail.com'
+    img: Logo,
+    text: "Pracuj ze mną!",
+    linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
+    email: 'maciej.szasjtek@gmail.com'
 }
 
 export type bannerType = {
@@ -163,6 +164,129 @@ export const bannerPl: bannerType = {
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image
+}
+
+type skillType = {
+    id: number,
+    url: string,
+    text: string,
+    stars:  JSX.Element[]
+}
+
+type aboutType = {
+    singleWord: string[],
+    description: string,
+    github: string,
+    skillsList: skillType[],
+}
+
+
+
+export const AboutPl: aboutType = {
+    singleWord: ['Technologie:', 'Mój obecny stack technologiczny to:', 'Lata', 'Doświadczenia', '++', 'Projekty', 'Gotowe', 'Usatysfakjonowani', 'klienci', 'Kontakt', 'My Portfolio'],
+    description: 'JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń), React (AOS, Firebase, TypeScript, ' +
+        'tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale), ' +
+        'Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express), MySql, Prisma, TypeScript, ' +
+        'Tailwind CSS, Strapi, Next.js. Moim kolejnym celem jest poznanie języka C# oraz .Net.',
+    github: 'https://github.com/Atlon1',
+    skillsList:[
+        {
+            id: 1,
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1200px-WebStorm_Icon.svg.png",
+            text: "Webstorm",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },
+        {
+            id: 2,
+            url: "https://skillicons.dev/icons?i=react",
+            text: "React",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 3,
+            url: "https://skillicons.dev/icons?i=js",
+            text: "Java Script",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 4,
+            url: "https://skillicons.dev/icons?i=sass",
+            text: "Sass",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 5,
+            url: "https://skillicons.dev/icons?i=css",
+            text: "HTML5",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 6,
+            url: "https://skillicons.dev/icons?i=github",
+            text: "Github",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 7,
+            url: "https://skillicons.dev/icons?i=ts",
+            text: "Typescript",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 8,
+            url: "https://skillicons.dev/icons?i=firebase",
+            text: "Firebase",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 9,
+            url: "https://skillicons.dev/icons?i=tailwind",
+            text: "Tailwind CSS",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 10,
+            url: "https://skillicons.dev/icons?i=express",
+            text: "Express.js",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 11,
+            url: "https://skillicons.dev/icons?i=mongodb",
+            text: "MongoDB",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 12,
+            url: "https://skillicons.dev/icons?i=nextjs",
+            text: "Next JS",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 13,
+            url: "https://skillicons.dev/icons?i=prisma",
+            text: "Prisma",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 14,
+            url: "https://skillicons.dev/icons?i=cs",
+            text: "C #",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 15,
+            url: "https://skillicons.dev/icons?i=dotnet",
+            text: "Net",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 16,
+            url: "https://skillicons.dev/icons?i=mysql",
+            text: "MySql",
+            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+    ]
 }
 
 

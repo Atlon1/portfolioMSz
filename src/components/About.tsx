@@ -1,15 +1,17 @@
 import React from 'react';
 import CountUp from "react-countup";
 import {useInView} from "react-intersection-observer";
-import {SkillsList} from "./Helpers/SkillsList";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
+import {AboutPl} from '../data/pl/forntDataPl'
+
 
 
 
 const About = () => {
+    const {singleWord, description, github, skillsList} = AboutPl
     const [ref, inView] = useInView({
         threshold: 0.5,
     })
@@ -24,20 +26,10 @@ const About = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.3}}
                         className='flex-1'>
-                        <h2 className='h2 text-accent'>Technologie.</h2>
-                        <h3 className='h3 mb-4'> Moj obecny stack technologiczny to:</h3>
+                        <h2 className='h2 text-accent'>{singleWord[0]}</h2>
+                        <h3 className='h3 mb-4'>{singleWord[1]}</h3>
                         <p className='mb-6'>
-                            JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń),
-                            React (AOS, Firebase, TypeScript, tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale),
-                            Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express),
-                            MySql,
-                            Prisma,
-                            TypeScript,
-                            Tailwind CSS,
-                            Strapi,
-                            Next.js.
-
-                            Moim kolejnym celem jest poznanie języka C# oraz .Net.
+                            {description}
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
@@ -48,8 +40,8 @@ const About = () => {
 
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
-                                    Lata <br/>
-                                    Doświadczenia
+                                    {singleWord[2]}<br/>
+                                    {singleWord[3]}
                                 </div>
                             </div>
                             <div>
@@ -57,11 +49,11 @@ const About = () => {
                                     {
                                         inView ? <CountUp start={0} end={8} duration={3}/> : null
                                     }
-                                    ++
+                                    {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
-                                    Projekty <br/>
-                                    Gotowe
+                                    {singleWord[5]} <br/>
+                                    {singleWord[6]}
                                 </div>
                             </div>
                             <div>
@@ -69,11 +61,11 @@ const About = () => {
                                     {
                                         inView ? <CountUp start={0} end={10} duration={3}/> : null
                                     }
-                                    ++
+                                    {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
-                                    Usatysfakjonowani <br/>
-                                    klienci
+                                    {singleWord[7]}<br/>
+                                    {singleWord[8]}
                                 </div>
                             </div>
                         </div>
@@ -83,11 +75,11 @@ const About = () => {
                                       activeClass='active'
                                       smooth={true}
                                       spy={true}>
-                                    Kontakt
+                                    {singleWord[9]}
                                 </Link>
                             </button>
-                            <a href='https://github.com/Atlon1' className='text-gradient2 btn-link'>
-                                My Portfolio
+                            <a href={github} className='text-gradient2 btn-link'>
+                                {singleWord[10]}
                             </a>
                         </div>
                     </motion.div>
@@ -97,7 +89,7 @@ const About = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.5}}
                         className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center '>
-                        {SkillsList.map((skillList)=> {
+                        {skillsList.map((skillList)=> {
                             return (
                                 <SkillComp
                                     key={skillList.id}
