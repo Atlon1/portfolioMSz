@@ -20,7 +20,7 @@ const Header = () => {
     }, [])
 
     useEffect(() => {
-        const html: any = document.querySelector('html')
+        const html: HTMLElement | null = document.querySelector('html')
         if (localStorage.getItem('lang') === 'eng' && localStorage.getItem('active') === "false") {
             html.classList.add('eng')
             setLang('eng')
