@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import Modal from "react-modal";
 import {WorkContProps} from "../../data/pl/forntDataPl";
+import {WorkContPropsEng} from "../../data/ang/forntDataEng";
 import {IoCloseOutline} from 'react-icons/io5';
 import WorkModal from "./WorkModal";
+
 
 Modal.setAppElement('#root');
 
@@ -14,7 +16,7 @@ const modalStyles = {
     }
 };
 
-const WorkCont = ({data}: { data: WorkContProps }) => {
+const WorkCont = ({data}: { data: WorkContProps | WorkContPropsEng }) => {
     const {img, title, project} = data;
     const [modalIsOpen, setModalIsOpen] = useState(false);
 

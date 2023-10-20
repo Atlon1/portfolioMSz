@@ -6,12 +6,13 @@ import {fadeIn} from "../variants";
 import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
 import {AboutPl} from '../data/pl/forntDataPl'
+import {AboutEng} from "../data/ang/forntDataEng";
 
 
 
 
 const About = () => {
-    const {singleWord, description, github, skillsList} = AboutPl
+    const {singleWord, description, github, skillsList} = localStorage.getItem('lang') === 'pl' ? AboutPl : AboutEng
     const [ref, inView] = useInView({
         threshold: 0.5,
     })

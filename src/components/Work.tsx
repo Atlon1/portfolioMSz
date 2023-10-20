@@ -9,11 +9,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/grid';
 import {Pagination, Navigation, Grid} from "swiper";
+import {workDescriptionEng, workContModalEng} from "../data/ang/forntDataEng";
 
 
 export default function Work() {
 
-    const {singleWord} = workDescription
+    const {singleWord} = localStorage.getItem('lang') === 'pl' ? workDescription : workDescriptionEng
 
 
     return (
@@ -24,7 +25,6 @@ export default function Work() {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.3}}
-                    // wstaw motion div
                     className='flex flex-col gap-x-10'>
                     <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
@@ -71,13 +71,23 @@ export default function Work() {
                     >
 
                         <div>
-                            {workContModal.map((data) => {
-                                return (
-                                    <SwiperSlide key={data.id}>
-                                        <WorkCont key={data.id} data={data}/>
-                                    </SwiperSlide>
-                                )
-                            })}
+                            {localStorage.getItem('lang') === 'pl' ? (
+                                workContModal.map((data) => {
+                                    return (
+                                        <SwiperSlide key={data.id}>
+                                            <WorkCont key={data.id} data={data}/>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            ) : (
+                                workContModalEng.map((data) => {
+                                    return (
+                                        <SwiperSlide key={data.id}>
+                                            <WorkCont key={data.id} data={data}/>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            )}
                         </div>
                     </Swiper>
                 </motion.div>

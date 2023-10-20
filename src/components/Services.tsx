@@ -3,10 +3,11 @@ import {BsArrowUpRight} from 'react-icons/bs'
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import {servicesPl} from '../data/pl/forntDataPl'
+import {servicesEng} from "../data/ang/forntDataEng";
 
 const Services = () => {
 
-    const {singleWord, word, services} = servicesPl
+    const {singleWord, word, services} = localStorage.getItem('lang') === 'pl' ? servicesPl : servicesEng
 
     return <section className='w-full h-full lg:section py-[10px]' id='services'>
         <div className=' container mx-auto'>

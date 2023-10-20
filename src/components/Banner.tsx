@@ -7,10 +7,11 @@ import {fadeIn} from "../variants";
 import {Link} from "react-scroll";
 import ParticlessConteiner from "./ParticlessConteiner";
 import {bannerPl} from '../data/pl/forntDataPl'
+import {bannerEng} from "../data/ang/forntDataEng";
 
 const Banner = () => {
 
-    const {singleWord, typed, description, link, cv, img} = bannerPl
+    const {singleWord, typed, description, link, cv, img} = localStorage.getItem('lang') === 'pl' ? bannerPl : bannerEng
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
         <ParticlessConteiner/>

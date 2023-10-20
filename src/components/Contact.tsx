@@ -4,10 +4,11 @@ import {fadeIn} from "../variants";
 import {db} from '../Firebase'
 import {collection, addDoc} from 'firebase/firestore'
 import {contactPl} from '../data/pl/forntDataPl'
+import {contactEng} from "../data/ang/forntDataEng";
 
 const Contact = () => {
 
-    const { thxText, singleWord, nameValidation, textValidation, emailValidation} = contactPl
+    const { thxText, singleWord, nameValidation, textValidation, emailValidation} = localStorage.getItem('lang') === 'eng' ? contactEng : contactPl
 
     const validateName = (form: any) => {
         const {name, nameLength} = nameValidation
@@ -109,7 +110,7 @@ const Contact = () => {
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 flex justify-start items-center'>
                     <div>
-                        <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>{singleWord[0}</h4>
+                        <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>{singleWord[0]}</h4>
                         <h2 className='text-[45px] uppercase lg:text-[90px] leading-none mb-12'>
                             {singleWord[1]} <br/> {singleWord[2]}
                         </h2>
@@ -127,7 +128,7 @@ const Contact = () => {
                         onChange={updateField}
                         className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
                         type='text'
-                        placeholder='Twoje Dane'
+                        placeholder={singleWord[4]}
                         name="name"
                         style=
                             {
@@ -148,12 +149,12 @@ const Contact = () => {
                                     borderBottom: (!err.name ? "1px solid white" : borderColor)
                                 }
                             }
-                        placeholder='Adres email'/>
+                        placeholder={singleWord[5]}/>
                     <div className='text-red-700 font-secondary flex'>{err.email}</div>
                     <textarea
                         onChange={updateField}
                         className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-5'
-                        placeholder='Wiadomość'
+                        placeholder={singleWord[6]}
                         style=
                             {
                                 {

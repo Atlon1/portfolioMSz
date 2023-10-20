@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
 
@@ -16,8 +16,22 @@ type WorkModalProps = {
     }
 }
 
+type WorkModalPropsEng = {
+    data: {
+        img: string,
+        text: string,
+        description1: string,
+        description2: string,
+        technology: string[],
+        autor: string,
+        name: string,
+        note: string,
+        link: string
+    }
+}
 
-const WorkModal = ({data: {img, text, description1, description2, technology, autor, name, note, link}}: WorkModalProps) => {
+
+const WorkModal = ({data: {img, text, description1, description2, technology, autor, name, note, link}}: WorkModalProps | WorkModalPropsEng) => {
 
 
     return (

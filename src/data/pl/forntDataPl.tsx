@@ -383,7 +383,7 @@ export const contactPl : contactType = {
 
 
     thxText: 'Wiadomość została wysłana!. Dziękuje!',
-    singleWord: ['Get in Touch', 'Zacznijmy prace', 'razem!', 'Wyślij wiadomość!'],
+    singleWord: ['Get in Touch', 'Zacznijmy prace', 'razem!', 'Wyślij wiadomość!', 'Twoje Dane:', 'Adres emial:', 'Wiadomość'],
 
 }
 
