@@ -1,42 +1,12 @@
 import React from 'react';
 import {BsArrowUpRight} from 'react-icons/bs'
-
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
-
-const services = [
-    {
-        name: 'Standaryzacja zakupów narzedzi skrawajacych.',
-        description: 'Szczegółowe wyliczenia, pracy przy zakupie narzędzi skrawających. Czas, droga, opis. Opracowano instrukcje po przez przekazanie odpowienich stadnradów zakupwych.',
-        link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
-    },
-    {
-        name: 'Zwiększenie efektywności,maszyn CNC.',
-        description: 'Opracowanie oprzyrządowania technologicznego pozwalającego na wykonaywanie jednocześnie kilku elementów na raz. Wydłużenie pracy maszyny o około 40%  w nocy. Możliwość montażu, wszelkiego rodzaju elementów.',
-        link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
-    },
-    {
-        name: 'Organizacja pracy maszyn. Layout.',
-        description: 'Wyrysowanie planu obszaru pordukcyjnego. Przestawienie maszyn wg. koncjepcji. Opracowanie Harmonogramu Gunta.' +
-            ' Nie zakłucając cyklu pordukcyjnego.',
-        link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
-    },
-    {
-        name: 'Nowe technologie obróbkowe.',
-        description: 'Szczegółowe wyliczenia zakupu nowych technologi obróbki Trochoidalnej. Testy w praktyce.' +
-            'Nowa technologia narzedzi skrawających dla nowej strategii obróbki.',
-        link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
-    },
-    {
-        name: 'Zakup maszyn CNC na potrzeby produkcyjne.',
-        description: 'Wytypownie odpowiedniej maszyny, na potrzeby produkcyjne. Negocjacje cenowe dobór odpownienich parametrów maszyny.' +
-            'Instalacja. Nadzór nad instalcją w miejscu wskazanym. Podłączenia mediów niezbędnych do pracy.',
-        link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
-    },
-]
+import {servicesPl} from '../data/pl/forntDataPl'
 
 const Services = () => {
 
+    const {singleWord, word, services} = servicesPl
 
     return <section className='w-full h-full lg:section py-[10px]' id='services'>
         <div className=' container mx-auto'>
@@ -47,9 +17,9 @@ const Services = () => {
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
-                    <h2 className='h2 text-accent mb-6'>Czym sie zajmuje? </h2>
-                    <h3 className='h3 max-w-[455px] mb-16'>Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce się na FreeLance Developer..</h3>
-                    <button className='btn btn-sm'>Technologia.</button>
+                    <h2 className='h2 text-accent mb-6'>{singleWord[0]}</h2>
+                    <h3 className='h3 max-w-[455px] mb-16'>{word}</h3>
+                    <button className='btn btn-sm'>{singleWord[1]}</button>
                 </motion.div>
 
                 <motion.div

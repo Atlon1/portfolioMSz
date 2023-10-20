@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import WorkCont from "./work/WorkCont";
-import {workContModal} from '../data/pl/forntDataPl'
+import {workContModal, workDescription} from '../data/pl/forntDataPl'
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -12,6 +12,8 @@ import {Pagination, Navigation, Grid} from "swiper";
 
 
 export default function Work() {
+
+    const {singleWord} = workDescription
 
 
     return (
@@ -27,22 +29,22 @@ export default function Work() {
                     <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
                         <div>
-                            <h2 className='h2 leading-tight text-accent'>Moje ostatnie <br/>projekty:
+                            <h2 className='h2 leading-tight text-accent'>{singleWord[0]}<br/>{singleWord[1]}
                             </h2>
                             <p className='max-w-sm mb-16'>
-                                Jestem otwarty na projekty kazdego rodzaju.
+                                {singleWord[2]}
                             </p>
                             <a href="https://github.com/Atlon1?tab=repositories">
-                                <button className='btn btn-sm mb-10'> Wszystkie projekty</button>
+                                <button className='btn btn-sm mb-10'> {singleWord[3]}</button>
                             </a>
                         </div>
 
                     </div>
                     <Swiper
-                        modules={[Pagination, Navigation, Grid ]}
+                        modules={[Pagination, Navigation, Grid]}
                         loop={false}
                         navigation={true}
-                            spaceBetween={20}
+                        spaceBetween={20}
                         breakpoints={
                             {
                                 600: {

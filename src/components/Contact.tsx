@@ -3,44 +3,52 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import {db} from '../Firebase'
 import {collection, addDoc} from 'firebase/firestore'
+import {contactPl} from '../data/pl/forntDataPl'
 
 const Contact = () => {
 
+    const { thxText, singleWord, nameValidation, textValidation, emailValidation} = contactPl
 
     const validateName = (form: any) => {
+        const {name, nameLength} = nameValidation
         if (!form.name) {
-            return "Podane imię jest nie prawidłowe!"
+            return `${name}`
         } else if (form.name.length < 2) {
-            return "Imię jest za krótkie!"
+            return `${nameLength}`
         }
         return null
     }
 
 
     const validateEmail = (form: any) => {
+        const {email, emailFormat} = emailValidation
         if (!form.email) {
-            return "Podany email jest nie prawidłowy!"
+            return `${email}`
         } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(form.email)) {
-            return "Zły e-mail!"
+            return `${emailFormat}`
         }
         return null
     }
 
     const validateText = (form: any) => {
+        const {text, textLength} = textValidation
         if (!form.text) {
-            return "Pole nie może być pustę!"
+            return `${text}`
         } else if (form.text.length < 40) {
-            return "Wiadomość musi mieć conajmniej 40 znaków!"
+            return `${textLength}`
         }
         return null
     }
 
 
-    const [nameErr, setNameErr] = useState(null as any);
-    const [emailErr, setEmailErr] = useState(null as any);
-    const [textErr, setTextErr] = useState(null as any);
+    const [err, setErr] = useState<{ name: string | null, email: string | null, text: string | null }>({
+        name: null,
+        email: null,
+        text: null
+    });
 
-    const [borderColor, setBorderColor] = useState('' as any);
+
+    const [borderColor, setBorderColor] = useState('');
     const [agree, setAgree] = useState(<div/>)
     const [form, setForm] = useState({
         name: '',
@@ -65,16 +73,11 @@ const Contact = () => {
         const textErorr = validateText(form)
 
         if (nameError || emailError || textErorr) {
-            setNameErr(nameError)
-            setEmailErr(emailError)
-            setTextErr(textErorr)
+            setErr({...err, name: nameError, email: emailError, text: textErorr})
             setBorderColor('1px solid red')
         } else {
-            setNameErr('')
-            setEmailErr('')
-            setTextErr('')
+            setErr({...err, name: null, email: null, text: null})
             setBorderColor('')
-
             await addDoc(usersCollectionRef, {
                 name: form.name,
                 email: form.email,
@@ -89,7 +92,7 @@ const Contact = () => {
                     }
                 }
                 >
-                    Wiadomość wysłana! Dziękuję :)
+                    {thxText}
                 </div>
             )
         }
@@ -106,9 +109,9 @@ const Contact = () => {
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 flex justify-start items-center'>
                     <div>
-                        <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>Get in touch</h4>
+                        <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>{singleWord[0}</h4>
                         <h2 className='text-[45px] uppercase lg:text-[90px] leading-none mb-12'>
-                            Zacznijmy prace <br/> razem!
+                            {singleWord[1]} <br/> {singleWord[2]}
                         </h2>
                     </div>
                 </motion.div>
@@ -129,11 +132,11 @@ const Contact = () => {
                         style=
                             {
                                 {
-                                    borderBottom: (!nameErr ? "1px solid white" : borderColor)
+                                    borderBottom: (!err.name ? "1px solid white" : borderColor)
                                 }
                             }
                     />
-                    <div className='text-red-700 font-secondary flex'>{nameErr}</div>
+                    <div className='text-red-700 font-secondary flex'>{err.name}</div>
                     <input
                         onChange={updateField}
                         className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
@@ -142,11 +145,11 @@ const Contact = () => {
                         style=
                             {
                                 {
-                                    borderBottom: (!emailErr ? "1px solid white" : borderColor)
+                                    borderBottom: (!err.name ? "1px solid white" : borderColor)
                                 }
                             }
                         placeholder='Adres email'/>
-                    <div className='text-red-700 font-secondary flex'>{emailErr}</div>
+                    <div className='text-red-700 font-secondary flex'>{err.email}</div>
                     <textarea
                         onChange={updateField}
                         className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-5'
@@ -154,13 +157,13 @@ const Contact = () => {
                         style=
                             {
                                 {
-                                    borderBottom: (!textErr ? "1px solid white" : borderColor)
+                                    borderBottom: (!err.text ? "1px solid white" : borderColor)
                                 }
                             }
                         name="text"
                     />
-                    <div className='text-red-700 font-secondary flex'>{textErr}</div>
-                    <button className='btn btn-lg' onClick={handleSendMessage}>Wyślij wiadomosc!</button>
+                    <div className='text-red-700 font-secondary flex'>{err.text}</div>
+                    <button className='btn btn-lg' onClick={handleSendMessage}>{singleWord[3]}</button>
                     {agree}
                 </motion.form>
             </div>
