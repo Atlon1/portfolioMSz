@@ -13,7 +13,7 @@ const ParticlessConteiner = () => {
 
     return (
         <Particles
-            className='w-full max-h-[800px] h-full absolute translate-z-0 z-[10] top-[40px]'
+            className='w-full max-h-[600px] h-full absolute translate-z-0 z-[5] top-[160px]'
             id='tsparticles' init={particlesInit} loaded={particlesloaded}
             options={{
                 fullScreen: {enable: false},

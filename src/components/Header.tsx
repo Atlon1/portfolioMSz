@@ -20,7 +20,7 @@ const Header = () => {
     }, [])
 
     useEffect(() => {
-        const html: HTMLElement | null = document.querySelector('html')
+        const html: any = document.querySelector('html')
         if (localStorage.getItem('lang') === 'eng' && localStorage.getItem('active') === "false") {
             html.classList.add('eng')
             setLang('eng')
@@ -49,19 +49,28 @@ const Header = () => {
         setLangActive(!langActive)
     }
 
+    console.log(lang)
+
     const {img, text, linkedIn, email} = lang === 'pl' ? headerPL : headerEng
 
-    return <header className='py-2 z-50'>
-        <div className='container mx-auto'>
+    return <header className='py-2 z-[20] border-b border-white/20'>
+        <div className='container mx-auto flex flex-col gap-y-4'>
             <div className='flex justify-between items-center '>
                 <a href={email}>
                     <img className='max-w-[250px] w-full' src={img} alt='Logo'/>
                 </a>
+
+                <button className='btn btn-sm'><a href={linkedIn}>{text}</a></button>
+            </div>
+            <div className='flex sm:justify-between  gap-y-2 flex-col sm:flex-row items-center justify-center'>
                 <div className='flex items-center gap-x-4'>
                     <button className={!langActive ? 'btn btn-sm' : ''} onClick={handleSwitchPL}>PL</button>
                     <button className={langActive ? 'btn btn-sm' : '' } onClick={handleSwitchENG}>ENG</button>
                 </div>
-                <button className='btn btn-sm'><a href={linkedIn}>{text}</a></button>
+                <div className='flex items-center gap-x-4'>
+                    <button className={!langActive ? 'btn btn-sm' : ''} onClick={handleSwitchPL}>Programista</button>
+                    <button className={langActive ? 'btn btn-sm' : '' } onClick={handleSwitchENG}>Technolog</button>
+                </div>
             </div>
         </div>
     </header>;
