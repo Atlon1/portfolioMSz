@@ -1,21 +1,29 @@
 import React, {useEffect, useState} from 'react';
-import { headerPL} from '../data/pl/forntDataPl'
+import {headerPL} from '../data/pl/forntDataPl'
 import {headerEng} from "../data/ang/forntDataEng";
 
 const Header = () => {
 
 
     const [lang, setLang] = useState('pl')
+    const [tech, setTech] = useState('mechanics')
     const [langActive, setLangActive] = useState(false)
+    const [profActive, setProfileActive] = useState(false)
 
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
             localStorage.setItem('lang', 'pl')
         }
+        if (localStorage.getItem('tech') === null) {
+            localStorage.setItem('tech', 'mechanics')
+        }
     }, [])
     useEffect(() => {
         if (localStorage.getItem('active') === null) {
             localStorage.setItem('active', 'false')
+        }
+        if (localStorage.getItem('techActive') === null) {
+            localStorage.setItem('techActive', 'false')
         }
     }, [])
 
@@ -31,6 +39,17 @@ const Header = () => {
             setLangActive(false)
         }
     }, [lang])
+
+
+    useEffect(() => {
+        if (localStorage.getItem('tech') === "front" && localStorage.getItem('techActive') === "false") {
+            setTech('front')
+            setProfileActive(true)
+        } else {
+            setTech('mechanics')
+            setProfileActive(false)
+        }
+    }, [tech]);
 
     const handleSwitchENG = () => {
         if (localStorage.getItem('lang') === 'pl') {
@@ -49,7 +68,24 @@ const Header = () => {
         setLangActive(!langActive)
     }
 
-    console.log(lang)
+    const handleSwitchTechFront = () => {
+        if (localStorage.getItem('tech') === 'mechanics') {
+            setTech('front');
+            localStorage.setItem('tech', 'front')
+        }
+        window.location.reload();
+        setProfileActive(!profActive)
+    }
+
+    const handleSwitchTechMech = () => {
+        if (localStorage.getItem('tech') === 'front') {
+            setTech('mechanics');
+            localStorage.setItem('tech', 'mechanics')
+        }
+        window.location.reload();
+        setProfileActive(!profActive)
+    }
+
 
     const {img, text, linkedIn, email} = lang === 'pl' ? headerPL : headerEng
 
@@ -65,11 +101,13 @@ const Header = () => {
             <div className='flex sm:justify-between  gap-y-2 flex-col sm:flex-row items-center justify-center'>
                 <div className='flex items-center gap-x-4'>
                     <button className={!langActive ? 'btn btn-sm' : ''} onClick={handleSwitchPL}>PL</button>
-                    <button className={langActive ? 'btn btn-sm' : '' } onClick={handleSwitchENG}>ENG</button>
+                    <button className={langActive ? 'btn btn-sm' : ''} onClick={handleSwitchENG}>ENG</button>
                 </div>
                 <div className='flex items-center gap-x-4'>
-                    <button className={!langActive ? 'btn btn-sm' : ''} onClick={handleSwitchPL}>Programista</button>
-                    <button className={langActive ? 'btn btn-sm' : '' } onClick={handleSwitchENG}>Technolog</button>
+                    <button className={profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechFront}>Programista
+                    </button>
+                    <button className={!profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechMech}>Technolog
+                    </button>
                 </div>
             </div>
         </div>
