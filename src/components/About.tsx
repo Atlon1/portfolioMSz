@@ -22,7 +22,7 @@ const About = () => {
     return (
         <section className='w-full h-full lg:section' id='about' ref={ref}>
             <div className='container mx-auto'>
-                <div className=' flex md:flex-row flex-col '>
+                <div className=' flex md:flex-row flex-col'>
                     <motion.div
                         variants={fadeIn('right', 0.3)}
                         initial='hidden'
@@ -34,7 +34,7 @@ const About = () => {
                         <p className='mb-6 w-full max-w-[455px]'>
                             {description}
                         </p>
-                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
+                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px] w-full max-w-[455px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
@@ -91,7 +91,7 @@ const About = () => {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.5}}
-                        className='flex flex-wrap gap-1 md:gap-5 w-3/4 h-4/5 justify-center self-center content-center '>
+                        className='flex flex-wrap gap-1 md:gap-5 w-2/4 h-4/5 justify-center self-center content-center '>
                         {skillsList.map((skillList)=> {
                             return (
                                 <SkillComp

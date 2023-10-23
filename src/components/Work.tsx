@@ -10,11 +10,17 @@ import 'swiper/css/navigation';
 import 'swiper/css/grid';
 import {Pagination, Navigation, Grid} from "swiper";
 import {workDescriptionEng, workContModalEng} from "../data/ang/forntDataEng";
+import {workDescriptionEngMechanic, workContModalEngMechanic} from "../data/ang/TechDataEng";
+import {workDescriptionMechanic, workContModalMechanic} from "../data/pl/TechDataPl";
+
 
 
 export default function Work() {
 
-    const {singleWord} = localStorage.getItem('lang') === 'pl' ? workDescription : workDescriptionEng
+    const {singleWord} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? workDescriptionMechanic :
+        localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? workDescription :
+        localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? workDescriptionEngMechanic : workDescriptionEng
+
 
 
     return (
@@ -71,7 +77,7 @@ export default function Work() {
                     >
 
                         <div>
-                            {localStorage.getItem('lang') === 'pl' ? (
+                            {localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? (
                                 workContModal.map((data) => {
                                     return (
                                         <SwiperSlide key={data.id}>
@@ -79,8 +85,24 @@ export default function Work() {
                                         </SwiperSlide>
                                     )
                                 })
-                            ) : (
+                            ) : localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'front' ?(
                                 workContModalEng.map((data) => {
+                                    return (
+                                        <SwiperSlide key={data.id}>
+                                            <WorkCont key={data.id} data={data}/>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            ) : localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? (
+                                workContModalMechanic.map((data) => {
+                                    return (
+                                        <SwiperSlide key={data.id}>
+                                            <WorkCont key={data.id} data={data}/>
+                                        </SwiperSlide>
+                                    )
+                                })
+                            ) : (
+                                workContModalEngMechanic.map((data) => {
                                     return (
                                         <SwiperSlide key={data.id}>
                                             <WorkCont key={data.id} data={data}/>
