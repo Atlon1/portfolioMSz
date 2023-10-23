@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioMSz/static/css/main.ebe405a2.css",
-    "main.js": "/portfolioMSz/static/js/main.9a9ff9aa.js",
+    "main.css": "/portfolioMSz/static/css/main.650aec84.css",
+    "main.js": "/portfolioMSz/static/js/main.5c9d6c55.js",
     "static/media/bg-site2.jpg": "/portfolioMSz/static/media/bg-site2.20b87727091b2efa5adc.jpg",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
@@ -11,13 +11,16 @@
     "static/media/e-commerence.jpg": "/portfolioMSz/static/media/e-commerence.d2669ae6b878090eca58.jpg",
     "static/media/Gym-image.jpg": "/portfolioMSz/static/media/Gym-image.6955c6886367edcb36d5.jpg",
     "static/media/Photoland.jpg": "/portfolioMSz/static/media/Photoland.0fc538f5045200bb61cb.jpg",
+    "static/media/sap.jpg": "/portfolioMSz/static/media/sap.6e8e7cf95f6152ac5b59.jpg",
     "static/media/Maciej_logo.png": "/portfolioMSz/static/media/Maciej_logo.5d5651cd1755b2acd341.png",
+    "static/media/Heidenhain_400.jpg": "/portfolioMSz/static/media/Heidenhain_400.8ea3aaab8769f9027354.jpg",
+    "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
-    "main.ebe405a2.css.map": "/portfolioMSz/static/css/main.ebe405a2.css.map",
-    "main.9a9ff9aa.js.map": "/portfolioMSz/static/js/main.9a9ff9aa.js.map"
+    "main.650aec84.css.map": "/portfolioMSz/static/css/main.650aec84.css.map",
+    "main.5c9d6c55.js.map": "/portfolioMSz/static/js/main.5c9d6c55.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebe405a2.css",
-    "static/js/main.9a9ff9aa.js"
+    "static/css/main.650aec84.css",
+    "static/js/main.5c9d6c55.js"
   ]
 }
