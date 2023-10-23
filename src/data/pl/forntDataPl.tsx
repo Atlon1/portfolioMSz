@@ -28,7 +28,8 @@ export type bannerType = {
     description: string,
     link: string,
     cv: string,
-    img: string
+    img: string,
+
 }
 
 export const bannerPl: bannerType = {
@@ -43,7 +44,7 @@ export const bannerPl: bannerType = {
         '                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
-    img: Image
+    img: Image,
 }
 
 type skillType = {
@@ -58,6 +59,7 @@ type aboutType = {
     description: string,
     github: string,
     skillsList: skillType[],
+    count: number[]
 }
 
 
@@ -68,6 +70,7 @@ export const AboutPl: aboutType = {
         'Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express), MySql, Prisma, TypeScript, ' +
         'Tailwind CSS, Strapi, Next.js. Moim kolejnym celem jest poznanie języka C# oraz .Net.',
     github: 'https://github.com/Atlon1',
+    count: [2,8, 10],
     skillsList: [
         {
             id: 1,

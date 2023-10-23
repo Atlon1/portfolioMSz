@@ -7,12 +7,14 @@ import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
 import {AboutPl} from '../data/pl/forntDataPl'
 import {AboutEng} from "../data/ang/forntDataEng";
-
-
+import {AboutPlMechanic} from "../data/pl/TechDataPl";
+import {AboutEngMechanic} from "../data/ang/TechDataEng";
 
 
 const About = () => {
-    const {singleWord, description, github, skillsList} = localStorage.getItem('lang') === 'pl' ? AboutPl : AboutEng
+    const {singleWord, description, github, skillsList, count} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? AboutPlMechanic :
+        localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? AboutPl :
+        localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? AboutEngMechanic : AboutEng
     const [ref, inView] = useInView({
         threshold: 0.5,
     })
@@ -29,14 +31,14 @@ const About = () => {
                         className='flex-1'>
                         <h2 className='h2 text-accent'>{singleWord[0]}</h2>
                         <h3 className='h3 mb-4'>{singleWord[1]}</h3>
-                        <p className='mb-6'>
+                        <p className='mb-6 w-full max-w-[455px]'>
                             {description}
                         </p>
                         <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
-                                        inView ? <CountUp start={0} end={2} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={count[0]} duration={3}/> : null
                                     }
 
                                 </div>
@@ -48,7 +50,7 @@ const About = () => {
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
-                                        inView ? <CountUp start={0} end={8} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={count[1]} duration={3}/> : null
                                     }
                                     {singleWord[4]}
                                 </div>
@@ -60,7 +62,7 @@ const About = () => {
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
-                                        inView ? <CountUp start={0} end={10} duration={3}/> : null
+                                        inView ? <CountUp start={0} end={count[2]} duration={3}/> : null
                                     }
                                     {singleWord[4]}
                                 </div>

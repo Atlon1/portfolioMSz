@@ -6,6 +6,10 @@ import WorkImg5 from '../../assets/Photoland.jpg'
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarSFill, RiStarSLine} from "react-icons/ri";
+import HM from '../../assets/TechIcons/hyperMILL.png';
+import HH from '../../assets/TechIcons/Heidenhain_400.jpg';
+import Sap from '../../assets/TechIcons/sap.jpg';
+import Creo from '../../assets/TechIcons/creo.png';
 
 
 export type headerType = {
@@ -59,112 +63,49 @@ type aboutType = {
     description: string,
     github: string,
     skillsList: skillType[],
+    count: number[]
 }
 
 
 export const AboutPlMechanic: aboutType = {
-    singleWord: ['Technologie:', 'Mój obecny stack technologiczny to:', 'Lata', 'Doświadczenia', '++', 'Projekty', 'Gotowe', 'Usatysfakjonowani', 'klienci', 'Kontakt', 'My Portfolio'],
-    description: 'JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń), React (AOS, Firebase, TypeScript, ' +
-        'tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale), ' +
-        'Node.js (MongoDB z wykorzystaniem Mongoose, Axios, Express), MySql, Prisma, TypeScript, ' +
-        'Tailwind CSS, Strapi, Next.js. Moim kolejnym celem jest poznanie języka C# oraz .Net.',
+    singleWord: ['Technologie:', 'Mój obecny stack technologiczny:', 'Lata', 'Doświadczenia', '++', 'Projekty', 'Gotowe', 'Usatysfakjonowani', 'klienci', 'Kontakt', 'My Portfolio'],
+    description: 'Wykorzystanie cykli obróbkowych 2D i 3D w programie Hyper Mill.\n' +
+        'Zajmowanie się symultaniczną obróbką 5-osiową oraz obróbką 5-osiową indeksowaną.\n' +
+        'Korzystanie z automatycznych inteligentnych makr do oznaczania cech.\n' +
+        'Pisanie skryptów w systemie SAP.\n' +
+        'Generowanie zamówień.\n' +
+        'Zarządzanie narzędziami skrawającymi.\n' +
+        'Przeprowadzanie kalkulacji cenowych dla klientów.\n' +
+        'Planowanie pracy na produkcji.\n' +
+        'Projektowanie elektrod oraz konstrukcji form wtryskowych w programie Creo Direct.\n' +
+        'Ustalanie parametrów Q w cyklach obróbkowych w programie Hyper Mill.\n' +
+        'Wykonywanie obliczeń dotyczących parametrów skrawania w narzędziach Hidehain.',
     github: 'https://github.com/Atlon1',
+    count: [15,23,80],
     skillsList: [
         {
             id: 1,
-            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/WebStorm_Icon.svg/1200px-WebStorm_Icon.svg.png",
-            text: "Webstorm",
+            url: HM,
+            text: "HyperMill",
             stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
         },
         {
             id: 2,
-            url: "https://skillicons.dev/icons?i=react",
-            text: "React",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+            url: HH,
+            text: "Hidehain",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>]
         },
         {
             id: 3,
-            url: "https://skillicons.dev/icons?i=js",
-            text: "Java Script",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+            url: Sap,
+            text: "SAP",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
         },
         {
             id: 4,
-            url: "https://skillicons.dev/icons?i=sass",
-            text: "Sass",
+            url: Creo,
+            text: "Creo Direct/Element",
             stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 5,
-            url: "https://skillicons.dev/icons?i=css",
-            text: "HTML5",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 6,
-            url: "https://skillicons.dev/icons?i=github",
-            text: "Github",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 7,
-            url: "https://skillicons.dev/icons?i=ts",
-            text: "Typescript",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 8,
-            url: "https://skillicons.dev/icons?i=firebase",
-            text: "Firebase",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 9,
-            url: "https://skillicons.dev/icons?i=tailwind",
-            text: "Tailwind CSS",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 10,
-            url: "https://skillicons.dev/icons?i=express",
-            text: "Express.js",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 11,
-            url: "https://skillicons.dev/icons?i=mongodb",
-            text: "MongoDB",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 12,
-            url: "https://skillicons.dev/icons?i=nextjs",
-            text: "Next JS",
-            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 13,
-            url: "https://skillicons.dev/icons?i=prisma",
-            text: "Prisma",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 14,
-            url: "https://skillicons.dev/icons?i=cs",
-            text: "C #",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 15,
-            url: "https://skillicons.dev/icons?i=dotnet",
-            text: "Net",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
-        },
-        {
-            id: 16,
-            url: "https://skillicons.dev/icons?i=mysql",
-            text: "MySql",
-            stars: [<RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>, <RiStarSLine/>]
         },
     ]
 }
