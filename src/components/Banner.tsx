@@ -8,10 +8,15 @@ import {Link} from "react-scroll";
 import ParticlessConteiner from "./ParticlessConteiner";
 import {bannerPl} from '../data/pl/forntDataPl'
 import {bannerEng} from "../data/ang/forntDataEng";
+import {bannerPlMechanic} from "../data/pl/TechDataPl";
+import {bannerEngMechanic} from "../data/ang/TechDataEng";
 
 const Banner = () => {
 
-    const {singleWord, typed, description, link, cv, img} = localStorage.getItem('lang') === 'pl' ? bannerPl : bannerEng
+    const {singleWord, typed, description, link, cv, img} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? bannerPlMechanic :
+        localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? bannerPl :
+        localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
+
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
         <ParticlessConteiner/>

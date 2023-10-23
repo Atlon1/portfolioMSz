@@ -15,7 +15,7 @@ export type headerType = {
     email: string
 }
 
-export const headerPL: headerType = {
+export const headerPlMechanic: headerType = {
     img: Logo,
     text: "Pracuj ze mną!",
     linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
@@ -33,14 +33,15 @@ export type bannerType = {
 
 export const bannerPlMechanic: bannerType = {
     singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
-    typed: ['Frontend Developerem', 'Projektantem Ui/Ux', 'Inżynierem'],
-    description: 'Rozpocząłem naukę front-endu w grudniu 2021 roku, uczestnicząc w kursie organizowanym przez\n' +
-        '                        Coders Lab. Wybrałem język JavaScript, uważając, że jest on najbardziej przystępny i oferuje\n' +
-        '                        ogromne możliwości. Poniżej znajdują się moje pierwsze aplikacje webowe, a z czasem planuję\n' +
-        '                        tworzyć ich coraz więcej. Codziennie pracuję jako technolog, a w mojej obecnej pracy dostrzegłem\n' +
-        '                        korzyści płynące z programowania, takie jak automatyzacja bieżących zadań i ograniczanie błędów.\n' +
-        '                        To właśnie to zainspirowało mnie do nauki front-endu, a mój ogromny zapał do pracy sprawia, że\n' +
-        '                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.',
+    typed: ['Programista CAM.', 'Technologiem.', 'Inżynierem.'],
+    description: 'Jestem doświadczonym technologiem z 15-letnim stażem zawodowym, specjalizującym się zarówno w programowaniu CAM, zwłaszcza z wykorzystaniem oprogramowania Hyper Mill, ' +
+        'jak i w obszarze CAD, gdzie doskonale operuję narzędziem Creo Direct. Moja rola obejmuje projektowanie optymalizacji procesów produkcyjnych oraz zarządzanie magazynem narzędzi ' +
+        'skrawających. Tworzę także narzędzia technologiczne, które znacząco przyspieszają procesy produkcyjne.\n' +
+        'Jestem współtwórcą projektów realizowanych nocą, które pozwoliły firmie oszczędzić nawet do 100 000 złotych rocznie. Dodatkowo, dzięki negocjacjom cenowym w zakresie narzędzi skrawających, ' +
+        'udało mi się osiągnąć oszczędności rzędu 250 000 złotych. Odpowiadam również za prowadzenie ' +
+        'międzynarodowych projektów oraz za aktualizację i wdrożenie nowego oprogramowania.\n' +
+        'W ramach swojej pracy, pełniłem funkcję lidera w wielu projektach, takich jak wdrażanie nowych technologii obróbki, na przykład VoluMill. Dzięki automatyzacji procesów technologicznych, ' +
+        'udało mi się przyspieszyć pracę technologów o około 75%, jednocześnie eliminując powtarzalne czynności.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image
@@ -61,7 +62,7 @@ type aboutType = {
 }
 
 
-export const AboutPl: aboutType = {
+export const AboutPlMechanic: aboutType = {
     singleWord: ['Technologie:', 'Mój obecny stack technologiczny to:', 'Lata', 'Doświadczenia', '++', 'Projekty', 'Gotowe', 'Usatysfakjonowani', 'klienci', 'Kontakt', 'My Portfolio'],
     description: 'JavaScript (ścieżka, komendy, moduły FS, interfejs wiersza poleceń), React (AOS, Firebase, TypeScript, ' +
         'tworzenie responsywnych stron internetowych, animacje za pomocą Motion, modale), ' +
@@ -187,7 +188,7 @@ export type WorkContProps = {
     }
 }
 
-export const workContModal: WorkContProps[] = [
+export const workContModalMechanic: WorkContProps[] = [
     {
         id: 1,
         img: WorkImg1,
@@ -292,7 +293,7 @@ export const workContModal: WorkContProps[] = [
 type WorkDescription = {
     singleWord: string[]
 }
-export const workDescription: WorkDescription = {
+export const workDescriptionMechanic: WorkDescription = {
     singleWord: ['Moje ostatnie', 'projekty:', 'Jestem otwarty na projekty każdego rodzaju.', 'Wszystkie projekty'],
 }
 
@@ -308,7 +309,7 @@ type services = {
     services: servicesType[]
 }
 
-export const servicesPl: services = {
+export const servicesPlMechanic: services = {
     singleWord: ['Czym sie zajmuje?', 'Technologia'],
     word: 'Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce się na FreeLance Developer..',
     services: [
@@ -366,7 +367,7 @@ export type contactType = {
 
 }
 
-export const contactPl : contactType = {
+export const contactPlMechanic: contactType = {
 
     nameValidation: {
         name: 'Pole nie może być puste!',

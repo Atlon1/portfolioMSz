@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {headerPL} from '../data/pl/forntDataPl'
 import {headerEng} from "../data/ang/forntDataEng";
+import {headerPlMechanic} from "../data/pl/TechDataPl";
+import {headerEngMechanic} from "../data/ang/TechDataEng";
 
 const Header = () => {
 
@@ -18,6 +20,7 @@ const Header = () => {
             localStorage.setItem('tech', 'mechanics')
         }
     }, [])
+
     useEffect(() => {
         if (localStorage.getItem('active') === null) {
             localStorage.setItem('active', 'false')
@@ -87,7 +90,10 @@ const Header = () => {
     }
 
 
-    const {img, text, linkedIn, email} = lang === 'pl' ? headerPL : headerEng
+    const {img, text, linkedIn, email} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
+        lang === 'pl' && tech === 'front' ? headerPL :
+        lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
+
 
     return <header className='py-2 z-[20] border-b border-white/20'>
         <div className='container mx-auto flex flex-col gap-y-4'>
