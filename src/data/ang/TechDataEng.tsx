@@ -1,8 +1,7 @@
-import WorkImg1 from '../../assets/Oddaj_rzeczy.jpg';
-import WorkImg2 from '../../assets/e-commerence.jpg';
-import WorkImg3 from '../../assets/Estate-website.jpg';
-import WorkImg4 from '../../assets/Gym-image.jpg';
-import WorkImg5 from '../../assets/Photoland.jpg';
+import WorkImg1 from '../../assets/ModalTech/Sap-automatyzacja.png';
+import WrokImgModal1 from '../../assets/ModalTech/Sap-automatyzacja2.png';
+import Layout from '../../assets/ModalTech/LayOut.jpg'
+
 import Logo from '../../assets/Maciej_logo.png';
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarFill, RiStarSFill, RiStarSLine} from "react-icons/ri";
@@ -180,92 +179,38 @@ export const workContModalEngMechanic: WorkContPropsEng[] = [
     {
         id: 1,
         img: WorkImg1,
-        title: 'Donate Items',
-        project: 'Portfolio project',
+        title: 'Sap - autoatyzation files.',
+        project: 'Project for PxCW',
         description: {
-            text: 'Donate Items:',
-            description1: 'Technologies:',
-            description2: 'Welcome to the official website of the charity organization "PT Donate Items"! We are a place where charity meets those in need, and your willingness to help turns into concrete actions for those who require support.\n' +
-                '\n' +
-                'Our mission:\n' +
-                '\n' +
-                'Our main mission is to support those in need by collecting and distributing gifts, clothing, food, and other necessary items. We aim to improve the living conditions of the poorest and assist in difficult life situations.',
-            technology: ['ReactRouter', 'Aos', 'Firebase', "Firestore", "CountIf", 'Pagination', 'FormValidation', "LogIn", "Typed"],
+            text: 'Sap - autoatyzation files.',
+            description1: 'Technologie:',
+            description2: 'This project focuses on automating tasks within the SAP ERP system using VBA scripts and introducing logical instructions. The primary goal of the project is to eliminate monotony in work and reduce errors resulting from manual task execution. As a result, we achieve a significant acceleration in the production order assembly process, by approximately 80%.',
+            technology: ['SAP', "Excel", "VBA"],
             autor: 'Author:',
             name: 'Maciej Szajstek - solo',
-            note: 'Donate Items Live Demo',
-            link: "https://atlon1.github.io/Rent_the_stuff/",
-            img: WorkImg1
+            note: '',
+            link: "",
+            img: WrokImgModal1
         },
     },
     {
         id: 2,
-        img: WorkImg2,
-        title: 'E-commerce Shop',
-        project: 'Portfolio project',
+        img: Layout,
+        title: 'Oragniazja miejsc pracy.',
+        project: 'Projekt dla PxCW',
         description: {
-            text: 'E-commerce Shop:',
-            description1: 'Technologies:',
-            description2: 'Our website is the place to find the latest fashion trends for every occasion. We offer a wide selection of high-quality clothing, from elegant dresses to everyday wear. Our collections are carefully curated to meet the expectations of both classic fashion lovers and those who love to experiment with style. With a user-friendly interface and convenient search options, you can quickly find what you re looking for. Explore our website and discover inspiring outfits that will enhance your unique style.',
-            technology: ['ReactScroll', 'Fetch Get-POST', 'Firebase', 'HashLink', 'Context-API', 'RWD'],
-            autor: 'Author:',
+            text: 'Layout - organizacja miejsc pracy.',
+            description1: 'Technologie:',
+            description2: 'Ten projekt koncentruje się na automatyzacji działań w systemie ERP SAP, wykorzystując skrypty VBA oraz wprowadzając instrukcje logiczne. Głównym celem projektu jest wyeliminowanie monotonii w pracy i redukcja błędów wynikających z ręcznego wykonywania zadań. Dzięki temu osiągamy znaczne przyspieszenie procesu składania zleceń produkcyjnych, aż o około 80%.',
+            technology: ['Auto-Cad', 'Excel'],
+            autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
-            note: 'E-commerce Live Demo',
-            link: "https://atlon1.github.io/first-e-commerce-shop/",
-            img: WorkImg2
+            note: '',
+            link: "",
+            img: Layout
         },
     },
-    {
-        id: 3,
-        img: WorkImg3,
-        title: 'Estate Website',
-        project: 'Portfolio project',
-        description: {
-            text: 'Estate Website:',
-            description1: 'Technologies:',
-            description2: 'Our website is a leading source of real estate listings in the United States and Canada, offering a wide range of attractive properties on the real estate market. We operate in both countries, providing clients access to a variety of properties, from luxury homes to apartments and investment plots. Our platform is user-friendly, and advanced search tools allow you to quickly find the perfect property. Additionally, we provide the latest real estate market information and advice on buying, selling, and investing. We are your partner in your journey to finding your dream property in the United States and Canada.',
-            technology: ['Fetch', 'React-Router', 'ContextAPI', 'UseParams', 'DataBase'],
-            autor: 'Author:',
-            name: 'Maciej Szajstek - solo',
-            note: 'Estate Live Demo',
-            link: "https://atlon1.github.io/estate-website/",
-            img: WorkImg3
-        },
-    },
-    {
-        id: 4,
-        img: WorkImg4,
-        title: 'Gym Me',
-        project: 'Portfolio project',
-        description: {
-            text: 'Gym Me',
-            description1: 'Technologies:',
-            description2: 'Our gym is a place where your fitness goals become a reality. We offer a modern and well-equipped facility that is the perfect place to shape your physique, improve your stamina, and enhance your health. Our team of experienced instructors is ready to help you achieve your fitness goals and tailor programs to your individual needs. Our atmosphere fosters motivation and growth, providing comfort and a sense of security. Whether you are an experienced athlete or just starting your fitness journey, you will find everything you need to stay fit and enjoy a healthy lifestyle. Join our fitness community and start working on yourself today!',
-            technology: ['React-Router', 'ContextAPI', 'UseParams', 'DataBase', 'Local Storage', 'Accordion', 'React-Switch', 'FormValidation'],
-            autor: 'Author:',
-            name: 'Maciej Szajstek - solo',
-            note: 'Gym Me Live Demo',
-            link: "https://atlon1.github.io/gym-site/",
-            img: WorkImg4
-        },
-    },
-    {
-        id: 5,
-        img: WorkImg5,
-        title: 'Photoland',
-        project: 'Portfolio project',
-        description: {
-            text: 'Photoland',
-            description1: 'Technologies:',
-            description2: 'Our website is a paradise for photography enthusiasts, where you will find the highest quality cameras available on the market. We offer a wide selection of digital cameras, DSLRs, and accessories that will help you capture life\'s most beautiful moments. Our platform provides easy navigation and detailed product descriptions so you can find the camera that suits your needs. We are always up to date with the latest developments in the world of photography, providing you with information on the newest models and technologies. Join our community of photographers and invest in your passion by exploring the world through the lens.',
-            technology: ['React scroll', 'React Switch', 'Strapi', 'Strape', 'React-Router', 'ContextAPI', 'UseParams'],
-            autor: 'Author:',
-            name: 'Maciej Szajstek - solo',
-            note: 'Photoland Live Demo',
-            link: "https://atlon1.github.io/fotoSite/",
-            img: WorkImg5
-        },
-    }
+
 ];
 
 type WorkDescription = {
