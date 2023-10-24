@@ -1,6 +1,13 @@
 import WorkImg1 from '../../assets/ModalTech/Sap-automatyzacja.png';
 import WrokImgModal1 from '../../assets/ModalTech/Sap-automatyzacja2.png';
-import Layout from '../../assets/ModalTech/LayOut.jpg'
+import Layout from '../../assets/ModalTech/LayOut.jpg';
+import Wiert from '../../assets/ModalTech/Wiertło_Atorn.jpg';
+import Wiert2 from '../../assets/ModalTech/WIERTLO-BEZ-CHLODZENIA.jpg';
+import Machine5X from '../../assets/ModalTech/dmu60Evo.jpg'
+import NightOrder from '../../assets/ModalTech/Praca_w nocy.gif';
+import BM from '../../assets/ModalTech/BM.gif';
+import Elasto from '../../assets/ModalTech/Elastomer.webp';
+
 
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
@@ -16,7 +23,8 @@ import SimultanicMill from '../../assets/TechIcons/png-clipart-computer-numerica
 import VoluMill from '../../assets/TechIcons/png-transparent-geometric-solidworks-computeraided-manufacturing-volumill-computeraided-design-solidworks-simulation-nccs-ekspe-software-services-llp.png';
 import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg';
 import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
-
+import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
+import Excel from '../../assets/TechIcons/Excel.png';
 
 
 export type headerType = {
@@ -88,7 +96,7 @@ export const AboutPlMechanic: aboutType = {
         'Ustalanie parametrów Q w cyklach obróbkowych w programie Hyper Mill.\n' +
         'Wykonywanie obliczeń dotyczących parametrów skrawania w narzędziach Hidehain.',
     github: 'https://github.com/Atlon1',
-    count: [15,23,80],
+    count: [15, 23, 80],
     skillsList: [
         {
             id: 1,
@@ -156,6 +164,17 @@ export const AboutPlMechanic: aboutType = {
             text: "Magazyn narzędzi",
             stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>]
         },
+        {
+            id: 12,
+            url: AutoCad,
+            text: "AutoCad",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },{
+            id: 13,
+            url: Excel,
+            text: "Excel",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },
     ]
 }
 
@@ -204,17 +223,100 @@ export const workContModalMechanic: WorkContProps[] = [
         description: {
             text: 'Layout - organizacja miejsc pracy.',
             description1: 'Technologie:',
-            description2: 'Ten projekt koncentruje się na automatyzacji działań w systemie ERP SAP, wykorzystując skrypty VBA oraz wprowadzając instrukcje logiczne. Głównym celem projektu jest wyeliminowanie monotonii w pracy i redukcja błędów wynikających z ręcznego wykonywania zadań. Dzięki temu osiągamy znaczne przyspieszenie procesu składania zleceń produkcyjnych, aż o około 80%.',
+            description2: 'Projekt obejmuje organizację miejsc pracy zgodnie z wymaganiami klienta, co obejmuje zarządzanie na poziomie IT, DIT oraz współpracę z firmą zewnętrzną, która była odpowiedzialna za przestawienie maszyn. Koordynacja zespołów była realizowana zgodnie z harmonogramem Gaunta, a głównym założeniem było minimalizowanie zakłóceń w procesie produkcyjnym. Codziennie przenoszono po 2 maszyny z kompleksowym podłączeniem i uruchomieniem, tak aby mogły pracować już na drugiej zmianie. Dzięki efektywnemu zarządzaniu i koordynacji, projekt przebiegł bez żadnych problemów.',
             technology: ['Auto-Cad', 'Excel'],
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: '',
-            link: "",
+            link: "https://docs.google.com/spreadsheets/d/1hxYMN_D3L07l3jaB7c0TfRIWo20Gv7GT/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
             img: Layout
         },
     },
-
-
+    {
+        id: 3,
+        img: Wiert,
+        title: 'Wprowadzenie nowych wierteł.',
+        project: 'Projekt dla PxCW',
+        description: {
+            text: 'Wprowadzenie nowych wierteł.',
+            description1: 'Technologie:',
+            description2: 'Projekt zakładał wprowadzenie nowej technologii w zakresie wiercenia otworów powtarzalnych, włączając w to wszelkie gwinty oraz otwory pod rozwiertaki. Wykorzystano istniejący park maszynowy. Dzięki temu proces ten przyspieszył się o imponujące 300%, co zaowocowało rocznymi oszczędnościami na poziomie około 30 000 złotych. Dodatkowo, udało się wynegocjować korzystne ceny dzięki wykorzystaniu pozycji silnej firmy, co zaowocowało rabatami sięgającymi nawet 50%.',
+            technology: ['HyperMill', 'Excel', "Heidenhain"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: '',
+            link: "https://drive.google.com/file/d/1eVKmVQxUPL5zGyfLWt3uB-OpzAxoGRbS/view?usp=drive_link",
+            img: Wiert2
+        },
+    },
+    {
+        id: 4,
+        img: Machine5X,
+        title: 'Zakup maszyny 5 osiowej.',
+        project: 'Projekt dla PxCW',
+        description: {
+            text: 'Zakup maszyny 5 osiowej.',
+            description1: 'Technologie:',
+            description2: 'Celem projektu było zakupienie nowej frezarki 5-osiowej wraz z odpowiednim wyposażeniem. Całkowita inwestycja wyniosła 1 200 000 złotych. W ramach projektu przeprowadzono analizę budżetu w celu wytypowania maszyny, która spełni określone wymagania technologiczne oraz będzie miała możliwość automatyzacji gniazda w przyszłości. Maszyna przeszła przez wiele etapów testowych, obejmujących wykonanie detalu próbnego oraz opracowanie specyfikacji testowej maszyny. Dokonano także szczegółowej oceny geometrii i budowy maszyny.',
+            technology: ['HyperMill', 'Excel', "Heidenhain", "AutoCad"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: '',
+            link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            img: Machine5X
+        },
+    },
+    {
+        id: 5,
+        img: NightOrder,
+        title: 'Praca w nocy Frezarek.',
+        project: 'Projekt dla PxCW',
+        description: {
+            text: 'Praca w nocy Frezarek.',
+            description1: 'Technologie:',
+            description2: 'Celem projektu jest zwiększenie efektywności pracy frezarek CNC w nocy. Założeniem było wydłużenie czasu pracy maszyn w nocy poprzez projektowanie specjalnego oprzyrządowania technologicznego. Stworzono nowe urządzenia do stabilnego trzymania detali, wykorzystując system z czterema imadelami. Działanie to znacząco wydłużyło czas pracy w nocy z jednej godziny do co najmniej czterech godzin, co przełożyło się na roczne oszczędności rzędu 50 000 złotych. Dodatkowo, skróciło efektywnie czas przygotowawczy-zakończeniowy o ponad 60%, eliminując potrzebę przezbrajania maszyny.',
+            technology: ['HyperMill', 'Excel', "Heidenhain"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: '',
+            link: "https://docs.google.com/presentation/d/1ENdOObc5tb8797X0l23hFPKY_iszn6W8/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            img: NightOrder
+        },
+    },
+    {
+        id: 6,
+        img: BM,
+        title: 'Raportowanie Wskazników KPI',
+        project: 'Projekt dla PxCW',
+        description: {
+            text: 'Raportowanie Wskazników KPI',
+            description1: 'Technologie:',
+            description2: 'Głównym celem tego projektu było ustalenie nowych wskaźników KPI dla jednego z kluczowych klientów działu. Wprowadzono terminy oraz oceniono wskaźniki dotyczące lead time dla poszczególnych kryteriów. Raporty, zawierające te wskaźniki, są przekazywane Dyrektorowi Produkcji wraz z wnioskami i propozycjami dotyczącymi poprawy procesu w celu osiągnięcia jak najlepszych wyników.',
+            technology: ['Excel'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: '',
+            link: "",
+            img: BM
+        },
+    },
+    {
+        id: 7,
+        img: Elasto,
+        title: 'Optymalizacja Elastomerów',
+        project: 'Projekt dla PxCW',
+        description: {
+            text: 'Optymalizacja Elastomerów',
+            description1: 'Technologie:',
+            description2: 'Głównym celem tego projektu było zaprojektowanie oraz stworzenie oprzyrządowania technologicznego do produkcji części z elastomeru. Proces produkcji został unifikowany i uproszczony poprzez znormalizowane przygotowania. Wszystko zostało tak opracowane, aby każdy pracownik, niezależnie od poziomu doświadczenia, mógł go wykonywać. Dzięki tym zmianom, udało się skrócić proces o 40%, co przekłada się na roczne oszczędności rzędu 40 000 złotych.',
+            technology: ['Excel', "Creo", 'HyperMill'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: '',
+            link: "",
+            img: Elasto
+        },
+    },
 ]
 type WorkDescription = {
     singleWord: string[]
