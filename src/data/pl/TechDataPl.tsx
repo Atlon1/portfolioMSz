@@ -5,11 +5,19 @@ import WorkImg4 from '../../assets/Gym-image.jpg'
 import WorkImg5 from '../../assets/Photoland.jpg'
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
-import {RiStarSFill, RiStarSLine} from "react-icons/ri";
+import {RiStarFill, RiStarSFill, RiStarSLine} from "react-icons/ri";
 import HM from '../../assets/TechIcons/hyperMILL.png';
 import HH from '../../assets/TechIcons/Heidenhain_400.jpg';
 import Sap from '../../assets/TechIcons/sap.jpg';
 import Creo from '../../assets/TechIcons/creo.png';
+import Axis5 from '../../assets/TechIcons/5AxisDrilling.png';
+import Finish from '../../assets/TechIcons/cnc-milling-machine.webp';
+import Electorde from '../../assets/TechIcons/hypercad-s-electrode-function-colour-coding-en.webp';
+import SimultanicMill from '../../assets/TechIcons/png-clipart-computer-numerical-control-machining-machine-milling-turning-3-miscellaneous-service.png';
+import VoluMill from '../../assets/TechIcons/png-transparent-geometric-solidworks-computeraided-manufacturing-volumill-computeraided-design-solidworks-simulation-nccs-ekspe-software-services-llp.png';
+import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg';
+import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
+
 
 
 export type headerType = {
@@ -106,6 +114,48 @@ export const AboutPlMechanic: aboutType = {
             url: Creo,
             text: "Creo Direct/Element",
             stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 5,
+            url: Axis5,
+            text: "5 osiowe wiercenie",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },
+        {
+            id: 6,
+            url: Finish,
+            text: "5 osiowe wykańczanie",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarFill/>, <RiStarSLine/>]
+        },
+        {
+            id: 7,
+            url: Electorde,
+            text: "Projektowanie Elektrod",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>, <RiStarSLine/>]
+        },
+        {
+            id: 8,
+            url: SimultanicMill,
+            text: "Symulatniczna obróbka",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>]
+        },
+        {
+            id: 9,
+            url: VoluMill,
+            text: "VoluMill - tochoidalana obróbka",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },
+        {
+            id: 10,
+            url: ProductionPlanning,
+            text: "Planowanie produkcji",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
+        },
+        {
+            id: 11,
+            url: ToolMngr,
+            text: "Magazyn narzędzi",
+            stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>]
         },
     ]
 }
