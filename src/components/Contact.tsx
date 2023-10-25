@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import {db} from '../Firebase'
 import {collection, addDoc} from 'firebase/firestore'
 import {contactPl} from '../data/pl/forntDataPl'
 import {contactEng} from "../data/ang/forntDataEng";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
     const { thxText, singleWord, nameValidation, textValidation, emailValidation} = localStorage.getItem('lang') === 'eng' ? contactEng : contactPl
+    const formData = useRef()
+
 
     const validateName = (form: any) => {
         const {name, nameLength} = nameValidation
@@ -85,6 +88,10 @@ const Contact = () => {
                 text: form.text
             })
 
+
+            emailjs.sendForm('service_1d5lzg4', 'template_necr00k', formData.current as any, 'WfT1Ydqf0OJBucEf-')
+
+
             return setAgree(
                 <div style={
                     {
@@ -98,6 +105,7 @@ const Contact = () => {
             )
         }
     }
+
 
 
     return <section className='w-full h-full lg:section mb-20 py-[10px]' id='contact'>
@@ -122,7 +130,8 @@ const Contact = () => {
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.3}}
                     className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'
-
+                    ref={formData as any}
+                    onSubmit={handleSendMessage}
                 >
                     <input
                         onChange={updateField}
@@ -164,7 +173,7 @@ const Contact = () => {
                         name="text"
                     />
                     <div className='text-red-700 font-secondary flex'>{err.text}</div>
-                    <button className='btn btn-lg' onClick={handleSendMessage}>{singleWord[3]}</button>
+                    <button className='btn btn-lg' type='submit'>{singleWord[3]}</button>
                     {agree}
                 </motion.form>
             </div>
