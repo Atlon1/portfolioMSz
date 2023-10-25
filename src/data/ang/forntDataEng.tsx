@@ -280,6 +280,7 @@ export const workDescriptionEng: WorkDescription = {
 };
 
 type servicesType = {
+    id: number,
     name: string,
     description: string,
     link: string
@@ -296,26 +297,31 @@ export const servicesEng: services = {
     word: "I am currently working as a CNC Technologist in an international company. Additionally, I am developing my skills as a freelance developer.",
     services: [
         {
+            id: 1,
             name: 'Standardization of Cutting Tool Purchases',
             description: 'Detailed calculations for tool purchase. Time, path, description. Developed tool purchase standards.',
             link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 2,
             name: 'Increasing the Efficiency of CNC Machines',
             description: 'Development of technological equipment allowing for the production of several elements simultaneously. Approximately 40% extended machine work at night. The possibility of assembling various types of components.',
             link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 3,
             name: 'Organizing Machine Work. Layout.',
             description: 'Drawing a production area plan. Relocation of machines according to the concept. Development of the Gantt schedule without disrupting the production cycle.',
             link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
         },
         {
+            id: 4,
             name: 'New Machining Technologies',
             description: 'Detailed calculations for the purchase of new Trochoidal machining technologies. Practical tests. New cutting tool technology for a new machining strategy.',
             link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 5,
             name: 'Purchase of CNC Machines for Production Needs',
             description: 'Selection of the appropriate machine for production needs. Price negotiations and selection of the machine\'s parameters. Installation. Supervision of the installation at the designated location. Connection of the necessary media for operation.',
             link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",

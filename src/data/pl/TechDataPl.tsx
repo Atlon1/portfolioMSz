@@ -7,8 +7,6 @@ import Machine5X from '../../assets/ModalTech/dmu60Evo.jpg'
 import NightOrder from '../../assets/ModalTech/Praca_w nocy.gif';
 import BM from '../../assets/ModalTech/BM.gif';
 import Elasto from '../../assets/ModalTech/Elastomer.webp';
-
-
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarFill, RiStarSFill, RiStarSLine} from "react-icons/ri";
@@ -53,14 +51,12 @@ export type bannerType = {
 export const bannerPlMechanic: bannerType = {
     singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
     typed: ['Programista CAM.', 'Technologiem.', 'Inżynierem.'],
-    description: 'Jestem doświadczonym technologiem z 15-letnim stażem zawodowym, specjalizującym się zarówno w programowaniu CAM, zwłaszcza z wykorzystaniem oprogramowania Hyper Mill, ' +
-        'jak i w obszarze CAD, gdzie doskonale operuję narzędziem Creo Direct. Moja rola obejmuje projektowanie optymalizacji procesów produkcyjnych oraz zarządzanie magazynem narzędzi ' +
-        'skrawających. Tworzę także narzędzia technologiczne, które znacząco przyspieszają procesy produkcyjne.\n' +
-        'Jestem współtwórcą projektów realizowanych nocą, które pozwoliły firmie oszczędzić nawet do 100 000 złotych rocznie. Dodatkowo, dzięki negocjacjom cenowym w zakresie narzędzi skrawających, ' +
-        'udało mi się osiągnąć oszczędności rzędu 250 000 złotych. Odpowiadam również za prowadzenie ' +
-        'międzynarodowych projektów oraz za aktualizację i wdrożenie nowego oprogramowania.\n' +
-        'W ramach swojej pracy, pełniłem funkcję lidera w wielu projektach, takich jak wdrażanie nowych technologii obróbki, na przykład VoluMill. Dzięki automatyzacji procesów technologicznych, ' +
-        'udało mi się przyspieszyć pracę technologów o około 75%, jednocześnie eliminując powtarzalne czynności.',
+    description: 'Jestem doświadczonym technologiem z 15-letnim stażem zawodowym, specjalizującym się zarówno w programowaniu CAM, ' +
+        'jak i CAD. Moje umiejętności mogą przyczynić się do rozwoju Twojej firmy. Poniżej znajdziesz więcej informacji na temat ' +
+        'mojej działalności. Dodatkowo, ukończyłem 3 kursy związane z programowaniem oraz zdobyłem tytuł magistra inżyniera z dwóch specjalizacji:' +
+        ' Mechanika i Budowa Maszyn oraz Zarządzanie i Inżynieria Produkcji. Przeszedłem także wiele szkoleń z zakresu programowania oraz zarządzania ' +
+        'zespołem. Prywatnie jestem ojcem dwójki dzieci i pasjonuję się programowaniem oraz grami komputerowymi. Ostatnio zajmowałem się programowaniem ' +
+        'panelu operatora dla mojej firmy, który ma na celu dostarczenie operatorom na niższym szczeblu wiedzy podstawowej.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image
@@ -326,6 +322,7 @@ export const workDescriptionMechanic: WorkDescription = {
 }
 
 type servicesType = {
+    id: number,
     name: string,
     description: string,
     link: string
@@ -339,35 +336,49 @@ type services = {
 
 export const servicesPlMechanic: services = {
     singleWord: ['Czym sie zajmuje?', 'Technologia'],
-    word: 'Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce się na FreeLance Developer..',
+    word: 'Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce sie na FreeLance Developer..',
     services: [
         {
-            name: 'Standaryzacja zakupów narzedzi skrawajacych.',
-            description: 'Szczegółowe wyliczenia, pracy przy zakupie narzędzi skrawających. Czas, droga, opis. Opracowano instrukcje po przez przekazanie odpowienich stadnradów zakupwych.',
-            link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 1,
+            name: 'Zarządzanie Zespołem',
+            description: 'Dzięki doskonałym umiejętnościom interpersonalnym potrafię efektywnie zarządzać zespołem oraz motywować go do działania, zgodnie z metodyką Scrum.',
+            link: "",
         },
         {
-            name: 'Zwiększenie efektywności,maszyn CNC.',
-            description: 'Opracowanie oprzyrządowania technologicznego pozwalającego na wykonaywanie jednocześnie kilku elementów na raz. Wydłużenie pracy maszyny o około 40%  w nocy. Możliwość montażu, wszelkiego rodzaju elementów.',
-            link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 2,
+            name: 'Prowadzenie Kluczowych Projektów',
+            description: 'Dzięki wieloletniemu doświadczeniu nie boję się podejmować trudnych projektów i wyzwań.',
+            link: "",
         },
         {
-            name: 'Organizacja pracy maszyn. Layout.',
-            description: 'Wyrysowanie planu obszaru pordukcyjnego. Przestawienie maszyn wg. koncjepcji. Opracowanie Harmonogramu Gunta.' +
-                ' Nie zakłucając cyklu pordukcyjnego.',
-            link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
+            id: 3,
+            name: 'Zakupy Narzędzi Skrawających',
+            description: 'Posiadam obszerne doświadczenie w zakupach narzędzi skrawających oraz dysponuję rozległą siecią kontaktów, co umożliwia szybką reakcję w razie potrzeby.',
+            link: "",
         },
         {
-            name: 'Nowe technologie obróbkowe.',
-            description: 'Szczegółowe wyliczenia zakupu nowych technologi obróbki Trochoidalnej. Testy w praktyce.' +
-                'Nowa technologia narzedzi skrawających dla nowej strategii obróbki.',
-            link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 4,
+            name: 'Optymalizacja Procesów',
+            description: 'Posiadam szereg inżynierskich rozwiązań oraz bazę wiedzy, co pozwala na osiąganie zysków poprzez inwestycje.',
+            link: "",
         },
         {
-            name: 'Zakup maszyn CNC na potrzeby produkcyjne.',
-            description: 'Wytypownie odpowiedniej maszyny, na potrzeby produkcyjne. Negocjacje cenowe dobór odpownienich parametrów maszyny.' +
-                'Instalacja. Nadzór nad instalcją w miejscu wskazanym. Podłączenia mediów niezbędnych do pracy.',
-            link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 5,
+            name: 'Tworzenie Układów Przestrzennych',
+            description: 'Potrafię projektować układy przestrzenne w obszarze produkcji, przestawiać maszyny zgodnie z koncepcją oraz opracowywać harmonogramy Ganta, nie zakłócając cyklu produkcyjnego.',
+            link: "",
+        },
+        {
+            id: 6,
+            name: 'Pisanie Skryptów Dla Systemu ERP',
+            description: 'Specjalizuję się w pisaniu skryptów dla systemów ERP, co pozwala na rozszerzanie ich funkcjonalności.',
+            link: "",
+        },
+        {
+            id: 7,
+            name: 'Zwiększanie Wydajności Maszyn Produkcyjnych',
+            description: 'Dokonuję kalkulacji mocy obecnych maszyn, identyfikuję wąskie gardła oraz dostosowuję wydajność maszyn do potrzeb klienta.',
+            link: "",
         },
     ]
 }

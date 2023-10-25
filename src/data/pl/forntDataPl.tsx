@@ -300,6 +300,7 @@ export const workDescription: WorkDescription = {
 }
 
 type servicesType = {
+    id: number,
     name: string,
     description: string,
     link: string
@@ -316,28 +317,33 @@ export const servicesPl: services = {
     word: 'Obecnie pracuje jako Technolog CNC, w miedzynarodowej firmie. Dodatkowo kształce się na FreeLance Developer..',
     services: [
         {
+            id: 1,
             name: 'Standaryzacja zakupów narzedzi skrawajacych.',
             description: 'Szczegółowe wyliczenia, pracy przy zakupie narzędzi skrawających. Czas, droga, opis. Opracowano instrukcje po przez przekazanie odpowienich stadnradów zakupwych.',
             link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 2,
             name: 'Zwiększenie efektywności,maszyn CNC.',
             description: 'Opracowanie oprzyrządowania technologicznego pozwalającego na wykonaywanie jednocześnie kilku elementów na raz. Wydłużenie pracy maszyny o około 40%  w nocy. Możliwość montażu, wszelkiego rodzaju elementów.',
             link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 3,
             name: 'Organizacja pracy maszyn. Layout.',
             description: 'Wyrysowanie planu obszaru pordukcyjnego. Przestawienie maszyn wg. koncjepcji. Opracowanie Harmonogramu Gunta.' +
                 ' Nie zakłucając cyklu pordukcyjnego.',
             link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
         },
         {
+            id: 4,
             name: 'Nowe technologie obróbkowe.',
             description: 'Szczegółowe wyliczenia zakupu nowych technologi obróbki Trochoidalnej. Testy w praktyce.' +
                 'Nowa technologia narzedzi skrawających dla nowej strategii obróbki.',
             link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
         },
         {
+            id: 5,
             name: 'Zakup maszyn CNC na potrzeby produkcyjne.',
             description: 'Wytypownie odpowiedniej maszyny, na potrzeby produkcyjne. Negocjacje cenowe dobór odpownienich parametrów maszyny.' +
                 'Instalacja. Nadzór nad instalcją w miejscu wskazanym. Podłączenia mediów niezbędnych do pracy.',

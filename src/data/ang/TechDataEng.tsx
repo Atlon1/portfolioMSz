@@ -7,7 +7,6 @@ import Machine5X from '../../assets/ModalTech/dmu60Evo.jpg'
 import NightOrder from '../../assets/ModalTech/Praca_w nocy.gif';
 import BM from '../../assets/ModalTech/BM.gif';
 import Elasto from '../../assets/ModalTech/Elastomer.webp';
-
 import Logo from '../../assets/Maciej_logo.png';
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarFill, RiStarSFill, RiStarSLine} from "react-icons/ri";
@@ -51,15 +50,12 @@ export type bannerType = {
 export const bannerEngMechanic: bannerType = {
     singleWord: ['Maciej', 'Szajstek', 'I am:', 'Hello!', 'Contact'],
     typed: ['Programer CAM.', 'Technologist.', 'Engineer.'],
-    description: 'I am an experienced technologist with a 15-year professional background, specializing in both CAM programming, ' +
-        'particularly with expertise in Hyper Mill software, and CAD, where I excel in using ' +
-        'Creo Direct. My role involves designing process optimization in production and managing the cutting tool inventory.' +
-        ' I also create technological tools that significantly expedite production processes.\n' +
-        'I am a co-creator of projects executed at night, which have enabled the company to save up to 100,000 PLN annually. ' +
-        'Additionally, through price negotiations for cutting tools, I\'ve generated savings of around 250,000 PLN.' +
-        ' I\'m also responsible for leading international projects and for updating and implementing new software.\n' +
-        'In my work, I have served as a leader in various projects, such as the implementation of new machining technologies, ' +
-        'like VoluMill. Through the automation of technological processes, I managed to speed up the work of technologists by approximately 75% while eliminating repetitive tasks.',
+    description: 'I am an experienced technologist with 15 years of professional experience, specializing in both CAM and CAD programming. ' +
+        'My skills can contribute to the development of your company. Below, you will find more information about my activities. Additionally, ' +
+        'I have completed three programming courses and hold a master\'s degree in two specializations: Mechanical Engineering and Machine Construction, ' +
+        'as well as Management and Production Engineering. I have also attended numerous training sessions in programming and team management. In my personal life, ' +
+        'I am a father of two children and have a passion for programming and computer games. Recently, I have been working on programming an operator panel for my company, ' +
+        'designed to provide basic knowledge to operators at a lower level.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image
@@ -326,6 +322,7 @@ export const workDescriptionEngMechanic: WorkDescription = {
 };
 
 type servicesType = {
+    id: number,
     name: string,
     description: string,
     link: string
@@ -342,29 +339,46 @@ export const servicesEngMechanic: services = {
     word: "I am currently working as a CNC Technologist in an international company. Additionally, I am developing my skills as a freelance developer.",
     services: [
         {
-            name: 'Standardization of Cutting Tool Purchases',
-            description: 'Detailed calculations for tool purchase. Time, path, description. Developed tool purchase standards.',
-            link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 1,
+            name: 'Team Management',
+            description: 'Thanks to excellent interpersonal skills, I can effectively manage teams and motivate them to act according to the Scrum methodology.',
+            link: "",
         },
         {
-            name: 'Increasing the Efficiency of CNC Machines',
-            description: 'Development of technological equipment allowing for the production of several elements simultaneously. Approximately 40% extended machine work at night. The possibility of assembling various types of components.',
-            link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 2,
+            name: 'Leading Key Projects',
+            description: 'With years of experience, I am not afraid of tackling challenging projects and tasks.',
+            link: "",
         },
         {
-            name: 'Organizing Machine Work. Layout.',
-            description: 'Drawing a production area plan. Relocation of machines according to the concept. Development of the Gantt schedule without disrupting the production cycle.',
-            link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
+            id: 3,
+            name: 'Cutting Tool Procurement',
+            description: 'I have extensive experience in purchasing cutting tools and a broad network of contacts for prompt responses to procurement needs.',
+            link: "",
         },
         {
-            name: 'New Machining Technologies',
-            description: 'Detailed calculations for the purchase of new Trochoidal machining technologies. Practical tests. New cutting tool technology for a new machining strategy.',
-            link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 4,
+            name: 'Process Optimization',
+            description: 'I offer a range of engineering solutions and a knowledge base that allows for profit generation through investments.',
+            link: "",
         },
         {
-            name: 'Purchase of CNC Machines for Production Needs',
-            description: 'Selection of the appropriate machine for production needs. Price negotiations and selection of the machine\'s parameters. Installation. Supervision of the installation at the designated location. Connection of the necessary media for operation.',
-            link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            id: 5,
+            name: 'Layout Design',
+            description: 'I can create production area layouts, move machines according to the concept, and develop Gantt schedules without disrupting the production cycle.',
+            link: "",
+        },
+        {
+            id: 6,
+            name: 'Script Writing for ERP System',
+            description: 'I specialize in writing scripts for ERP systems, adding new functionalities.',
+            link: "",
+        },
+        {
+            id: 7,
+            name: 'Increasing Machine Production Capacity',
+            description: 'I calculate current machine capacities, identify bottlenecks, and adapt machine performance to meet customer needs.',
+            link: "",
         },
     ]
 };
