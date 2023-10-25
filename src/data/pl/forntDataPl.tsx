@@ -35,13 +35,15 @@ export type bannerType = {
 export const bannerPl: bannerType = {
     singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
     typed: ['Frontend Developerem', 'Projektantem Ui/Ux', 'Inżynierem'],
-    description: 'Rozpocząłem naukę front-endu w grudniu 2021 roku, uczestnicząc w kursie organizowanym przez\n' +
-        '                        Coders Lab. Wybrałem język JavaScript, uważając, że jest on najbardziej przystępny i oferuje\n' +
-        '                        ogromne możliwości. Poniżej znajdują się moje pierwsze aplikacje webowe, a z czasem planuję\n' +
-        '                        tworzyć ich coraz więcej. Codziennie pracuję jako technolog, a w mojej obecnej pracy dostrzegłem\n' +
-        '                        korzyści płynące z programowania, takie jak automatyzacja bieżących zadań i ograniczanie błędów.\n' +
-        '                        To właśnie to zainspirowało mnie do nauki front-endu, a mój ogromny zapał do pracy sprawia, że\n' +
-        '                        chcę rozwijać się jeszcze bardziej w tej dziedzinie.',
+    description: 'Swoją przygodę z programowaniem rozpocząłem w grudniu 2021 roku. ' +
+        'Zaczęłem od front-endu, który ' +
+        'uważam za łatwy i satysfakcjonujący' +
+        ' do nauki. Poniżej znajdziesz informacje o moich umiejętnościach jako programisty.' +
+        ' Ukończyłem kurs z front-endu w CodersLab, następnie zanurzyłem się w świecie Node.js.' +
+        'Aktualnie, pracuję nad poszerzeniem swojej wiedzy o język C#, co jest swoistym hobby, ' +
+        'ponieważ wszystkie te zajęcia odbywają się po godzinach pracy. Poniżej przedstawiam zakres ' +
+        'mojej obecnej wiedzy technicznej. Nieustannie uczę się nowych funkcjonalności oraz sposobów ' +
+        'tworzenia czystego i wydajnego kodu.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image,
@@ -318,36 +320,33 @@ export const servicesPl: services = {
     services: [
         {
             id: 1,
-            name: 'Standaryzacja zakupów narzedzi skrawajacych.',
-            description: 'Szczegółowe wyliczenia, pracy przy zakupie narzędzi skrawających. Czas, droga, opis. Opracowano instrukcje po przez przekazanie odpowienich stadnradów zakupwych.',
-            link: "https://docs.google.com/presentation/d/1WAkiwveUZdDLS6hEf5K2X5tQFzTpX28f/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            name: 'Projektowanie stron typu slider',
+            description: 'Jestem gotów przygotować dla Państwa spersonalizowaną wizytówkę firmy lub osoby na stronie internetowej. Pozwólcie nam zaistnieć w wirtualnym świecie i zaprezentować się jako profesjonaliści.',
+            link: ""
         },
         {
             id: 2,
-            name: 'Zwiększenie efektywności,maszyn CNC.',
-            description: 'Opracowanie oprzyrządowania technologicznego pozwalającego na wykonaywanie jednocześnie kilku elementów na raz. Wydłużenie pracy maszyny o około 40%  w nocy. Możliwość montażu, wszelkiego rodzaju elementów.',
-            link: "https://docs.google.com/presentation/d/1vhOrwB_pLfeO0AEj0udgSWfLtJ5OBkEW/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            name: 'Zakładanie sklepów internetowych',
+            description: 'Oferuję kompleksową usługę tworzenia stron e-commerce. Przełamcie barierę sprzedaży online i oszczędzajcie na opłatach abonamentowych.',
+            link: ""
         },
         {
             id: 3,
-            name: 'Organizacja pracy maszyn. Layout.',
-            description: 'Wyrysowanie planu obszaru pordukcyjnego. Przestawienie maszyn wg. koncjepcji. Opracowanie Harmonogramu Gunta.' +
-                ' Nie zakłucając cyklu pordukcyjnego.',
-            link: "https://drive.google.com/file/d/1YAwpq1dwBjW5908pk_fGxhCUdbw92j2L/view?usp=sharing",
+            name: 'Aplikacje edukacyjne',
+            description: 'Jeśli planują Państwo prowadzić kursy online, to śmiało piszcie do nas. Oferujemy niezawodne rozwiązania pozwalające na maksymalizację zysków.',
+            link: ""
         },
         {
             id: 4,
-            name: 'Nowe technologie obróbkowe.',
-            description: 'Szczegółowe wyliczenia zakupu nowych technologi obróbki Trochoidalnej. Testy w praktyce.' +
-                'Nowa technologia narzedzi skrawających dla nowej strategii obróbki.',
-            link: "https://docs.google.com/presentation/d/1mAxj5_qJuB_lBwVAR6FJeGDZtClGsYRT/edit?usp=sharing&ouid=108326513820685031819&rtpof=true&sd=true",
+            name: 'Aplikacja dla pizzerii',
+            description: 'Zapraszamy do wspólnego projektu, jeśli marzycie o wejściu w świat gastronomii i przyjmowaniu zamówień online poprzez stronę internetową.',
+            link: ""
         },
         {
             id: 5,
-            name: 'Zakup maszyn CNC na potrzeby produkcyjne.',
-            description: 'Wytypownie odpowiedniej maszyny, na potrzeby produkcyjne. Negocjacje cenowe dobór odpownienich parametrów maszyny.' +
-                'Instalacja. Nadzór nad instalcją w miejscu wskazanym. Podłączenia mediów niezbędnych do pracy.',
-            link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            name: 'Spersonalizowana aplikacja',
+            description: 'Jesteśmy gotowi stworzyć dla Państwa spersonalizowany projekt, dostosowany do indywidualnych potrzeb. Wystarczy nam powiedzieć, czego potrzebujecie, a my zrealizujemy Wasze marzenia.',
+            link: ""
         },
     ]
 }

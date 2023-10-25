@@ -51,12 +51,13 @@ export type bannerType = {
 export const bannerPlMechanic: bannerType = {
     singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
     typed: ['Programista CAM.', 'Technologiem.', 'Inżynierem.'],
-    description: 'Jestem doświadczonym technologiem z 15-letnim stażem zawodowym, specjalizującym się zarówno w programowaniu CAM, ' +
-        'jak i CAD. Moje umiejętności mogą przyczynić się do rozwoju Twojej firmy. Poniżej znajdziesz więcej informacji na temat ' +
-        'mojej działalności. Dodatkowo, ukończyłem 3 kursy związane z programowaniem oraz zdobyłem tytuł magistra inżyniera z dwóch specjalizacji:' +
-        ' Mechanika i Budowa Maszyn oraz Zarządzanie i Inżynieria Produkcji. Przeszedłem także wiele szkoleń z zakresu programowania oraz zarządzania ' +
-        'zespołem. Prywatnie jestem ojcem dwójki dzieci i pasjonuję się programowaniem oraz grami komputerowymi. Ostatnio zajmowałem się programowaniem ' +
-        'panelu operatora dla mojej firmy, który ma na celu dostarczenie operatorom na niższym szczeblu wiedzy podstawowej.',
+    description: 'I began my journey into programming in December 2021. I started with front-end' +
+        ' development, which I find both easy and enjoyable to learn. Below, you will ' +
+        'find information about my programming skills. I completed a front-end course at CodersLab ' +
+        'and then delved into Node.js. Currently, I am furthering my knowledge by learning C#. This ' +
+        'is more of a hobby for me, as I do all of this after my regular working hours. Below, ' +
+        'you\'ll find the scope of my current technological proficiency. I am continuously exploring ' +
+        'new features and ways to write clean and efficient code.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
     img: Image
