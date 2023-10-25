@@ -18,7 +18,7 @@ import Axis5 from '../../assets/TechIcons/5AxisDrilling.png';
 import Finish from '../../assets/TechIcons/cnc-milling-machine.webp';
 import Electorde from '../../assets/TechIcons/hypercad-s-electrode.webp';
 import SimultanicMill from '../../assets/TechIcons/png-clipart-computer-numerical.png';
-import VoluMill from '../../assets/TechIcons/geometric-solidworks.png';
+// import VoluMill from '../../assets/TechIcons/geometric-solidworks.png';
 import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg';
 import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
 import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
@@ -145,7 +145,7 @@ export const AboutPlMechanic: aboutType = {
         },
         {
             id: 9,
-            url: VoluMill,
+            url: SimultanicMill,
             text: "VoluMill - tochoidalana obróbka",
             stars: [<RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSFill/>, <RiStarSLine/>]
         },
