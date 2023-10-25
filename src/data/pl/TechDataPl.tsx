@@ -7,7 +7,7 @@ import Machine5X from '../../assets/ModalTech/dmu60Evo.jpg'
 import NightOrder from '../../assets/ModalTech/Praca_w nocy.gif';
 import BM from '../../assets/ModalTech/BM.gif';
 import Elasto from '../../assets/ModalTech/Elastomer.webp';
-import Logo from '../../assets/Maciej_logo.png'
+import Logo from '../../assets/Maciej_logo.png';
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarFill, RiStarSFill, RiStarSLine} from "react-icons/ri";
 import HM from '../../assets/TechIcons/hyperMILL.png';
@@ -16,9 +16,9 @@ import Sap from '../../assets/TechIcons/sap.jpg';
 import Creo from '../../assets/TechIcons/creo.png';
 import Axis5 from '../../assets/TechIcons/5AxisDrilling.png';
 import Finish from '../../assets/TechIcons/cnc-milling-machine.webp';
-import Electorde from '../../assets/TechIcons/hypercad-s-electrode-function-colour-coding-en.webp';
-import SimultanicMill from '../../assets/TechIcons/png-clipart-computer-numerical-control-machining-machine-milling-turning-3-miscellaneous-service.png';
-import VoluMill from '../../assets/TechIcons/png-transparent-geometric-solidworks-computeraided-manufacturing-volumill-computeraided-design-solidworks-simulation-nccs-ekspe-software-services-llp.png';
+import Electorde from '../../assets/TechIcons/hypercad-s-electrode.webp';
+import SimultanicMill from '../../assets/TechIcons/png-clipart-computer-numerical.png';
+import VoluMill from '../../assets/TechIcons/geometric-solidworks.png';
 import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg';
 import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
 import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
