@@ -24,18 +24,18 @@ const Banner = () => {
             <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.h1
-                        variants={fadeIn('up', 0.3)}
+                        variants={fadeIn('up', 0.1)}
                         initial="hidden"
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.7}}
+                        viewport={{once: false, amount: 0.1}}
                         className='hidden sm:block text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
                         {singleWord[0]} <span>{singleWord[1]}</span>
                     </motion.h1>
                     <motion.div
-                        variants={fadeIn('up', 0.4)}
+                        variants={fadeIn('up', 0.1)}
                         initial="hidden"
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.7}}
+                        viewport={{once: false, amount: 0.1}}
                         className='mb-6 text-[22px] sm:text-[36px] max-w-full font-secondary font-semibold leading-[1]'>
                         <span className='text-white mr-4'>{singleWord[2]}</span>
                         <TypeAnimation
@@ -53,19 +53,19 @@ const Banner = () => {
                             repeat={Infinity}/>
                     </motion.div>
                     <motion.p
-                        variants={fadeIn('up', 0.5)}
+                        variants={fadeIn('up', 0.1)}
                         initial="hidden"
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.7}}
+                        viewport={{once: false, amount: 0.1}}
                         className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-[14px] sm:text-[18px]'>
                         {singleWord[3]} <br/>
                         {description}
                     </motion.p>
                     <motion.div
-                        variants={fadeIn('up', 0.6)}
+                        variants={fadeIn('up', 0.1)}
                         initial="hidden"
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.7}}
+                        viewport={{once: false, amount: 0.1}}
                         className='flex max-m-max gap-x-6 items-center mb-6 mx-auto lg:mx-0 md:justify-center lg:justify-start justify-center z-[10]'>
                         <button className='btn btn-lg'>
                             <Link to="contact"
@@ -77,10 +77,10 @@ const Banner = () => {
                         </button>
                     </motion.div>
                     <motion.div
-                        variants={fadeIn('up', 0.8)}
+                        variants={fadeIn('up', 0.1)}
                         initial="hidden"
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.7}}
+                        viewport={{once: false, amount: 0.1}}
                         className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers mb-32 z-[10]'>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
@@ -97,7 +97,7 @@ const Banner = () => {
                     </motion.div>
                 </div>
                 <motion.div
-                    variants={fadeIn('down', 0.5)}
+                    variants={fadeIn('down', 0.1)}
                     initial="hidden"
                     whileInView={'show'}
                     className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 '>

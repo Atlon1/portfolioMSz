@@ -110,10 +110,10 @@ const Contact = () => {
         <div className='container mx-auto'>
             <div className=' flex flex-col lg:flex-row'>
                 <motion.div
-                    variants={fadeIn('right', 0.3)}
+                    variants={fadeIn('right', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.3}}
+                    viewport={{once: false, amount: 0.1}}
                     className='flex-1 flex justify-start items-center'>
                     <div>
                         <h4 className='text-xl uppercase text-accent font-medium mb-2 tracking-wide'>{singleWord[0]}</h4>
@@ -123,10 +123,10 @@ const Contact = () => {
                     </div>
                 </motion.div>
                 <motion.form
-                    variants={fadeIn('left', 0.3)}
+                    variants={fadeIn('left', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.3}}
+                    viewport={{once: false, amount: 0.1}}
                     className='flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start'
                     ref={formData as any}
                     onSubmit={handleSendMessage}

@@ -27,10 +27,10 @@ export default function Work() {
         <section className='w-full h-full lg:section py-[10px]' id='work'>
             <div className='container mx-auto'>
                 <motion.div
-                    variants={fadeIn('left', 0.3)}
+                    variants={fadeIn('left', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.3}}
+                    viewport={{once: false, amount: 0.1}}
                     className='flex flex-col gap-x-10'>
                     <div
                         className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>

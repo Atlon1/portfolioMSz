@@ -24,10 +24,10 @@ const About = () => {
             <div className='container mx-auto'>
                 <div className=' flex md:flex-row flex-col'>
                     <motion.div
-                        variants={fadeIn('right', 0.3)}
+                        variants={fadeIn('right', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.3}}
+                        viewport={{once: false, amount: 0.1}}
                         className='flex-1'>
                         <h2 className='h2 text-accent'>{singleWord[0]}</h2>
                         <h3 className='h3 mb-4'>{singleWord[1]}</h3>
@@ -87,10 +87,10 @@ const About = () => {
                         </div>
                     </motion.div>
                     <motion.div
-                        variants={fadeIn('left', 0.3)}
+                        variants={fadeIn('left', 0.1)}
                         initial='hidden'
                         whileInView={'show'}
-                        viewport={{once: false, amount: 0.5}}
+                        viewport={{once: false, amount: 0.1}}
                         className='flex flex-wrap gap-1 md:gap-5 w-2/4 h-4/5 justify-center self-center content-center '>
                         {skillsList.map((skillList)=> {
                             return (
