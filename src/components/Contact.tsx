@@ -82,6 +82,7 @@ const Contact = () => {
         } else {
             setErr({...err, name: null, email: null, text: null})
             setBorderColor('')
+
             await addDoc(usersCollectionRef, {
                 name: form.name,
                 email: form.email,
@@ -89,7 +90,7 @@ const Contact = () => {
             })
             emailjs.sendForm('service_1d5lzg4', 'template_necr00k', formData.current as any, 'WfT1Ydqf0OJBucEf-')
 
-
+            setForm({...form, name: '', email: '', text: ''})
             return setAgree(
                 <div style={
                     {
@@ -137,6 +138,7 @@ const Contact = () => {
                         type='text'
                         placeholder={singleWord[4]}
                         name="name"
+                        value={form.name}
                         style=
                             {
                                 {
@@ -150,6 +152,7 @@ const Contact = () => {
                         className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all'
                         type='text'
                         name="email"
+                        value={form.email}
                         style=
                             {
                                 {
@@ -162,13 +165,15 @@ const Contact = () => {
                         onChange={updateField}
                         className='bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-5'
                         placeholder={singleWord[6]}
+                        name="text"
+                        value={form.text}
                         style=
                             {
                                 {
                                     borderBottom: (!err.text ? "1px solid white" : borderColor)
                                 }
                             }
-                        name="text"
+
                     />
                     <div className='text-red-700 font-secondary flex'>{err.text}</div>
                     <button className='btn btn-lg' type='submit'>{singleWord[3]}</button>

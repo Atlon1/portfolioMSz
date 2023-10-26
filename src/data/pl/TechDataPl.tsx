@@ -426,7 +426,7 @@ export const contactPlMechanic: contactType = {
 
 
     thxText: 'Wiadomość została wysłana!. Dziękuje!',
-    singleWord: ['Get in Touch', 'Zacznijmy prace', 'razem!', 'Wyślij wiadomość!', 'Twoje Dane:', 'Adres emial:', 'Wiadomość'],
+    singleWord: ['Get in Touch', 'Zacznijmy pracę', 'razem!', 'Wyślij wiadomość!', 'Twoje Dane:', 'Adres email:', 'Wiadomość'],
 
 }
 

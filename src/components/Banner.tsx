@@ -21,7 +21,7 @@ const Banner = () => {
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
         <ParticlessConteiner/>
         <div className='container mx-auto z-[10]'>
-            <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12'>
+            <div className='flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12 '>
                 <div className='flex-1 text-center font-secondary lg:text-left'>
                     <motion.h1
                         variants={fadeIn('up', 0.1)}
@@ -57,7 +57,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.1}}
-                        className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-[14px] sm:text-[18px]'>
+                        className='mb-2 sm:mb-8 max-w-lg mx-auto lg:mx-0 text-lg sm:text-[18px]'>
                         {singleWord[3]} <br/>
                         {description}
                     </motion.p>
@@ -100,7 +100,7 @@ const Banner = () => {
                     variants={fadeIn('down', 0.1)}
                     initial="hidden"
                     whileInView={'show'}
-                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px] md:bottom-40 bottom-60 right-20 '>
+                    className='hidden lg:flex flex-1 max-w-[480px] lg:max-w-[650px]'>
                     <img
                         src={img} alt='MaciejSz'/>
                 </motion.div>

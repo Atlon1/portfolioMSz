@@ -30,10 +30,10 @@ const Services = () => {
                 </motion.div>
 
                 <motion.div
-                    variants={fadeIn('left', 0.5)}
+                    variants={fadeIn('left', 0.1)}
                     initial='hidden'
                     whileInView={'show'}
-                    viewport={{once: false, amount: 0.3}}
+                    viewport={{once: false, amount: 0.1}}
                     className='flex-1'>
                     <div>
                         {services.map((services) => {

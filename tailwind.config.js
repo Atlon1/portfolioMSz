@@ -19,6 +19,9 @@ module.exports = {
       xl: '1200px',
     },
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         primary: '#0a0a0a',
         accent: '#43C6AC',

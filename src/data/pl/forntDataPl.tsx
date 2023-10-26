@@ -323,7 +323,7 @@ export const servicesPl: services = {
         {
             id: 1,
             name: 'Projektowanie stron typu slider',
-            description: 'Jestem gotów przygotować dla Państwa spersonalizowaną wizytówkę firmy lub osoby na stronie internetowej. Pozwólcie nam zaistnieć w wirtualnym świecie i zaprezentować się jako profesjonaliści.',
+            description: 'Wykonam Państwa spersonalizowaną wizytówkę firmy lub osoby na stronie internetowej. Pozwólcie nam zaistnieć w wirtualnym świecie i zaprezentować się jako profesjonaliści.',
             link: ""
         },
         {
@@ -335,19 +335,19 @@ export const servicesPl: services = {
         {
             id: 3,
             name: 'Aplikacje edukacyjne',
-            description: 'Jeśli planują Państwo prowadzić kursy online, to śmiało piszcie do nas. Oferujemy niezawodne rozwiązania pozwalające na maksymalizację zysków.',
+            description: 'Zaprojtkuje stornę która będzie prowadzić kursy online. Oferuje niezawodne rozwiązania pozwalające na maksymalizację zysków.',
             link: ""
         },
         {
             id: 4,
             name: 'Aplikacja dla pizzerii',
-            description: 'Zapraszamy do wspólnego projektu, jeśli marzycie o wejściu w świat gastronomii i przyjmowaniu zamówień online poprzez stronę internetową.',
+            description: 'Zapraszam do wspólnego projektu, jeśli marzycie o wejściu w świat gastronomii i przyjmowaniu zamówień online poprzez stronę internetową.',
             link: ""
         },
         {
             id: 5,
             name: 'Spersonalizowana aplikacja',
-            description: 'Jesteśmy gotowi stworzyć dla Państwa spersonalizowany projekt, dostosowany do indywidualnych potrzeb. Wystarczy nam powiedzieć, czego potrzebujecie, a my zrealizujemy Wasze marzenia.',
+            description: 'Jestem gotowy stworzyć dla Państwa spersonalizowany projekt, dostosowany do indywidualnych potrzeb. Wystarczy nam powiedzieć, czego potrzebujecie, a my zrealizujemy Wasze marzenia.',
             link: ""
         },
     ]
@@ -393,7 +393,7 @@ export const contactPl : contactType = {
 
 
     thxText: 'Wiadomość została wysłana!. Dziękuje!',
-    singleWord: ['Get in Touch', 'Zacznijmy prace', 'razem!', 'Wyślij wiadomość!', 'Twoje Dane:', 'Adres emial:', 'Wiadomość'],
+    singleWord: ['Get in Touch', 'Zacznijmy pracę', 'razem!', 'Wyślij wiadomość!', 'Twoje Dane:', 'Adres email:', 'Wiadomość'],
 
 }
 

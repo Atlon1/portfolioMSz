@@ -5,6 +5,8 @@ import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
 import SkillComp from "./About/SkillComp";
 import {Link} from "react-scroll";
+import Rounded from "../assets/rounded-text.png"
+import {HiArrowRight} from 'react-icons/hi';
 import {AboutPl} from '../data/pl/forntDataPl'
 import {AboutEng} from "../data/ang/forntDataEng";
 import {AboutPlMechanic} from "../data/pl/TechDataPl";
@@ -14,7 +16,7 @@ import {AboutEngMechanic} from "../data/ang/TechDataEng";
 const About = () => {
     const {singleWord, description, github, skillsList, count} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? AboutPlMechanic :
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? AboutPl :
-        localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? AboutEngMechanic : AboutEng
+            localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? AboutEngMechanic : AboutEng
     const [ref, inView] = useInView({
         threshold: 0.5,
     })
@@ -31,10 +33,11 @@ const About = () => {
                         className='flex-1'>
                         <h2 className='h2 text-accent'>{singleWord[0]}</h2>
                         <h3 className='h3 mb-4'>{singleWord[1]}</h3>
-                        <p className='mb-6 w-full max-w-[455px]'>
+                        <p className='mb-6 w-full max-w-[455px] text-lg text-center sm:text-left'>
                             {description}
                         </p>
-                        <div className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px] w-full max-w-[455px]'>
+                        <div
+                            className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px] w-full max-w-[455px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
                                     {
@@ -81,8 +84,11 @@ const About = () => {
                                     {singleWord[9]}
                                 </Link>
                             </button>
-                            <a href={github} className='text-gradient2 btn-link'>
-                                {singleWord[10]}
+                            <a href={github}
+                               className='relative w-[185px] h-[185px] flex justify-center items-center'>
+                                <img className='animate-spin-slow w-full h-full max-w-[141px] max-h-[141px]'
+                                    src={Rounded} alt='rounded'/>
+                                <HiArrowRight className='absolute text-4xl hover:translate-x-2 transition-all duration-300'/>
                             </a>
                         </div>
                     </motion.div>
@@ -92,7 +98,7 @@ const About = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.1}}
                         className='flex flex-wrap gap-1 md:gap-5 w-2/4 h-4/5 justify-center self-center content-center '>
-                        {skillsList.map((skillList)=> {
+                        {skillsList.map((skillList) => {
                             return (
                                 <SkillComp
                                     key={skillList.id}
