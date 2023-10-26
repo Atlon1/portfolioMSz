@@ -28,14 +28,16 @@ export type headerType = {
     img: string,
     text: string,
     linkedIn: string,
-    email: string
+    email: string,
+    singleWord: string[]
 };
 
 export const headerEngMechanic: headerType = {
     img: Logo,
     text: "Work with Me!",
     linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
-    email: 'maciej.szasjtek@gmail.com'
+    email: 'maciej.szasjtek@gmail.com',
+    singleWord: ['Programmer', 'Engineer']
 };
 
 export type bannerType = {
@@ -423,7 +425,7 @@ export const contactEngMechnic: contactType = {
     },
 
 
-    thxText: 'The message has been sent!. Thank you!',
+    thxText: 'Your message has been sent. Thank you!',
     singleWord: ['Get in Touch', 'Let\'s start working', 'together!', 'Send a message!', 'Your Data:', 'Email:', 'Message:'],
 
 }

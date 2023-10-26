@@ -4,6 +4,7 @@ import {headerEng} from "../data/ang/forntDataEng";
 import {headerPlMechanic} from "../data/pl/TechDataPl";
 import {headerEngMechanic} from "../data/ang/TechDataEng";
 
+
 const Header = () => {
 
 
@@ -11,6 +12,7 @@ const Header = () => {
     const [tech, setTech] = useState('mechanics')
     const [langActive, setLangActive] = useState(false)
     const [profActive, setProfileActive] = useState(false)
+    const [setCheacked, setChecked] = useState(false)
 
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
@@ -90,7 +92,7 @@ const Header = () => {
     }
 
 
-    const {img, text, linkedIn, email} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
+    const {img, text, linkedIn, email, singleWord} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
         lang === 'pl' && tech === 'front' ? headerPL :
         lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
 
@@ -110,9 +112,9 @@ const Header = () => {
                     <button className={langActive ? 'btn btn-sm' : ''} onClick={handleSwitchENG}>ENG</button>
                 </div>
                 <div className='flex items-center gap-x-4'>
-                    <button className={profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechFront}>Programista
+                    <button className={profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechFront}>{singleWord[0]}
                     </button>
-                    <button className={!profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechMech}>Technolog
+                    <button className={!profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechMech}>{singleWord[1]}
                     </button>
                 </div>
             </div>

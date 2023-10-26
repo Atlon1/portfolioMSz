@@ -13,13 +13,15 @@ export type headerType = {
     text: string,
     linkedIn: string,
     email: string
+    singleWord: string[]
 }
 
 export const headerPL: headerType = {
     img: Logo,
     text: "Pracuj ze mną!",
     linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
-    email: 'maciej.szasjtek@gmail.com'
+    email: 'maciej.szasjtek@gmail.com',
+    singleWord: ['Programista', 'Technolog']
 }
 
 export type bannerType = {
@@ -39,7 +41,7 @@ export const bannerPl: bannerType = {
         'Zaczęłem od front-endu, który ' +
         'uważam za łatwy i satysfakcjonujący' +
         ' do nauki. Poniżej znajdziesz informacje o moich umiejętnościach jako programisty.' +
-        ' Ukończyłem kurs z front-endu w CodersLab, następnie zanurzyłem się w świecie Node.js.' +
+        ' Ukończyłem kurs z front-endu w CodersLab, następnie zanurzyłem się w świecie Node.js. ' +
         'Aktualnie, pracuję nad poszerzeniem swojej wiedzy o język C#, co jest swoistym hobby, ' +
         'ponieważ wszystkie te zajęcia odbywają się po godzinach pracy. Poniżej przedstawiam zakres ' +
         'mojej obecnej wiedzy technicznej. Nieustannie uczę się nowych funkcjonalności oraz sposobów ' +

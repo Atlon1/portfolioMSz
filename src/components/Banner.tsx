@@ -29,7 +29,7 @@ const Banner = () => {
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
                         className='hidden sm:block text-[35px] sm:text-[55px] font-bold leading-[0.8] lg:text-[60px] mb-6'>
-                        {singleWord[0]}<span>{singleWord[1]}</span>
+                        {singleWord[0]} <span>{singleWord[1]}</span>
                     </motion.h1>
                     <motion.div
                         variants={fadeIn('up', 0.4)}
@@ -66,7 +66,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex max-m-max gap-x-6 items-center mb-6 mx-auto lg:mx-0 md:justify-center lg:justify-start justify-center'>
+                        className='flex max-m-max gap-x-6 items-center mb-6 mx-auto lg:mx-0 md:justify-center lg:justify-start justify-center z-[10]'>
                         <button className='btn btn-lg'>
                             <Link to="contact"
                                   activeClass='active'
@@ -81,7 +81,7 @@ const Banner = () => {
                         initial="hidden"
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.7}}
-                        className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers mb-32'>
+                        className='flex text-[40px] gap-x-4 max-w-max mx-auto lg:mx-0 justify-centers mb-32 z-[10]'>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
                             <a href={link}>
