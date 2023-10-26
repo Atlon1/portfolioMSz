@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .btn {
+    transition: 2s ease;
     background: linear-gradient(
             92.23deg,
             #43C6AC 21.43%,
@@ -14,6 +15,7 @@
 }
 
 .btn:hover {
+
     background: linear-gradient(
             92.23deg,
             #191654 21.43%,
@@ -47,12 +49,6 @@
 }
 
 
-
-.animation_BG {
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-}
-
 @layer base {
     body {
         @apply font-secondary text-lg leading-8 text-white;
@@ -83,10 +79,10 @@
     }
 
     .text-gradient {
-        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#191654] to-[#43C6AC] font-bold font-primary hover:from-[#43C6AC] hover:to-[#191654];
+        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#43C6AC] to-[#43C6AC] font-bold font-primary hover:from-[#43C6AC] transition-all duration-500 hover:to-[#191654];
     }
     .text-gradient2 {
-        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#43C6AC] to-[#191654] font-bold font-primary hover:from-[#191654] hover:to-[#43C6AC];
+        @apply bg-gradient-to-r text-transparent bg-clip-text from-[#43C6AC] to-[#43C6AC] font-bold font-primary hover:from-[#191654] transition-all duration-500 hover:to-[#43C6AC];
     }
     .section {
         @apply py-8 lg:py-24 xl:h-screen flex items-center;

@@ -6,6 +6,7 @@ import {IoCloseOutline} from 'react-icons/io5';
 import WorkModal from "./WorkModal";
 
 
+
 Modal.setAppElement('#root');
 
 const modalStyles = {
