@@ -21,8 +21,6 @@ export default function Work() {
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? workDescription :
         localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? workDescriptionEngMechanic : workDescriptionEng
 
-
-
     return (
         <section className='w-full h-full lg:section py-[10px]' id='work'>
             <div className='container mx-auto'>
