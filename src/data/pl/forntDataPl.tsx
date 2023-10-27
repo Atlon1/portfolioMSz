@@ -47,7 +47,7 @@ export const bannerPl: bannerType = {
         'mojej obecnej wiedzy technicznej. Nieustannie uczę się nowych funkcjonalności oraz sposobów ' +
         'tworzenia czystego i wydajnego kodu.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
+    cv: 'https://drive.google.com/file/d/10pLT9nkMXhJoR3iGlPWwoUVe2ESNfcqG/view?usp=drive_link',
     img: Image,
 }
 

@@ -38,7 +38,7 @@ export const bannerEng: bannerType = {
     typed: ['Frontend Developer', 'Ui/Ux Designer', 'Engineer'],
     description: 'I started learning front-end development in December 2021 by participating in a course organized by Coders Lab. I chose JavaScript as my primary language, believing it to be the most accessible and offering immense possibilities. Below are my first web applications, and I plan to create more over time. I work as a technologist on a daily basis, and in my current job, I have recognized the benefits of programming, such as automating routine tasks and reducing errors. This inspired me to learn front-end development, and my tremendous enthusiasm for work motivates me to further develop in this field.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
+    cv: 'https://drive.google.com/file/d/1eOMnP_FquNAHwXUsvSAx6rwXBMiUaLgW/view?usp=drive_link',
     img: Image,
     count: [2,8,10]
 };
