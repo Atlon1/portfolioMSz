@@ -100,11 +100,11 @@ const Header = () => {
     return <header className='py-2 z-[20] border-b border-white/20'>
         <div className='container mx-auto flex flex-col gap-y-4'>
             <div className='flex justify-between items-center '>
-                <a href={email}>
+                <a href={linkedIn}>
                     <img className='max-w-[250px] w-full' src={img} alt='Logo'/>
                 </a>
 
-                <button className='btn btn-sm'><a href={linkedIn}>{text}</a></button>
+                <button className='btn btn-sm'><a href={email}>{text}</a></button>
             </div>
             <div className='flex sm:justify-between  gap-y-2 flex-col sm:flex-row items-center justify-center'>
                 <div className='flex items-center gap-x-4'>
