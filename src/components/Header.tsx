@@ -10,9 +10,8 @@ const Header = () => {
 
     const [lang, setLang] = useState('pl')
     const [tech, setTech] = useState('mechanics')
-    const [langActive, setLangActive] = useState(false)
-    const [profActive, setProfileActive] = useState(false)
-    const [setCheacked, setChecked] = useState(false)
+
+
 
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
@@ -37,11 +36,9 @@ const Header = () => {
         if (localStorage.getItem('lang') === 'eng' && localStorage.getItem('active') === "false") {
             html.classList.add('eng')
             setLang('eng')
-            setLangActive(true)
         } else {
             html.classList.remove('eng')
             setLang('pl')
-            setLangActive(false)
         }
     }, [lang])
 
@@ -49,50 +46,26 @@ const Header = () => {
     useEffect(() => {
         if (localStorage.getItem('tech') === "front" && localStorage.getItem('techActive') === "false") {
             setTech('front')
-            setProfileActive(true)
         } else {
             setTech('mechanics')
-            setProfileActive(false)
         }
     }, [tech]);
 
-    const handleSwitchENG = () => {
-        if (localStorage.getItem('lang') === 'pl') {
-            setLang('eng');
-            localStorage.setItem('lang', 'eng')
-        }
-        window.location.reload();
-        setLangActive(!langActive)
-    }
-    const handleSwitchPL = () => {
-        if (localStorage.getItem('lang') === 'eng') {
-            setLang('pl');
-            localStorage.setItem('lang', 'pl')
-        }
-        window.location.reload();
-        setLangActive(!langActive)
+
+    const onChangeLang = (e: {target: {value: string}}) => {
+        setLang(e.target.value)
+        localStorage.setItem('lang', e.target.value)
+        window.location.reload()
     }
 
-    const handleSwitchTechFront = () => {
-        if (localStorage.getItem('tech') === 'mechanics') {
-            setTech('front');
-            localStorage.setItem('tech', 'front')
-        }
-        window.location.reload();
-        setProfileActive(!profActive)
-    }
-
-    const handleSwitchTechMech = () => {
-        if (localStorage.getItem('tech') === 'front') {
-            setTech('mechanics');
-            localStorage.setItem('tech', 'mechanics')
-        }
-        window.location.reload();
-        setProfileActive(!profActive)
+    const onChangeTech = (e: {target: {value: string}}) => {
+        setTech(e.target.value)
+        localStorage.setItem('tech', e.target.value)
+        window.location.reload()
     }
 
 
-    const {img, text, linkedIn, email, singleWord} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
+    const {img, text, linkedIn, email } = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
         lang === 'pl' && tech === 'front' ? headerPL :
         lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
 
@@ -107,16 +80,28 @@ const Header = () => {
                 <button className='btn btn-sm'><a href={email}>{text}</a></button>
             </div>
             <div className='flex sm:justify-between  gap-y-2 flex-col sm:flex-row items-center justify-center'>
-                <div className='flex items-center gap-x-4'>
-                    <button className={!langActive ? 'btn btn-sm' : ''} onClick={handleSwitchPL}>PL</button>
-                    <button className={langActive ? 'btn btn-sm' : ''} onClick={handleSwitchENG}>ENG</button>
-                </div>
-                <div className='flex items-center gap-x-4'>
-                    <button className={profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechFront}>{singleWord[0]}
-                    </button>
-                    <button className={!profActive ? 'btn btn-sm' : ''} onClick={handleSwitchTechMech}>{singleWord[1]}
-                    </button>
-                </div>
+                <select
+                    onChange={onChangeLang}
+                    value={lang}
+                    className='btn btn-sm'>
+                    <option
+                        className='text-black rounded-2xl'
+                        value='pl'> PL</option>
+                    <option
+                        className='text-black'
+                        value='eng'>ENG</option>
+                </select>
+                <select className='btn btn-sm'
+                        onChange={onChangeTech}
+                        value={tech}
+                >
+                    <option
+                        className='text-black rounded-2xl'
+                        value='mechanics'>Mechanics</option>
+                    <option
+                        className='text-black'
+                        value='front'>Front</option>
+                </select>
             </div>
         </div>
     </header>;
