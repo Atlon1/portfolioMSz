@@ -65,7 +65,7 @@ const Header = () => {
     }
 
 
-    const {img, text, linkedIn, email } = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
+    const {img, text, linkedIn, email, singleWord} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
         lang === 'pl' && tech === 'front' ? headerPL :
         lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
 
@@ -97,10 +97,10 @@ const Header = () => {
                 >
                     <option
                         className='text-black rounded-2xl'
-                        value='mechanics'>Mechanics</option>
+                        value='mechanics'>{singleWord[1]}</option>
                     <option
                         className='text-black'
-                        value='front'>Front</option>
+                        value='front'>{singleWord[0]}</option>
                 </select>
             </div>
         </div>
