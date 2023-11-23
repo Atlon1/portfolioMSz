@@ -37,10 +37,10 @@ const WorkCont = ({data}: { data: WorkContProps | WorkContPropsEng }) => {
                 className='group relative max-w-[600px] max-h-80 lg:h-[350px] h-[250px] bg-black overflow-hidden border-2 border-white/50 rounded-2xl cursor-pointer'>
                 <div className='group-hover:bg-black/50 w-full h-full absolute transition-all duration-300 z-[1]'/>
                 <img className='group-hover:scale-125 transition-all duration-500 bg-contain' src={img} alt={title}/>
-                <div className='absolute -bottom-full bg-black p-2 border-2 border-white/50 left-12 xl:group-hover:bottom-24 md:group-hover:bottom-40 group-hover:bottom-24 transition-all duration-500 z-[1]'>
+                <div className='absolute -bottom-full bg-black p-2 border-2 border-white/50 left-12 xl:group-hover:bottom-24 group-hover:bottom-40 transition-all duration-500 z-[1]'>
                     <span className='text-gradient'>{project}</span>
                 </div>
-                <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-[1]'>
+                <div className='absolute -bottom-full left-12 group-hover:bottom-8 xl:group-hover:bottom-12 transition-all duration-700 z-[1]'>
                     <span className='text-3xl text-white'>{title}</span>
                 </div>
             </div>

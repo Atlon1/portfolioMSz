@@ -42,7 +42,7 @@ const WorkModal = ({data: {img, text, description1, description2, technology, au
             viewport={{once: false, amount: 0.1}}
             className='flex flex-col overflow-hidden'>
             <div className='md:flex flex-1 max-w-[320px] lg:max-w-[482px] lg:max-h-[350px] mx-auto pb-6'>
-                <img className='rounded-bl-[40px] rounded-tr-[40px]' src={img}/>
+                <img className='rounded-bl-[40px] rounded-tr-[40px]' src={img} alt='work'/>
             </div>
             <span className='border border-white/50 w-full'/>
             <div className='my-1'>
