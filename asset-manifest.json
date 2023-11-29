@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolioMSz/static/css/main.03dc707d.css",
-    "main.js": "/portfolioMSz/static/js/main.80baccbc.js",
+    "main.js": "/portfolioMSz/static/js/main.d78c51d2.js",
     "static/media/Praca_w nocy.gif": "/portfolioMSz/static/media/Praca_w nocy.8519668d5f27bddf1ae1.gif",
     "static/media/BM.gif": "/portfolioMSz/static/media/BM.d1c3ca6ce14594393f55.gif",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
@@ -9,7 +9,6 @@
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
     "static/media/Autocad-Logo.png": "/portfolioMSz/static/media/Autocad-Logo.25fc1e8021b9ba5ffda9.png",
     "static/media/services.png": "/portfolioMSz/static/media/services.8e66d4fbbd95de45b8db.png",
-    "static/media/Lukasz-portfolio.jpg": "/portfolioMSz/static/media/Lukasz-portfolio.80109ff8a08df07eb82b.jpg",
     "static/media/Estate-website.jpg": "/portfolioMSz/static/media/Estate-website.223ca3f1ae636c6ab0f7.jpg",
     "static/media/Oddaj_rzeczy.jpg": "/portfolioMSz/static/media/Oddaj_rzeczy.5dcf20c2e39f7feee069.jpg",
     "static/media/Wiertło_Atorn.jpg": "/portfolioMSz/static/media/Wiertło_Atorn.30e1d779272b3df05b1c.jpg",
@@ -33,10 +32,10 @@
     "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
     "main.03dc707d.css.map": "/portfolioMSz/static/css/main.03dc707d.css.map",
-    "main.80baccbc.js.map": "/portfolioMSz/static/js/main.80baccbc.js.map"
+    "main.d78c51d2.js.map": "/portfolioMSz/static/js/main.d78c51d2.js.map"
   },
   "entrypoints": [
     "static/css/main.03dc707d.css",
-    "static/js/main.80baccbc.js"
+    "static/js/main.d78c51d2.js"
   ]
 }
