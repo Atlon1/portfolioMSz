@@ -227,7 +227,8 @@ export const workContModalMechanic: WorkContProps[] = [
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: '',
-            link: "https://docs.google.com/spreadsheets/d/1hxYMN_D3L07l3jaB7c0TfRIWo20Gv7GT/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            link: "",
+            // link: "https://docs.google.com/spreadsheets/d/1hxYMN_D3L07l3jaB7c0TfRIWo20Gv7GT/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
             img: Layout
         },
     },
@@ -244,7 +245,8 @@ export const workContModalMechanic: WorkContProps[] = [
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: '',
-            link: "https://drive.google.com/file/d/1eVKmVQxUPL5zGyfLWt3uB-OpzAxoGRbS/view?usp=drive_link",
+            link: "",
+            // link: "https://drive.google.com/file/d/1eVKmVQxUPL5zGyfLWt3uB-OpzAxoGRbS/view?usp=drive_link",
             img: Wiert2
         },
     },
@@ -261,7 +263,8 @@ export const workContModalMechanic: WorkContProps[] = [
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: '',
-            link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            link: "",
+            // link: "https://docs.google.com/document/d/1v9mfu8JEpAxDnm5dBDthPN3YFefeuInA/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
             img: Machine5X
         },
     },
@@ -278,7 +281,8 @@ export const workContModalMechanic: WorkContProps[] = [
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: '',
-            link: "https://docs.google.com/presentation/d/1ENdOObc5tb8797X0l23hFPKY_iszn6W8/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
+            link: "",
+            // link: "https://docs.google.com/presentation/d/1ENdOObc5tb8797X0l23hFPKY_iszn6W8/edit?usp=drive_link&ouid=108326513820685031819&rtpof=true&sd=true",
             img: NightOrder
         },
     },

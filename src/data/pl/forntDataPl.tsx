@@ -197,23 +197,23 @@ export type WorkContProps = {
 }
 
 export const workContModal: WorkContProps[] = [
-    {
-        id: 6,
-        img: WorkImg6,
-        title: 'Lukasz portfolio - Projekt',
-        project: 'Portfolio projekt',
-        description: {
-            text: 'Portfolio',
-            description1: 'Technologie:',
-            description2: 'Witajcie na moim portfolio! Jestem, technologiem i programistą CNC z pasją do precyzyjnego inżynieringu. Moje umiejętności obejmują specjalizację w kodzie G, oprogramowaniu CAM i obsłudze maszyn CNC. Przedstawiam tutaj swoje doświadczenie w różnorodnych projektach, od komponentów lotniczych po innowacyjne rozwiązania narzędziowe. Zapraszam do eksploracji mojego portfolio, aby zobaczyć precyzję i innowacyjność, które wnoszę do każdego projektu. Śledźcie mojego bloga, aby być na bieżąco z trendami branżowymi, i śmiało kontaktujcie się w sprawie potencjalnych współprac w dynamicznym świecie technologii CNC.',
-            technology: ['React scroll', 'React Switch', 'React-Router', 'Motion div', 'UseParams', 'TransformedAnimation'],
-            autor: 'Autor:',
-            name: 'Maciej Szajstek - solo',
-            note: 'Portfolio Live Demo',
-            link: "https://atlon1.github.io/lukaszL-portfolio/",
-            img: WorkImg6
-        },
-    },
+    // {
+    //     id: 6,
+    //     img: WorkImg6,
+    //     title: 'Lukasz portfolio - Projekt',
+    //     project: 'Portfolio projekt',
+    //     description: {
+    //         text: 'Portfolio',
+    //         description1: 'Technologie:',
+    //         description2: 'Witajcie na moim portfolio! Jestem, technologiem i programistą CNC z pasją do precyzyjnego inżynieringu. Moje umiejętności obejmują specjalizację w kodzie G, oprogramowaniu CAM i obsłudze maszyn CNC. Przedstawiam tutaj swoje doświadczenie w różnorodnych projektach, od komponentów lotniczych po innowacyjne rozwiązania narzędziowe. Zapraszam do eksploracji mojego portfolio, aby zobaczyć precyzję i innowacyjność, które wnoszę do każdego projektu. Śledźcie mojego bloga, aby być na bieżąco z trendami branżowymi, i śmiało kontaktujcie się w sprawie potencjalnych współprac w dynamicznym świecie technologii CNC.',
+    //         technology: ['React scroll', 'React Switch', 'React-Router', 'Motion div', 'UseParams', 'TransformedAnimation'],
+    //         autor: 'Autor:',
+    //         name: 'Maciej Szajstek - solo',
+    //         note: 'Portfolio Live Demo',
+    //         link: "https://atlon1.github.io/lukaszL-portfolio/",
+    //         img: WorkImg6
+    //     },
+    // },
     {
         id: 1,
         img: WorkImg1,
