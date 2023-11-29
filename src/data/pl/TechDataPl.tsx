@@ -37,7 +37,7 @@ export const headerPlMechanic: headerType = {
     img: Logo,
     text: "Pracuj ze mną!",
     linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
-    email: 'maciej.szasjtek@gmail.com',
+    email: 'mailto:maciej.szasjtek@gmail.com',
     singleWord: ['Programista', 'Technolog']
 }
 

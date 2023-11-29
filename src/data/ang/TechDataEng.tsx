@@ -36,7 +36,7 @@ export const headerEngMechanic: headerType = {
     img: Logo,
     text: "Work with Me!",
     linkedIn: 'https://www.linkedin.com/in/maciej-szajstek-8995b4175/',
-    email: 'maciej.szasjtek@gmail.com',
+    email: 'mailto:maciej.szasjtek@gmail.com',
     singleWord: ['Programmer', 'Engineer']
 };
 
