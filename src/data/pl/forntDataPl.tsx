@@ -7,6 +7,11 @@ import WorkImg6 from "../../assets/Lukasz-portfolio.jpg";
 import Logo from '../../assets/Maciej_logo.png'
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarSFill, RiStarSLine} from "react-icons/ri";
+import SiiDyp from '../../assets/Certificate/Sii_Dyplom.jpg';
+import SiiExam from '../../assets/Certificate/Sii_Exam.jpg';
+import CLDyp from '../../assets/Certificate/CL_Dyplom.jpg';
+import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
+import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
 
 
 
@@ -33,7 +38,8 @@ export type bannerType = {
     link: string,
     cv: string,
     img: string,
-
+    count: number[],
+    certificate: string[]
 }
 
 export const bannerPl: bannerType = {
@@ -51,6 +57,8 @@ export const bannerPl: bannerType = {
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/10pLT9nkMXhJoR3iGlPWwoUVe2ESNfcqG/view?usp=drive_link',
     img: Image,
+    count: [2, 8, 10],
+    certificate: [SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2]
 }
 
 type skillType = {

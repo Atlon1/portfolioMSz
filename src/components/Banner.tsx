@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from 'react';
+import React, {useState} from 'react';
 import {FaGithub} from 'react-icons/fa'
 import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
@@ -10,35 +10,17 @@ import {bannerPl} from '../data/pl/forntDataPl'
 import {bannerEng} from "../data/ang/forntDataEng";
 import {bannerPlMechanic} from "../data/pl/TechDataPl";
 import {bannerEngMechanic} from "../data/ang/TechDataEng";
-import ImageViewer from 'react-simple-image-viewer';
-import SiiDyp from '../assets/Certificate/Sii_Dyplom.jpg';
-import SiiExam from '../assets/Certificate/Sii_Exam.jpg';
-import CLDyp from '../assets/Certificate/CL_Dyplom.jpg';
-import CLSup1 from '../assets/Certificate/CL_Sup1.jpg';
-import CLSup2 from '../assets/Certificate/CL_Sup2.jpg';
-
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const Banner = () => {
-    const {singleWord, typed, description, link, cv, img} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? bannerPlMechanic :
+
+
+    const {singleWord, typed, description, link, cv, img, certificate} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? bannerPlMechanic :
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? bannerPl :
             localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
 
-    const [currentImage, setCurrentImage] = useState(0);
-    const [isViewerOpen, setIsViewerOpen] = useState(false);
-
-    const images = [
-        SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2
-    ]
-
-    const openImageViewer = useCallback((index: number) => {
-        setCurrentImage(index);
-        setIsViewerOpen(true);
-    }, [])
-
-    const closeImageViewer = () => {
-        setCurrentImage(0);
-        setIsViewerOpen(false);
-    }
+    const [open, setOpen] = useState(false);
 
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
@@ -98,13 +80,51 @@ const Banner = () => {
                                 {singleWord[4]}
                             </Link>
                         </button>
-                        {singleWord[5] &&(
+                        {singleWord[5] && (
                             <button
-                                onClick={() => openImageViewer(0)}
-                                className='btn btn-lg'>
+                                className='btn btn-lg'
+                                type='button'
+                                onClick={() => setOpen(true)}>
                                 {singleWord[5]}
                             </button>
                         )}
+                        <Lightbox
+                            open={open}
+                            close={() => setOpen(false)}
+                            slides={[
+                                {
+                                    src: certificate[0],
+                                    alt: 'Slide 1',
+                                    width: 1200,
+                                    height: 800,
+                                },
+                                {
+                                    src: certificate[1],
+                                    alt: 'Slide 2',
+                                    width: 1200,
+                                    height: 800,
+                                },
+                                {
+                                    src: certificate[2],
+                                    alt: 'Slide 3',
+                                    width: 1200,
+                                    height: 800,
+                                },
+                                {
+                                    src: certificate[3],
+                                    alt: 'Slide 4',
+                                    width: 1200,
+                                    height: 800,
+                                },
+                                {
+                                    src: certificate[4],
+                                    alt: 'Slide 5',
+                                    width: 1200,
+                                    height: 800,
+                                }
+                            ]}
+
+                        />
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.1)}
@@ -136,17 +156,6 @@ const Banner = () => {
                 </motion.div>
             </div>
         </div>
-            {isViewerOpen && (
-                <div className='z-[30] fixed overflow-y-hidden'>
-                <ImageViewer
-                    src={images}
-                    currentIndex={currentImage}
-                    disableScroll={false}
-                    closeOnClickOutside={true}
-                    onClose={closeImageViewer}
-                />
-                </div>
-            )}
     </section>;
 };
 

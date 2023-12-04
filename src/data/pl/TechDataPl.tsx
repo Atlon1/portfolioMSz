@@ -47,7 +47,8 @@ export type bannerType = {
     description: string,
     link: string,
     cv: string,
-    img: string
+    img: string,
+    certificate: string[]
 }
 
 export const bannerPlMechanic: bannerType = {
@@ -62,7 +63,8 @@ export const bannerPlMechanic: bannerType = {
         'który ma na celu dostarczenie operatorom na niższym szczeblu wiedzy podstawowej.',
     link: 'https://github.com/Atlon1',
     cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
-    img: Image
+    img: Image,
+    certificate: []
 }
 
 type skillType = {
