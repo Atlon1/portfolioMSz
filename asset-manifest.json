@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioMSz/static/css/main.f5c08806.css",
-    "main.js": "/portfolioMSz/static/js/main.431ed42a.js",
+    "main.css": "/portfolioMSz/static/css/main.f1b789fc.css",
+    "main.js": "/portfolioMSz/static/js/main.46bd1be0.js",
     "static/media/Praca_w nocy.gif": "/portfolioMSz/static/media/Praca_w nocy.8519668d5f27bddf1ae1.gif",
     "static/media/BM.gif": "/portfolioMSz/static/media/BM.d1c3ca6ce14594393f55.gif",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
@@ -36,11 +36,11 @@
     "static/media/hypercad-s-electrode.webp": "/portfolioMSz/static/media/hypercad-s-electrode.6fabbeb9b564bac03718.webp",
     "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
-    "main.f5c08806.css.map": "/portfolioMSz/static/css/main.f5c08806.css.map",
-    "main.431ed42a.js.map": "/portfolioMSz/static/js/main.431ed42a.js.map"
+    "main.f1b789fc.css.map": "/portfolioMSz/static/css/main.f1b789fc.css.map",
+    "main.46bd1be0.js.map": "/portfolioMSz/static/js/main.46bd1be0.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5c08806.css",
-    "static/js/main.431ed42a.js"
+    "static/css/main.f1b789fc.css",
+    "static/js/main.46bd1be0.js"
   ]
 }
