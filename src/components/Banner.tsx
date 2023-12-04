@@ -12,6 +12,8 @@ import {bannerPlMechanic} from "../data/pl/TechDataPl";
 import {bannerEngMechanic} from "../data/ang/TechDataEng";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 const Banner = () => {
 
@@ -91,6 +93,7 @@ const Banner = () => {
                         <Lightbox
                             open={open}
                             close={() => setOpen(false)}
+                            plugins={[Thumbnails]}
                             slides={[
                                 {
                                     src: certificate[0],
