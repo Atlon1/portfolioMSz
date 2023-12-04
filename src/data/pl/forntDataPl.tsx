@@ -37,7 +37,7 @@ export type bannerType = {
 }
 
 export const bannerPl: bannerType = {
-    singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt'],
+    singleWord: ['Maciej', 'Szajstek', 'Jestem:', 'Cześć!', 'Kontakt', 'Certyfikaty'],
     typed: ['Frontend Developerem', 'Projektantem Ui/Ux', 'Inżynierem'],
     description: 'Swoją przygodę z programowaniem rozpocząłem w grudniu 2021 roku. ' +
         'Zaczęłem od front-endu, który ' +
