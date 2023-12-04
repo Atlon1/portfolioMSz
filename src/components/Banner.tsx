@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from "react-modal";
 import {FaGithub} from 'react-icons/fa'
 import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
@@ -10,12 +11,31 @@ import {bannerPl} from '../data/pl/forntDataPl'
 import {bannerEng} from "../data/ang/forntDataEng";
 import {bannerPlMechanic} from "../data/pl/TechDataPl";
 import {bannerEngMechanic} from "../data/ang/TechDataEng";
+import {IoCloseOutline} from "react-icons/io5";
+import Certyficate from "./ImageViewer/Certyficate";
+
+const modalStyles = {
+    overlay: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        zIndex: '30'
+    },
+}
 
 const Banner = () => {
-
     const {singleWord, typed, description, link, cv, img} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? bannerPlMechanic :
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? bannerPl :
-        localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
+            localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
+
+
+    const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+    const openModal = () => {
+        setModalIsOpen(true);
+    }
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+    }
 
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
@@ -75,6 +95,12 @@ const Banner = () => {
                                 {singleWord[4]}
                             </Link>
                         </button>
+                        <button
+                            onClick={openModal}
+                            className='btn btn-lg'>
+                            Certyfikaty
+
+                        </button>
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.1)}
@@ -106,6 +132,24 @@ const Banner = () => {
                 </motion.div>
             </div>
         </div>
+        {modalIsOpen && (
+            <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            style={modalStyles}
+            contentLabel='certifficates'
+            className='bg-white w-full h-full lg:max-w-[950px] lg:max-h-[950px] lg:rounded-[30px] lg:fixed lg:top-[50%] lg:left-[50%]
+                    lg:translate-x-[-50%] lg:translate-y-[-50%] outline-none bg-modal bg-cover bg-no-repeat overflow-auto  lg:p-12 p-4'
+            >
+                <div
+                    onClick={closeModal}
+                    className='absolute right-2 top-2 hover:scale-110 duration-200 cursor-pointer text-white'>
+                    <IoCloseOutline className='text-4xl' />
+                </div>
+                <Certyficate/>
+
+            </Modal>
+        )}
     </section>;
 };
 
