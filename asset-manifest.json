@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolioMSz/static/css/main.03dc707d.css",
-    "main.js": "/portfolioMSz/static/js/main.e69eb394.js",
+    "main.css": "/portfolioMSz/static/css/main.f5c08806.css",
+    "main.js": "/portfolioMSz/static/js/main.431ed42a.js",
     "static/media/Praca_w nocy.gif": "/portfolioMSz/static/media/Praca_w nocy.8519668d5f27bddf1ae1.gif",
     "static/media/BM.gif": "/portfolioMSz/static/media/BM.d1c3ca6ce14594393f55.gif",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
@@ -18,7 +18,12 @@
     "static/media/Sap-automatyzacja2.png": "/portfolioMSz/static/media/Sap-automatyzacja2.7a04f1ada756fa6d75e6.png",
     "static/media/Elastomer.webp": "/portfolioMSz/static/media/Elastomer.a4e3dc9f4a32ec38930d.webp",
     "static/media/Photoland.jpg": "/portfolioMSz/static/media/Photoland.0fc538f5045200bb61cb.jpg",
+    "static/media/CL_Dyplom.jpg": "/portfolioMSz/static/media/CL_Dyplom.8d61888b172da6be9d2f.jpg",
+    "static/media/Sii_Dyplom.jpg": "/portfolioMSz/static/media/Sii_Dyplom.9cead521f80931f02e1e.jpg",
+    "static/media/Sii_Exam.jpg": "/portfolioMSz/static/media/Sii_Exam.b28f0c4fc153ea4f5584.jpg",
     "static/media/production-planning-b.jpg": "/portfolioMSz/static/media/production-planning-b.27e2acc673c44ca14ae7.jpg",
+    "static/media/CL_Sup1.jpg": "/portfolioMSz/static/media/CL_Sup1.2e6e45c602879701242a.jpg",
+    "static/media/CL_Sup2.jpg": "/portfolioMSz/static/media/CL_Sup2.dd01bbe498203dcff919.jpg",
     "static/media/Sap-automatyzacja.png": "/portfolioMSz/static/media/Sap-automatyzacja.6d588188097565ebc64c.png",
     "static/media/TM_Vending.jpg": "/portfolioMSz/static/media/TM_Vending.d0687441755aee6896c5.jpg",
     "static/media/Excel.png": "/portfolioMSz/static/media/Excel.1c7c304458ea6e93c73d.png",
@@ -31,11 +36,11 @@
     "static/media/hypercad-s-electrode.webp": "/portfolioMSz/static/media/hypercad-s-electrode.6fabbeb9b564bac03718.webp",
     "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
-    "main.03dc707d.css.map": "/portfolioMSz/static/css/main.03dc707d.css.map",
-    "main.e69eb394.js.map": "/portfolioMSz/static/js/main.e69eb394.js.map"
+    "main.f5c08806.css.map": "/portfolioMSz/static/css/main.f5c08806.css.map",
+    "main.431ed42a.js.map": "/portfolioMSz/static/js/main.431ed42a.js.map"
   },
   "entrypoints": [
-    "static/css/main.03dc707d.css",
-    "static/js/main.e69eb394.js"
+    "static/css/main.f5c08806.css",
+    "static/js/main.431ed42a.js"
   ]
 }
