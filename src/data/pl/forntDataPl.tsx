@@ -12,6 +12,7 @@ import SiiExam from '../../assets/Certificate/Sii_Exam.jpg';
 import CLDyp from '../../assets/Certificate/CL_Dyplom.jpg';
 import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
 import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
+import CvPL from '../../assets/Cv/CV_pl.jpg'
 
 
 
@@ -39,7 +40,7 @@ export type bannerType = {
     cv: string,
     img: string,
     count: number[],
-    certificate: string[]
+    certificate: string[],
 }
 
 export const bannerPl: bannerType = {
@@ -55,10 +56,11 @@ export const bannerPl: bannerType = {
         'mojej obecnej wiedzy technicznej. Nieustannie uczę się nowych funkcjonalności oraz sposobów ' +
         'tworzenia czystego i wydajnego kodu.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/10pLT9nkMXhJoR3iGlPWwoUVe2ESNfcqG/view?usp=drive_link',
+    cv: CvPL,
     img: Image,
     count: [2, 8, 10],
     certificate: [SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2]
+
 }
 
 type skillType = {

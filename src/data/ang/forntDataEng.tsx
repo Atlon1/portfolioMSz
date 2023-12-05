@@ -12,6 +12,7 @@ import SiiExam from '../../assets/Certificate/Sii_Exam.jpg';
 import CLDyp from '../../assets/Certificate/CL_Dyplom.jpg';
 import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
 import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
+import CvEng from '../../assets/Cv/CV_Eng.jpg';
 
 export type headerType = {
     img: string,
@@ -41,11 +42,11 @@ export type bannerType = {
 };
 
 export const bannerEng: bannerType = {
-    singleWord: ['Maciej', 'Szajstek', 'I am:', 'Hello!', 'Contact'],
+    singleWord: ['Maciej', 'Szajstek', 'I am:', 'Hello!', 'Contact',"Certificates"],
     typed: ['Frontend Developer', 'Ui/Ux Designer', 'Engineer'],
     description: 'I started learning front-end development in December 2021 by participating in a course organized by Coders Lab. I chose JavaScript as my primary language, believing it to be the most accessible and offering immense possibilities. Below are my first web applications, and I plan to create more over time. I work as a technologist on a daily basis, and in my current job, I have recognized the benefits of programming, such as automating routine tasks and reducing errors. This inspired me to learn front-end development, and my tremendous enthusiasm for work motivates me to further develop in this field.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/1eOMnP_FquNAHwXUsvSAx6rwXBMiUaLgW/view?usp=drive_link',
+    cv: CvEng,
     img: Image,
     count: [2, 8, 10],
     certificate: [SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2]

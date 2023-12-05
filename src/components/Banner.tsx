@@ -14,6 +14,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
+import Download from "yet-another-react-lightbox/plugins/download";
 
 const Banner = () => {
 
@@ -23,6 +24,7 @@ const Banner = () => {
             localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
 
     const [open, setOpen] = useState(false);
+    const [open2, setOpen2] = useState(false);
 
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
@@ -143,9 +145,25 @@ const Banner = () => {
                         </div>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
-                            <a href={cv}>
+                            <div
+                                onClick={() => setOpen2(true)}
+                                className='cursor-pointer'>
                                 <RiFilePaper2Line/>
-                            </a>
+                            </div>
+                            <Lightbox
+                            open={open2}
+                            close={() => setOpen2(false)}
+                            plugins={[Download]}
+                            slides={[
+                                {
+                                    src: cv,
+                                    alt: 'CvPl',
+                                    width: 1600,
+                                    height: 1200,
+                                }
+                            ]}
+                            />
+
                         </div>
                     </motion.div>
                 </div>
