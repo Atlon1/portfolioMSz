@@ -37,9 +37,8 @@ export type bannerType = {
     typed: string[],
     description: string,
     link: string,
-    cv: string,
+    cv: string[],
     img: string,
-    count: number[],
     certificate: string[],
 }
 
@@ -56,9 +55,8 @@ export const bannerPl: bannerType = {
         'mojej obecnej wiedzy technicznej. Nieustannie uczę się nowych funkcjonalności oraz sposobów ' +
         'tworzenia czystego i wydajnego kodu.',
     link: 'https://github.com/Atlon1',
-    cv: CvPL,
+    cv: [CvPL],
     img: Image,
-    count: [2, 8, 10],
     certificate: [SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2]
 
 }

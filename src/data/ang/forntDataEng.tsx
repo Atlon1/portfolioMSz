@@ -35,9 +35,8 @@ export type bannerType = {
     typed: string[],
     description: string,
     link: string,
-    cv: string,
+    cv: string[],
     img: string,
-    count: number[],
     certificate: string[]
 };
 
@@ -46,9 +45,8 @@ export const bannerEng: bannerType = {
     typed: ['Frontend Developer', 'Ui/Ux Designer', 'Engineer'],
     description: 'I started learning front-end development in December 2021 by participating in a course organized by Coders Lab. I chose JavaScript as my primary language, believing it to be the most accessible and offering immense possibilities. Below are my first web applications, and I plan to create more over time. I work as a technologist on a daily basis, and in my current job, I have recognized the benefits of programming, such as automating routine tasks and reducing errors. This inspired me to learn front-end development, and my tremendous enthusiasm for work motivates me to further develop in this field.',
     link: 'https://github.com/Atlon1',
-    cv: CvEng,
+    cv: [CvEng],
     img: Image,
-    count: [2, 8, 10],
     certificate: [SiiDyp, SiiExam, CLDyp, CLSup1, CLSup2]
 };
 

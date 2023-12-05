@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {FaGithub} from 'react-icons/fa'
-import {RiFilePaper2Line} from 'react-icons/ri'
 import {TypeAnimation} from "react-type-animation";
 import {motion} from "framer-motion";
 import {fadeIn} from "../variants";
@@ -10,11 +9,8 @@ import {bannerPl} from '../data/pl/forntDataPl'
 import {bannerEng} from "../data/ang/forntDataEng";
 import {bannerPlMechanic} from "../data/pl/TechDataPl";
 import {bannerEngMechanic} from "../data/ang/TechDataEng";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Download from "yet-another-react-lightbox/plugins/download";
+import Certificate from "./Banner/Certificate";
+import Cv from "./Banner/Cv";
 
 const Banner = () => {
 
@@ -22,10 +18,6 @@ const Banner = () => {
     const {singleWord, typed, description, link, cv, img, certificate} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? bannerPlMechanic :
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? bannerPl :
             localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? bannerEngMechanic : bannerEng
-
-    const [open, setOpen] = useState(false);
-    const [open2, setOpen2] = useState(false);
-
 
     return <section className='w-full h-full lg:section py-[10px]' id='home'>
         <ParticlessConteiner/>
@@ -85,51 +77,8 @@ const Banner = () => {
                             </Link>
                         </button>
                         {singleWord[5] && (
-                            <button
-                                className='btn btn-lg'
-                                type='button'
-                                onClick={() => setOpen(true)}>
-                                {singleWord[5]}
-                            </button>
+                            <Certificate singleWord={singleWord[5]} certificate={certificate}/>
                         )}
-                        <Lightbox
-                            open={open}
-                            close={() => setOpen(false)}
-                            plugins={[Thumbnails]}
-                            slides={[
-                                {
-                                    src: certificate[0],
-                                    alt: 'Slide 1',
-                                    width: 1200,
-                                    height: 800,
-                                },
-                                {
-                                    src: certificate[1],
-                                    alt: 'Slide 2',
-                                    width: 1200,
-                                    height: 800,
-                                },
-                                {
-                                    src: certificate[2],
-                                    alt: 'Slide 3',
-                                    width: 1200,
-                                    height: 800,
-                                },
-                                {
-                                    src: certificate[3],
-                                    alt: 'Slide 4',
-                                    width: 1200,
-                                    height: 800,
-                                },
-                                {
-                                    src: certificate[4],
-                                    alt: 'Slide 5',
-                                    width: 1200,
-                                    height: 800,
-                                }
-                            ]}
-
-                        />
                     </motion.div>
                     <motion.div
                         variants={fadeIn('up', 0.1)}
@@ -145,25 +94,7 @@ const Banner = () => {
                         </div>
                         <div
                             className='flex text-[40px] gap-x-6 max-w-max mx-auto lg:mx-0 justify-centers hover:text-accent transition-all'>
-                            <div
-                                onClick={() => setOpen2(true)}
-                                className='cursor-pointer'>
-                                <RiFilePaper2Line/>
-                            </div>
-                            <Lightbox
-                            open={open2}
-                            close={() => setOpen2(false)}
-                            plugins={[Download]}
-                            slides={[
-                                {
-                                    src: cv,
-                                    alt: 'CvPl',
-                                    width: 1600,
-                                    height: 1200,
-                                }
-                            ]}
-                            />
-
+                            <Cv cv={cv}/>
                         </div>
                     </motion.div>
                 </div>

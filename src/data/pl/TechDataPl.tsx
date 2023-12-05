@@ -23,6 +23,8 @@ import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg
 import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
 import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
 import Excel from '../../assets/TechIcons/Excel.png';
+import CvTechPl1 from '../../assets/Cv/CV_techPl.jpg';
+import CvTechPl2 from '../../assets/Cv/CV_techPl_2.jpg';
 
 
 export type headerType = {
@@ -46,7 +48,7 @@ export type bannerType = {
     typed: string[],
     description: string,
     link: string,
-    cv: string,
+    cv: string[],
     img: string,
     certificate: string[]
 }
@@ -62,7 +64,7 @@ export const bannerPlMechanic: bannerType = {
         'pasjonuję się programowaniem oraz grami komputerowymi. Ostatnio zajmowałem się programowaniem panelu operatora dla mojej firmy, ' +
         'który ma na celu dostarczenie operatorom na niższym szczeblu wiedzy podstawowej.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
+    cv:[CvTechPl1, CvTechPl2],
     img: Image,
     certificate: []
 }

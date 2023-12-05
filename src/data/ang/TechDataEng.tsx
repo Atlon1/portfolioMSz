@@ -23,6 +23,9 @@ import ProductionPlanning from '../../assets/TechIcons/production-planning-b.jpg
 import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
 import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
 import Excel from '../../assets/TechIcons/Excel.png';
+import CvTechEng1 from '../../assets/Cv/CV_tech_Eng1.jpg';
+import CvTechEng2 from '../../assets/Cv/CV_tech_Eng2.jpg';
+import CvTechEng3 from '../../assets/Cv/CV_tech_Eng3.jpg';
 
 export type headerType = {
     img: string,
@@ -45,7 +48,7 @@ export type bannerType = {
     typed: string[],
     description: string,
     link: string,
-    cv: string,
+    cv: string[],
     img: string,
     certificate: string[]
 };
@@ -60,7 +63,7 @@ export const bannerEngMechanic: bannerType = {
         'I am a father of two children and have a passion for programming and computer games. Recently, I have been working on programming an operator panel for my company, ' +
         'designed to provide basic knowledge to operators at a lower level.',
     link: 'https://github.com/Atlon1',
-    cv: 'https://drive.google.com/file/d/18g4x_tJHOikxTOzYGgOj3k3tYqjRhODm/view?usp=drive_link',
+    cv: [CvTechEng1, CvTechEng2, CvTechEng3],
     img: Image,
     certificate: []
 };
