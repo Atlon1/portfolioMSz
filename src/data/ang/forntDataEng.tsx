@@ -4,6 +4,7 @@ import WorkImg3 from '../../assets/Estate-website.jpg';
 import WorkImg4 from '../../assets/Gym-image.jpg';
 import WorkImg5 from '../../assets/Photoland.jpg';
 import WorkImg6 from '../../assets/Lukasz-portfolio.jpg';
+import WorkImg7 from '../../assets/PizzaLand.jpg';
 import Logo from '../../assets/Maciej_logo.png';
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarSFill, RiStarSLine} from "react-icons/ri";
@@ -41,7 +42,7 @@ export type bannerType = {
 };
 
 export const bannerEng: bannerType = {
-    singleWord: ['Maciej', 'Szajstek', 'I am:', 'Hello!', 'Contact',"Certificates"],
+    singleWord: ['Maciej', 'Szajstek', 'I am:', 'Hello!', 'Contact', "Certificates"],
     typed: ['Frontend Developer', 'Ui/Ux Designer', 'Engineer'],
     description: 'I started learning front-end development in December 2021 by participating in a course organized by Coders Lab. I chose JavaScript as my primary language, believing it to be the most accessible and offering immense possibilities. Below are my first web applications, and I plan to create more over time. I work as a technologist on a daily basis, and in my current job, I have recognized the benefits of programming, such as automating routine tasks and reducing errors. This inspired me to learn front-end development, and my tremendous enthusiasm for work motivates me to further develop in this field.',
     link: 'https://github.com/Atlon1',
@@ -191,16 +192,33 @@ export type WorkContPropsEng = {
 export const workContModalEng: WorkContPropsEng[] = [
 
     {
-        id: 6,
-        img: WorkImg6,
-        title: 'Lukasz portfolio - Projekt',
-        project: 'Portfolio projekt',
+        id: 7,
+        img: WorkImg7,
+        title: 'PizzaLand - Project',
+        project: 'Portfolio project',
         description: {
             text: 'Portfolio',
-            description1: 'Technologie:',
-            description2: 'Witajcie na moim portfolio! Jestem, technologiem i programistą CNC z pasją do precyzyjnego inżynieringu. Moje umiejętności obejmują specjalizację w kodzie G, oprogramowaniu CAM i obsłudze maszyn CNC. Przedstawiam tutaj swoje doświadczenie w różnorodnych projektach, od komponentów lotniczych po innowacyjne rozwiązania narzędziowe. Zapraszam do eksploracji mojego portfolio, aby zobaczyć precyzję i innowacyjność, które wnoszę do każdego projektu. Śledźcie mojego bloga, aby być na bieżąco z trendami branżowymi, i śmiało kontaktujcie się w sprawie potencjalnych współprac w dynamicznym świecie technologii CNC.',
+            description1: 'Technology:',
+            description2: '**PizzaWorld** is your ultimate online destination for pizza enthusiasts, offering a diverse selection of high-quality pizzas for every taste preference. Our curated collection includes classic favorites and innovative creations, crafted with the finest ingredients. With secure ordering, reliable delivery, and a hassle-free return policy, PizzaWorld ensures a delightful pizza experience from order to delivery. Join our thriving pizza community to share your love for pizza, engage in discussions, and discover new flavors. Explore our user-friendly features, from easy navigation and a convenient cart to quick searches and secure test payments, making your pizza journey seamless and enjoyable.',
+            technology: ['Next JS','React scroll', 'React Switch', 'Motion div', 'UseParams','UseContext', 'MouseParallels'],
+            autor: 'Author:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://atlon1.github.io/food-del/",
+            img: WorkImg7
+        },
+    },
+    {
+        id: 6,
+        img: WorkImg6,
+        title: 'Lukasz portfolio - Project',
+        project: 'Portfolio project',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technology:',
+            description2: 'Welcome to my portfolio! I am a passionate CNC technologist and programmer with a love for precision engineering. My skills include expertise in G-code, CAM software, and operating CNC machines. Here, I showcase my experience in diverse projects, ranging from aerospace components to innovative tooling solutions. Feel free to explore my portfolio to witness the precision and innovation I bring to each project. Follow my blog to stay updated on industry trends and feel free to reach out for potential collaborations in the dynamic world of CNC technology.',
             technology: ['React scroll', 'React Switch', 'React-Router', 'Motion div', 'UseParams', 'TransformedAnimation'],
-            autor: 'Autor:',
+            autor: 'Author:',
             name: 'Maciej Szajstek - solo',
             note: 'Portfolio Live Demo',
             link: "https://atlon1.github.io/lukaszL-portfolio/",

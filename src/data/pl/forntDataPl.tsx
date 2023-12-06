@@ -13,6 +13,7 @@ import CLDyp from '../../assets/Certificate/CL_Dyplom.jpg';
 import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
 import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
 import CvPL from '../../assets/Cv/CV_pl.jpg'
+import WorkImg7 from "../../assets/PizzaLand.jpg";
 
 
 
@@ -205,6 +206,24 @@ export type WorkContProps = {
 }
 
 export const workContModal: WorkContProps[] = [
+
+    {
+        id: 7,
+        img: WorkImg7,
+        title: 'PizzaLand - Projekt',
+        project: 'Portfolio projekt',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technologie:',
+            description2: '**PizzaWorld** to Twoje ostateczne miejsce online dla miłośników pizzy, oferujące zróżnicowany wybór wysokiej jakości pizz, dostosowanych do każdego gustu. Nasza starannie dobrana kolekcja obejmuje zarówno klasyczne ulubieńce, jak i innowacyjne kreacje, przygotowane z najwyższej jakości składników. Dzięki bezpiecznemu zamawianiu, niezawodnej dostawie i bezproblemowej polityce zwrotów, PizzaWorld zapewnia przyjemne doświadczenie związanego z pizzą, począwszy od zamówienia po dostawę. Dołącz do naszej kwitnącej społeczności miłośników pizzy, aby podzielić się swoją pasją, uczestniczyć w dyskusjach i odkrywać nowe smaki. Eksploruj nasze łatwe w obsłudze funkcje, od wygodnej nawigacji i praktycznego koszyka po szybkie wyszukiwanie i bezpieczne testowe płatności, uczyniając Twoją podróż w krainę pizzy płynną i przyjemną.',
+            technology: ['Next JS','React scroll', 'React Switch', 'Motion div', 'UseParams','UseContext', 'MouseParallels'],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://atlon1.github.io/food-del/",
+            img: WorkImg7
+        },
+    },
     {
         id: 6,
         img: WorkImg6,
