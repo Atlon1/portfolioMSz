@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/portfolioMSz/static/css/main.8b0b8317.css",
-    "main.js": "/portfolioMSz/static/js/main.bcb9a95a.js",
+    "main.js": "/portfolioMSz/static/js/main.2a80f199.js",
     "static/media/Praca_w nocy.gif": "/portfolioMSz/static/media/Praca_w nocy.8519668d5f27bddf1ae1.gif",
     "static/media/BM.gif": "/portfolioMSz/static/media/BM.d1c3ca6ce14594393f55.gif",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
     "static/media/bg-new2.jpg": "/portfolioMSz/static/media/bg-new2.61d03e6b5900a7c74940.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
+    "static/media/PizzaLand.jpg": "/portfolioMSz/static/media/PizzaLand.3c9a46a0bc5b9a8a429e.jpg",
     "static/media/CV_pl.jpg": "/portfolioMSz/static/media/CV_pl.301fc011ff5e8481b963.jpg",
     "static/media/CV_Eng.jpg": "/portfolioMSz/static/media/CV_Eng.03fb5819f31e8cc1590e.jpg",
     "static/media/Autocad-Logo.png": "/portfolioMSz/static/media/Autocad-Logo.25fc1e8021b9ba5ffda9.png",
     "static/media/services.png": "/portfolioMSz/static/media/services.8e66d4fbbd95de45b8db.png",
     "static/media/CV_techPl.jpg": "/portfolioMSz/static/media/CV_techPl.28f5af2dfd72505f907e.jpg",
+    "static/media/Lukasz-portfolio.jpg": "/portfolioMSz/static/media/Lukasz-portfolio.80109ff8a08df07eb82b.jpg",
     "static/media/Estate-website.jpg": "/portfolioMSz/static/media/Estate-website.223ca3f1ae636c6ab0f7.jpg",
     "static/media/Oddaj_rzeczy.jpg": "/portfolioMSz/static/media/Oddaj_rzeczy.5dcf20c2e39f7feee069.jpg",
     "static/media/CV_tech_Eng1.jpg": "/portfolioMSz/static/media/CV_tech_Eng1.834a83f916f9a7871fb3.jpg",
@@ -44,10 +46,10 @@
     "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
     "main.8b0b8317.css.map": "/portfolioMSz/static/css/main.8b0b8317.css.map",
-    "main.bcb9a95a.js.map": "/portfolioMSz/static/js/main.bcb9a95a.js.map"
+    "main.2a80f199.js.map": "/portfolioMSz/static/js/main.2a80f199.js.map"
   },
   "entrypoints": [
     "static/css/main.8b0b8317.css",
-    "static/js/main.bcb9a95a.js"
+    "static/js/main.2a80f199.js"
   ]
 }
