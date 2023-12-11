@@ -24,7 +24,7 @@ import ToolMngr from '../../assets/TechIcons/TM_Vending.jpg';
 import AutoCad from '../../assets/TechIcons/Autocad-Logo.png';
 import Excel from '../../assets/TechIcons/Excel.png';
 import CvTechPl1 from '../../assets/Cv/CV_techPl.jpg';
-import CvTechPl2 from '../../assets/Cv/CV_techPl_2.jpg';
+import CvTechPl2 from '../../assets/Cv/CV_techPl2.jpg';
 
 
 export type headerType = {
