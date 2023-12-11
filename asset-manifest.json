@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/portfolioMSz/static/css/main.8b0b8317.css",
-    "main.js": "/portfolioMSz/static/js/main.2a80f199.js",
+    "main.js": "/portfolioMSz/static/js/main.cbe06638.js",
     "static/media/Praca_w nocy.gif": "/portfolioMSz/static/media/Praca_w nocy.8519668d5f27bddf1ae1.gif",
     "static/media/BM.gif": "/portfolioMSz/static/media/BM.d1c3ca6ce14594393f55.gif",
     "static/media/bg-modal.jpg": "/portfolioMSz/static/media/bg-modal.c127e115a49283ac9c3e.jpg",
     "static/media/bg-new2.jpg": "/portfolioMSz/static/media/bg-new2.61d03e6b5900a7c74940.jpg",
     "static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png": "/portfolioMSz/static/media/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.404a2430972b6c3332b2.png",
+    "static/media/CV_techPl.jpg": "/portfolioMSz/static/media/CV_techPl.95582c7fc3a51e452355.jpg",
     "static/media/PizzaLand.jpg": "/portfolioMSz/static/media/PizzaLand.3c9a46a0bc5b9a8a429e.jpg",
     "static/media/CV_pl.jpg": "/portfolioMSz/static/media/CV_pl.301fc011ff5e8481b963.jpg",
     "static/media/CV_Eng.jpg": "/portfolioMSz/static/media/CV_Eng.03fb5819f31e8cc1590e.jpg",
     "static/media/Autocad-Logo.png": "/portfolioMSz/static/media/Autocad-Logo.25fc1e8021b9ba5ffda9.png",
     "static/media/services.png": "/portfolioMSz/static/media/services.8e66d4fbbd95de45b8db.png",
-    "static/media/CV_techPl.jpg": "/portfolioMSz/static/media/CV_techPl.28f5af2dfd72505f907e.jpg",
     "static/media/Lukasz-portfolio.jpg": "/portfolioMSz/static/media/Lukasz-portfolio.80109ff8a08df07eb82b.jpg",
     "static/media/Estate-website.jpg": "/portfolioMSz/static/media/Estate-website.223ca3f1ae636c6ab0f7.jpg",
     "static/media/Oddaj_rzeczy.jpg": "/portfolioMSz/static/media/Oddaj_rzeczy.5dcf20c2e39f7feee069.jpg",
     "static/media/CV_tech_Eng1.jpg": "/portfolioMSz/static/media/CV_tech_Eng1.834a83f916f9a7871fb3.jpg",
     "static/media/Wiertło_Atorn.jpg": "/portfolioMSz/static/media/Wiertło_Atorn.30e1d779272b3df05b1c.jpg",
+    "static/media/CV_techPl2.jpg": "/portfolioMSz/static/media/CV_techPl2.092337b6257d4a4c1f4c.jpg",
     "static/media/e-commerence.jpg": "/portfolioMSz/static/media/e-commerence.d2669ae6b878090eca58.jpg",
     "static/media/LayOut.jpg": "/portfolioMSz/static/media/LayOut.daec1e9a659807200ef6.jpg",
     "static/media/Gym-image.jpg": "/portfolioMSz/static/media/Gym-image.6955c6886367edcb36d5.jpg",
@@ -38,7 +39,6 @@
     "static/media/dmu60Evo.jpg": "/portfolioMSz/static/media/dmu60Evo.e31b05b211dd957b85c3.jpg",
     "static/media/cnc-milling-machine.webp": "/portfolioMSz/static/media/cnc-milling-machine.4bfa21a419ffed5f7c74.webp",
     "static/media/sap.jpg": "/portfolioMSz/static/media/sap.6e8e7cf95f6152ac5b59.jpg",
-    "static/media/CV_techPl_2.jpg": "/portfolioMSz/static/media/CV_techPl_2.41fa80d85b8867361bdd.jpg",
     "static/media/Maciej_logo.png": "/portfolioMSz/static/media/Maciej_logo.5d5651cd1755b2acd341.png",
     "static/media/png-clipart-computer-numerical.png": "/portfolioMSz/static/media/png-clipart-computer-numerical.24e994019ddf44a4e9ab.png",
     "static/media/Heidenhain_400.jpg": "/portfolioMSz/static/media/Heidenhain_400.8ea3aaab8769f9027354.jpg",
@@ -46,10 +46,10 @@
     "static/media/hyperMILL.png": "/portfolioMSz/static/media/hyperMILL.27371b390899dabbdebd.png",
     "index.html": "/portfolioMSz/index.html",
     "main.8b0b8317.css.map": "/portfolioMSz/static/css/main.8b0b8317.css.map",
-    "main.2a80f199.js.map": "/portfolioMSz/static/js/main.2a80f199.js.map"
+    "main.cbe06638.js.map": "/portfolioMSz/static/js/main.cbe06638.js.map"
   },
   "entrypoints": [
     "static/css/main.8b0b8317.css",
-    "static/js/main.2a80f199.js"
+    "static/js/main.cbe06638.js"
   ]
 }
