@@ -9,7 +9,7 @@ const Header = () => {
 
 
     const [lang, setLang] = useState('pl')
-    const [tech, setTech] = useState('mechanics')
+    const [tech, setTech] = useState('front')
 
 
 

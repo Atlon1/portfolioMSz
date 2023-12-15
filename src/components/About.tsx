@@ -14,7 +14,13 @@ import {AboutEngMechanic} from "../data/ang/TechDataEng";
 
 
 const About = () => {
-    const {singleWord, description, github, skillsList, count} = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? AboutPlMechanic :
+    const {
+        singleWord,
+        description,
+        github,
+        skillsList,
+        count
+    } = localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'mechanics' ? AboutPlMechanic :
         localStorage.getItem('lang') === 'pl' && localStorage.getItem('tech') === 'front' ? AboutPl :
             localStorage.getItem('lang') === 'eng' && localStorage.getItem('tech') === 'mechanics' ? AboutEngMechanic : AboutEng
     const [ref, inView] = useInView({
@@ -37,13 +43,10 @@ const About = () => {
                             {description}
                         </p>
                         <div
-                            className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[284px] w-full max-w-[455px]'>
+                            className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[350px] h-full max-w-[455px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
-                                    {
-                                        inView ? <CountUp start={0} end={count[0]} duration={3}/> : null
-                                    }
-
+                                    <CountUp start={0} end={count[0]} duration={3}/>
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
                                     {singleWord[2]}<br/>
@@ -51,10 +54,8 @@ const About = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className='text-[35px] font-tertiary text-gradient2'>
-                                    {
-                                        inView ? <CountUp start={0} end={count[1]} duration={3}/> : null
-                                    }
+                                <div className='text-[35px] w-full font-tertiary text-gradient2'>
+                                    <CountUp start={0} end={count[1]} duration={3}/>
                                     {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
@@ -64,9 +65,7 @@ const About = () => {
                             </div>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
-                                    {
-                                        inView ? <CountUp start={0} end={count[2]} duration={3}/> : null
-                                    }
+                                    <CountUp start={0} end={count[2]} duration={3}/>
                                     {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
@@ -87,8 +86,9 @@ const About = () => {
                             <a href={github}
                                className='relative w-[185px] h-[185px] flex justify-center items-center'>
                                 <img className='animate-spin-slow w-full h-full max-w-[141px] max-h-[141px]'
-                                    src={Rounded} alt='rounded'/>
-                                <HiArrowRight className='absolute text-4xl hover:translate-x-2 transition-all duration-300'/>
+                                     src={Rounded} alt='rounded'/>
+                                <HiArrowRight
+                                    className='absolute text-4xl hover:translate-x-2 transition-all duration-300'/>
                             </a>
                         </div>
                     </motion.div>
