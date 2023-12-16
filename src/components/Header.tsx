@@ -8,7 +8,7 @@ import {headerEngMechanic} from "../data/ang/TechDataEng";
 const Header = () => {
 
 
-    const [lang, setLang] = useState('pl')
+    const [lang, setLang] = useState('eng')
     const [tech, setTech] = useState('front')
 
 
