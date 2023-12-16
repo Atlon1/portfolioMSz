@@ -14,7 +14,7 @@ const Header = () => {
 
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
-            localStorage.setItem('lang', 'ang')
+            localStorage.setItem('lang', 'eng')
         }
         if (localStorage.getItem('tech') === null) {
             localStorage.setItem('tech', 'front')
