@@ -30,7 +30,7 @@ const About = () => {
     return (
         <section className='w-full h-full lg:section' id='about' ref={ref}>
             <div className='container mx-auto'>
-                <div className=' flex md:flex-row flex-col'>
+                <div className='flex md:flex-row flex-col'>
                     <motion.div
                         variants={fadeIn('right', 0.1)}
                         initial='hidden'
@@ -43,10 +43,14 @@ const About = () => {
                             {description}
                         </p>
                         <div
-                            className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 max-h-[350px] h-full max-w-[455px]'>
+                            className='flex flex-1 sm:flex-row flex-col gap-x-6 lg:gap-x-10 mb-12 sm:max-h-[50px] max-h-[150px] h-full max-w-[455px]'>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
-                                    <CountUp start={0} end={count[0]} duration={3}/>
+                                    {
+                                        inView ? <CountUp start={0} end={count[0]} duration={3}/> : <CountUp start={0} end={count[0]} duration={3}/>
+                                    }
+
+
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
                                     {singleWord[2]}<br/>
@@ -55,7 +59,10 @@ const About = () => {
                             </div>
                             <div>
                                 <div className='text-[35px] w-full font-tertiary text-gradient2'>
-                                    <CountUp start={0} end={count[1]} duration={3}/>
+                                    {
+                                        inView ? <CountUp start={0} end={count[1]} duration={3}/> : <CountUp start={0} end={count[1]} duration={3}/>
+                                    }
+
                                     {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
@@ -65,7 +72,10 @@ const About = () => {
                             </div>
                             <div>
                                 <div className='text-[35px] font-tertiary text-gradient2'>
-                                    <CountUp start={0} end={count[2]} duration={3}/>
+                                    {
+                                        inView ? <CountUp start={0} end={count[2]} duration={3}/> : <CountUp start={0} end={count[2]} duration={3}/>
+                                    }
+
                                     {singleWord[4]}
                                 </div>
                                 <div className='font-primary text-sm tracking-[2px]'>
