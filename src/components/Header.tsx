@@ -12,7 +12,6 @@ const Header = () => {
     const [tech, setTech] = useState('mechanics')
 
 
-
     useEffect(() => {
         if (localStorage.getItem('lang') === null) {
             localStorage.setItem('lang', 'ang')
@@ -52,13 +51,13 @@ const Header = () => {
     }, [tech]);
 
 
-    const onChangeLang = (e: {target: {value: string}}) => {
+    const onChangeLang = (e: { target: { value: string } }) => {
         setLang(e.target.value)
         localStorage.setItem('lang', e.target.value)
         window.location.reload()
     }
 
-    const onChangeTech = (e: {target: {value: string}}) => {
+    const onChangeTech = (e: { target: { value: string } }) => {
         setTech(e.target.value)
         localStorage.setItem('tech', e.target.value)
         window.location.reload()
@@ -67,7 +66,7 @@ const Header = () => {
 
     const {img, text, linkedIn, email, singleWord} = lang === 'pl' && tech === 'mechanics' ? headerPlMechanic :
         lang === 'pl' && tech === 'front' ? headerPL :
-        lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
+            lang === 'eng' && tech === 'mechanics' ? headerEngMechanic : headerEng
 
 
     return <header className='py-2 z-[20] border-b border-white/20'>
@@ -85,22 +84,26 @@ const Header = () => {
                     value={lang}
                     className='btn btn-sm'>
                     <option
-                        className='text-black rounded-2xl'
-                        value='pl'> PL</option>
-                    <option
                         className='text-black'
-                        value='eng'>ENG</option>
+                        value='eng'>ENG
+                    </option>
+                    <option
+                        className='text-black rounded-2xl'
+                        value='pl'> PL
+                    </option>
+
                 </select>
                 <select className='btn btn-sm'
                         onChange={onChangeTech}
                         value={tech}
                 >
                     <option
-                        className='text-black rounded-2xl'
-                        value='mechanics'>{singleWord[1]}</option>
-                    <option
                         className='text-black'
                         value='front'>{singleWord[0]}</option>
+                    <option
+                        className='text-black rounded-2xl'
+                        value='mechanics'>{singleWord[1]}</option>
+
                 </select>
             </div>
         </div>
