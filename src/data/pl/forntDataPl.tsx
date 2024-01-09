@@ -14,6 +14,10 @@ import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
 import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
 import CvPL from '../../assets/Cv/CV_pl.jpg'
 import WorkImg7 from "../../assets/PizzaLand.jpg";
+import WorkImg8 from "../../assets/CMS-admin.jpg";
+import WorkImg9 from "../../assets/CMS-Admin2.jpg";
+import WorkImg10 from "../../assets/Store-CMS.jpg"
+import WorkImg11 from "../../assets/Store-CMS2.jpg"
 
 
 
@@ -207,6 +211,40 @@ export type WorkContProps = {
 
 export const workContModal: WorkContProps[] = [
 
+    {
+        id: 9,
+        img: WorkImg10,
+        title: 'CMS Store - Projekt',
+        project: 'Portfolio projekt',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technologie:',
+            description2: 'Strona internetowa specjalizująca się w sprzedaży oferuje bogaty asortyment produktów, dostosowany do różnorodnych potrzeb klientów. Jej atrakcyjny i łatwy w nawigacji interfejs pozwala szybko znaleźć poszukiwane artykuły, a rozbudowany system kategorii ułatwia przeglądanie oferty. Dzięki bezpiecznym i wygodnym opcjom płatności, klient ma pewność, że transakcje są zabezpieczone, a zakupy mogą być dokonywane sprawnie. Dodatkowo, strona często oferuje promocje i rabaty, zwiększając atrakcyjność zakupów online. Obsługa klienta jest dostępna, aby udzielić pomocy i rozwiązać ewentualne pytania czy problemy, tworząc kompleksowe doświadczenie zakupowe dla każdego odwiedzającego.',
+            technology: ['Next JS','Prisma', 'Stripe', "Api", "MySql", "Tailwind", "React","Clerk", "NextRouter", "ShadCN"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://e-commerence-store.vercel.app/",
+            img: WorkImg11
+        },
+    },
+    {
+        id: 8,
+        img: WorkImg8,
+        title: 'CMS Admin Store - Projekt',
+        project: 'Portfolio projekt',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technologie:',
+            description2: 'Platforma e-commerce zapewniająca zarządzanie sklepem online oferuje intuicyjny interfejs, umożliwiający łatwe przeglądanie, dodawanie do koszyka i płatności. Zaawansowane funkcje administracyjne pozwalają monitorować stan magazynowy, zarządzać zamówieniami i analizować dane sprzedażowe. System obsługi klienta ułatwia kontakt z obsługą sklepu i rozwiązywanie problemów. Strona jest zoptymalizowana pod kątem bezpieczeństwa transakcji online. Korzystanie z platformy to nie tylko wygoda, ale także bezpieczeństwo.',
+            technology: ['Next JS','Prisma', 'Stripe', "Api", "MySql", "Tailwind", "React","Clerk", "NextRouter", "ShadCN"],
+            autor: 'Autor:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://ecommerence-admin-pink.vercel.app/fa805307-c347-4727-bd8f-1f1e07e7782c/categories",
+            img: WorkImg9
+        },
+    },
     {
         id: 7,
         img: WorkImg7,
