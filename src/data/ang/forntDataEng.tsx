@@ -4,7 +4,6 @@ import WorkImg3 from '../../assets/Estate-website.jpg';
 import WorkImg4 from '../../assets/Gym-image.jpg';
 import WorkImg5 from '../../assets/Photoland.jpg';
 import WorkImg6 from '../../assets/Lukasz-portfolio.jpg';
-import WorkImg7 from '../../assets/PizzaLand.jpg';
 import Logo from '../../assets/Maciej_logo.png';
 import Image from '../../assets/atlon_doit_steampunk_style_7ca45451-cd20-4701-9013-4bc324c64832-removebg-preview.png';
 import {RiStarSFill, RiStarSLine} from "react-icons/ri";
@@ -14,6 +13,11 @@ import CLDyp from '../../assets/Certificate/CL_Dyplom.jpg';
 import CLSup1 from '../../assets/Certificate/CL_Sup1.jpg';
 import CLSup2 from '../../assets/Certificate/CL_Sup2.jpg';
 import CvEng from '../../assets/Cv/CV_Eng.jpg';
+import WorkImg7 from "../../assets/PizzaLand.jpg";
+import WorkImg8 from "../../assets/CMS-admin.jpg";
+import WorkImg9 from "../../assets/CMS-Admin2.jpg";
+import WorkImg10 from "../../assets/Store-CMS.jpg"
+import WorkImg11 from "../../assets/Store-CMS2.jpg"
 
 export type headerType = {
     img: string,
@@ -190,7 +194,40 @@ export type WorkContPropsEng = {
 };
 
 export const workContModalEng: WorkContPropsEng[] = [
-
+    {
+        id: 9,
+        img: WorkImg10,
+        title: 'CMS Store - Project',
+        project: 'Portfolio project',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technology:',
+            description2: 'The website specializing in sales offers a diverse range of products tailored to various customer needs. Its attractive and user-friendly interface allows for quickly finding sought-after items, while an extensive category system facilitates browsing through the offer. Thanks to secure and convenient payment options, customers can be confident that transactions are protected, and purchases can be made efficiently. Additionally, the website frequently provides promotions and discounts, enhancing the appeal of online shopping. Customer support is available to provide assistance and resolve any questions or issues, creating a comprehensive shopping experience for every visitor.',
+            technology: ['Next JS','Prisma', 'Stripe', "Api", "MySql", "Tailwind", "React","Clerk", "NextRouter", "ShadCN"],
+            autor: 'Author:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://e-commerence-store.vercel.app/",
+            img: WorkImg11
+        },
+    },
+    {
+        id: 8,
+        img: WorkImg8,
+        title: 'CMS Admin Store - Project',
+        project: 'Portfolio project',
+        description: {
+            text: 'Portfolio',
+            description1: 'Technology:',
+            description2: 'The e-commerce platform providing management for an online store offers an intuitive interface for easy browsing, adding items to the cart, and making payments. Advanced administrative features allow for monitoring inventory, managing orders, and analyzing sales data. The customer support system facilitates communication with the store\'s staff and problem resolution. The website is optimized for online transaction security. Utilizing the platform ensures not only convenience but also safety for users.',
+            technology: ['Next JS','Prisma', 'Stripe', "Api", "MySql", "Tailwind", "React","Clerk", "NextRouter", "ShadCN"],
+            autor: 'Author:',
+            name: 'Maciej Szajstek - solo',
+            note: 'Portfolio Live Demo',
+            link: "https://ecommerence-admin-pink.vercel.app/fa805307-c347-4727-bd8f-1f1e07e7782c/categories",
+            img: WorkImg9
+        },
+    },
     {
         id: 7,
         img: WorkImg7,
