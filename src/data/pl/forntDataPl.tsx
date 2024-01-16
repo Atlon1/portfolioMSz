@@ -241,7 +241,7 @@ export const workContModal: WorkContProps[] = [
             autor: 'Autor:',
             name: 'Maciej Szajstek - solo',
             note: 'Portfolio Live Demo',
-            link: "https://ecommerence-admin-pink.vercel.app/fa805307-c347-4727-bd8f-1f1e07e7782c/categories",
+            link: "https://ecommerence-admin-pink.vercel.app/",
             img: WorkImg9
         },
     },
